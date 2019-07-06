@@ -1,11 +1,14 @@
 import React from 'react';
 import axios from 'axios';
+import ReviewsSummary from './components/fullReviews';
+import ImageCarousel from './components/imageCarousel';
+import FullReviews from './components/reviewsSummary';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: "hello world reviews component"
+            componentHeader: "Customer Reviews"
         }
     }
     //comment
@@ -17,7 +20,14 @@ class App extends React.Component {
     // }
     render() {
         return (
-            <div>{this.state.data}</div>
+            <div>
+                <div className = "componentHeader">
+                  <h2>{this.state.componentHeader}</h2>
+                </div>
+                <ImageCarousel />
+                <FullReviews />
+                <ReviewsSummary />
+            </div>
         )
     }
 }
