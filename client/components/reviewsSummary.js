@@ -1,5 +1,7 @@
 import React from 'react';
 import background from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/avgRatingBackground.gif';
+import Graph from './ratingsGraph.js';
+
 const ReviewsSummary = function(props) {
   return (
     <div className = "customerSummary">
@@ -13,7 +15,8 @@ const ReviewsSummary = function(props) {
       >
         {props.avg}
       </div>
-      <div>
+      <div className = "ratingSummary">
+        <Graph ratingsBreakdown = {props.ratingsBreakdown}/>
       </div>
     </div>
   )
