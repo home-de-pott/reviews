@@ -32,6 +32,11 @@ class App extends React.Component {
         avgReviews: newAvg, 
         ratingsBreakdown: ratingsByStars
       });
+      const rating = this.state.avgReviews;
+      const starTotal = 5;
+      const starPercentage = (rating / starTotal) * 100;
+      const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
+      document.querySelector('.starRating .stars-inner').style.width = starPercentageRounded; 
     }
 
     componentDidMount() {
