@@ -2007,10 +2007,263 @@ let allItems = [
         id: '204517298', 
         reviews: [
             {
-                userName: 'Springbok',
-                date: 'June 10, 2017',
-                header: 'Great addition to any DIY-er with a utility knife',
-                review: 'This 100-pack of heavy-duty utility blades is a must-have if you use a utility knife. Scoring drywall goes so much quicker and neater when you have blades available to swap out when they get dull, and this package makes it easy to safely store the old blade and to dispense a new one. The rachetting tabs on the back of the dispenser help to keep the new blades tight and the corresponding guide indicates how many fresh blades remain. As a valuable bonus, these blades are made in the USA and are very well priced.',
+                userName: '50laine',
+                date: 'January 29, 2019',
+                header: 'This is just what I need to feed birds all over the yard while preventing that awful pile of rott...',
+                review: 'This is just what I need to feed birds all over the yard while preventing that awful pile of rotting seed. It is heavy enough to withstand strong winds and keep the feeder upright. It is not so heavy I can\'t lift it to move just a little each day.The only problem is the need to replace it every few years because the base of the tube will rust out and break away from the bar that holds it to the base.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '206184456', 
+        reviews: [
+            {
+                userName: 'Asante',
+                date: 'April 12, 2019',
+                header: 'A little light. Should make it thicker.',
+                review: 'A little light. Should make it thicker.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '206391087', 
+        reviews: [
+            {
+                userName: 'DanInKaty',
+                date: 'July 12, 2018',
+                header: 'Thermostat is very easy to install. The instructions are easy to understand and follow. Connect...',
+                review: 'Thermostat is very easy to install. The instructions are easy to understand and follow. Connecting to the WiFi was as easy as any other device. I would download the app to your phone first and use that to give you the step by step instructions. Took me a little while on how to put in the password. sliding your finger around the outer edge moves the selector. I like the way it walks you through setting up everything from the heater & A/C to the temps you want and where you live. I like the display when you walk up to it or by, it will light up, and the display is large and easy to read up close or at a distance. The app gives you all the same setup menus that are on the thermostat.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 3,
+                notHelpfulCount: 1
+            }
+        ]
+    },
+    { 
+        id: '302997805', 
+        reviews: [
+            {
+                userName: 'Shawn',
+                date: 'March 21, 2018',
+                header: 'I looked at Ring and had a Skybell HD for just over a year before it finally gave up. I\'ve been w...',
+                review: 'I looked at Ring and had a Skybell HD for just over a year before it finally gave up. I\'ve been waiting on the Nest Hello to see how it stacked up.It appears they took notes from all the failures of the other brands of video doorbells and created the Nest Hello that performs flawlessly.Installation was a little more involved, but not hard.You have to make sure the voltage of your current transformer is between 16v - 24v.The app guides you through the install which took less that 30 minutes to have my account set up, doorbell installed and looking at video on my phone.Connects to 5G and 2.4G.Its noticeably faster on 5G over the 2.4G.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 7,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '203556922', 
+        reviews: [
+            {
+                userName: 'Leon',
+                date: 'August 12, 2014',
+                header: 'Not for the beginner installer',
+                review: 'This is my first review. We bought this thermostat for our new house. Easy to install wiring wise, has the openings and labeling. Also came with stickers to help label the old wires. We had a digital and decided this is good for us since its programmable and also has wifi. What I didn\'t know was that you do have to toggle the proper function on the unit by pressing the up button and another to set the internal function.For my Florida home, it was 2-0. I highly recommend learning what each wire on your thermostat does, like the Green wire really does turn on the fan and it is correct. ',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 38,
+                notHelpfulCount: 7
+            },
+            {
+                userName: 'uncruling99',
+                date: 'April 5, 2019',
+                header: 'Needed a new thermostat for our A/C Furnace unit. We still had the old mercury switch. I wanted s...',
+                review: 'Needed a new thermostat for our A/C Furnace unit. We still had the old mercury switch. I wanted something to have a schedule, auto mode selections, and learning functions. This unit works great! It requires a C wire to operate. The old mercury switch did not have the C wire so I had to hook up a wire to the C wire location on the board inside the A/C handler. Be sure to shut your power off and only install this if you are confident in your abilities. The WiFi feature was an added bonus cause initially I didn\'t want the feature, I have grown to like it.It is nice when you are in bed and want to change the temperature without getting out of bed.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '202973825', 
+        reviews: [
+            {
+                userName: 'Megtop',
+                date: 'January 29, 2019',
+                header: 'My family uses theae bags predominantly for river and lake clean ups. They hold up well to the wi...',
+                review: 'My family uses theae bags predominantly for river and lake clean ups. They hold up well to the wide variety of trash that is collected. Broken glass and large pieces of metal can be confidently carried without constant fear of having to pick it all up again. They handle the weight of half full bottles and soaking wet items very well. These bags are awesome and worth the price. Thank you',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '202977247', 
+        reviews: [
+            {
+                userName: 'JH',
+                date: 'May 9, 2017',
+                header: 'This toilet looks very sleek and modern. It has powerful flushing with little water. It is a gr...',
+                review: 'This toilet looks very sleek and modern. It has powerful flushing with little water. It is a great toilet by design and function, but unfortunately, porcelain coating quality drags down the rating. I bought four toilets.Two are fine and two have imperfect porcelain coating.One has a small grey spot on top of bowl, oh well, I decided to keep it.The other has two long grey hairlines on top of bowl, too obvious to ignore and I decided to exchange.One lid has uneven coating and looks weird.For a toilet with price tag @$300, this is unacceptable.Kohler should 1) improve porcelain coating process, and 2) rinse off dust / debris before reaching their quality control',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 40,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'sneaker4',
+                date: 'July 31, 2018',
+                header: 'After 24 years of reliable service the old toilet gave up, and after much research, I decided on ...',
+                review: 'After 24 years of reliable service the old toilet gave up, and after much research, I decided on this make and model. Installing the new toilet was somewhat of a challenge, since toilet dimensions have changed in 24 years. The first was the toilet shutoff valve was too close the back of the new toilet so that the shut valve handle would not turn without hitting the toilet. I had to remove new toilet and cut out drywall to move the valve slightly over. The other advice I have is this toilet is a one piece design, so it is heavy and awkward to lift and place over the hold down bolts, and making sure you are aligning the wax ring correctly to the floor flange. This was trying in a small space! ',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 8,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'garyfromag',
+                date: 'July 11, 2014',
+                header: 'Looks great; easy to install, but one thing to consider',
+                review: 'Looks great, was easy to install, functions well for low flow, good value, a quality product. One technical diappointment. When selecting this toilet the specs led me to believe it would extend from the wall about an inch less than my current toilet. This was an issue due to a our plans for a new shower door. But once installed it actually extended almost an inch further from the wall. Rough-in was 12 inches for both old and new. This was a big disappointment and resulted in a shower door of 24" rather than the planned 26" which would have worked better. Other than that technical detail, we love the toilet.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 61,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '206967353', 
+        reviews: [
+            {
+                userName: 'Anroyals',
+                date: 'April 10, 2017',
+                header: 'Medium Duty Strap',
+                review: 'This is a good tow strap to have in your vehicle in case of an emergency. The size and weight make it easier to store than larger, heavier duty straps. However, this strap has it\'s shortfalls.It\'s definitely not a heavy-duty, daily use strap. The hook size would prevent this strap from having long term longevity. When choked, the clasp of the hook will tear into the edge of the strap as shown in my pictures. The small diameter of the hooks is also an issue of hooking to a larger pin (i.e. shackles, adapt-a-ball pins, etc.). I would suggest this product to be the one for your trunk or emergency kit that you would rather have and not need, than need and not have. ',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 3,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '301122561', 
+        reviews: [
+            {
+                userName: 'HomeDepotCustomer',
+                date: 'July 9, 2019',
+                header: '4 Star Review',
+                review: '',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Slick',
+                date: 'July 9, 2019',
+                header: 'Looks good but have not used it yet. Thank goodness...',
+                review: 'Looks good but have not used it yet. Thank goodnes.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '100321594', 
+        reviews: [
+            {
+                userName: 'Albert',
+                date: 'January 15, 2019',
+                header: 'Good produt',
+                review: 'Good produt',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Anjleo',
+                date: 'April 23, 2019',
+                header: 'Eazy to put and cut',
+                review: 'Easy to put and cut',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Jxco',
+                date: 'February 5, 2019',
+                header: 'Light weight and thin for a low basement ceiling to cover...',
+                review: 'Light weight and thin for a low basement ceiling to cover insulation. Along good for lamination over existing drywall surfaces',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
+    },
+    { 
+        id: '202077241', 
+        reviews: [
+            {
+                userName: 'HotToddy',
+                date: 'March 4, 2017',
+                header: 'I just bought this today and after unpacking it, I am very impressed with its form and functional...',
+                review: 'I just bought this today and after unpacking it, I am very impressed with its form and functionality. It has great suction and everything stores pretty compact. We downsized from an old Ridgid 12gal to conserve garage space. I like the long cord and the smaller diameter hose. This will be great for vacuuming our cars and cleaning spots out of the carpet.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 17,
+                notHelpfulCount: 2
+            }
+        ]
+    },
+    { 
+        id: '205655916', 
+        reviews: [
+            {
+                userName: 'Ramcquaide',
+                date: 'April 9, 2019',
+                header: 'They\'re shingles, what more can I say?',
+                review: 'They\'re shingles, what more can I say?',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Ethan',
+                date: 'August 17, 2017',
+                header: 'These are the best all around shingles for performance in wind storms and hail events.',
+                review: 'These are the best all around shingles for performance in wind storms and hail events.',
                 rating: 5,
                 verifiedPurchase: false,
                 recommend: true,
@@ -2020,168 +2273,817 @@ let allItems = [
         ]
     },
     { 
-        id: '206184456', 
-        name: '10 ft. x 12 ft. Blue Medium Duty Tarp', 
-        price: 14.98 
-    },
-    { 
-        id: '206391087', 
-        name: 'Nest Learning Thermostat 3rd Gen in Stainless Steel', 
-        price: 189.00 
-    },
-    { 
-        id: '302997805', 
-        name: 'Nest Hello Video Doorbell', 
-        price: 189.00 
-    },
-    { 
-        id: '203556922', 
-        name: 'Wi-Fi 7 - Day Programmable Thermostat + Free App', 
-        price: 198.00 
-    },
-    { 
-        id: '202973825', 
-        name: '42 Gal. Contractor Bags (50-Count)', 
-        price: 25.97 
-    },
-    { 
-        id: '202977247', 
-        name: 'Santa Rosa Comfort Height 1-Piece 1.28 GPF Single Flush Compact Elongated Toilet with AquaPiston Flush in White', 
-        price: 329.00 
-    },
-    { 
-        id: '206967353', 
-        name: '15 ft. Tow Strap', 
-        price: 17.74 
-    },
-    { 
-        id: '301122561', 
-        name: '4 in. x 30 ft. x 20,000 lbs. Vehicle Recovery Tow Strap', 
-        price: 14.75 
-    },
-    { 
-        id: '100321594', 
-        name: '3/8 in. x 4 ft. x 8 ft. Gypsum Board', 
-        price: 9.48 
-    },
-    { 
-        id: '202077241', 
-        ame: '4 Gal. 5.0-Peak HP Portable Wet/Dry Vacuum', 
-        price: 69.97 
-    },
-    { 
-        id: '205655916', 
-        name: 'Oakridge Algae Resistant Driftwood Laminate Architectural Shingles (32.8 sq. ft. per Bundle)', 
-        price: 31.00 
-    },
-    { 
         id: '205143494', 
-        name: 'StudSensor HD55 Stud Finder', 
-        price: 19.97 
+        reviews: [
+            {
+                userName: 'Hawkoo',
+                date: 'September 18, 2018',
+                header: 'this stud finder will work for the needs of most people. easy to read, fits in the hand nicely wi...',
+                review: 'this stud finder will work for the needs of most people. easy to read, fits in the hand nicely with black gripper band around the main body, push on button is in a great place for left or right hand use. no need to turn on or off just push the button when you want to scan and it turns off when you let off the button. soft felt like glides on the bottom to help it slide along smooth surfaces. light up arrow indicator on the wall for easy marking of the stud. I have mostly used to find the suds to hang TV mounts or heavy artwork. I have found it works best on just drywall services. ',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '206721480', 
-        name: '64 Qt. Latching Storage Box', 
-        price: 10.98 
+        reviews: [
+            {
+                userName: 'Lawman',
+                date: 'February 25, 2019',
+                header: 'I just bought 2 of these, based on the size, I have several extra shop vac adapters to put in to...',
+                review: 'I just bought 2 of these, based on the size, I have several extra shop vac adapters to put in to these. It states Product Depth(in.) 26.125, Product Height(in.) 13.5, Product Width(in.) 16., My shop vac long adapters are 21.5 inches long and don\'t fit. Now I have to buy another bigger one for them. There is a difference in size from the web site and the storage box itself.',
+                rating: 3,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 9,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'Sal',
+                date: 'June 4, 2019',
+                header: 'This storage box is good to store in closet or under the bed. Good for CD\'s, DVD\'S, Books and clo...',
+                review: 'This storage box is good to store in closet or under the bed. Good for CD\'s, DVD\'S, Books and clothing.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }, 
+            {
+                userName: 'Legs',
+                date: 'July 3, 2019',
+                header: 'These containers are perfect for storing lots of different items. I buy the clear ones so I can...',
+                review: 'These containers are perfect for storing lots of different items. I buy the clear ones so I can tel\'s inside.They are sturdy and stackable.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+        ]
     },
     { 
         id: '205978361', 
-        name: '27 Gal. Tough Storage Tote in Black', 
-        price: 8.98 
+        reviews: [
+            {
+                userName: 'billjustbill',
+                date: 'April 17, 2016',
+                header: 'Sturdy and withstands Sunlight',
+                review: 'Because of the needs for myself, of two other relative families, and an aging neighbor, I just bought 14 more of these because the ones I\'ve had in the past are great.I\'ve stored old cast iron tools and other heavy benchtop tools like routers and sanders inside them. One has been outside, in the rain and in the sunlight for a year. Still dry and the plastic has not gotten brittle, nor has it split when moved or lifted, but I did not stack them on top of each other; just the weight of a set of tire chains, fireplace tools and old cast iron cookware.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 36,
+                notHelpfulCount: 1
+            }
+        ]
     },
     { 
         id: '307596627', 
-        name: '20 lbs. Original Charcoal Briquettes (2-Pack)', 
-        price: 14.98 
+        reviews: [
+            {
+                userName: 'YoungPrince',
+                date: 'May 30, 2019',
+                header: 'This was the best price for 20LBS of Kingsford for 12.88. I purchase 2 packs couldn\'t beat that p...',
+                review: 'This was the best price for 20LBS of Kingsford for 12.88. I purchase 2 packs couldn\'t beat that price.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'MarkMyWord',
+                date: 'June 25, 2019',
+                header: '#charcoalmatters Don\'t kid yourself into thinking that all briquettes are created equal. Kingsfor...',
+                review: '#charcoalmatters Don\'t kid yourself into thinking that all briquettes are created equal.Kingsford burns slowly and consistently and gives a wonderful flavor to the food on the grill.Oh, by the way, don\'t use liquid starting fluid and think that isn\'t going to taint the taste of the food you grill.This isn\'t rocket science, use a charcoal chimney or an electric starter. If you\'re in that much of a hurry, go buy a propane grill and hope that the food will taste nearly the same... ...good luck with that...',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'limey',
+                date: 'June 27, 2019',
+                header: 'being a pitmaster with a bbq buisnes entirely built on word of mouth and having tried most of the...',
+                review: 'being a pitmaster with a bbq buisnes entirely built on word of mouth and having tried most of the other commercially available products ,I have always come back to kingsford and now use it exclusively as it does exactly as advertised and is best value',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '308067442', 
-        name: 'ATOMIC 20-Volt MAX Lithium-Ion Brushless Cordless Compact 1/2 in. Drill Driver w/ (2) Batteries 1.3Ah, Charger & Bag', 
-        price: 99.00 
+        reviews: [
+            {
+                userName: 'Karl',
+                date: 'July 2, 2019',
+                header: 'Amazing drill and battery pack just one bad thing the bag came very dirty like grease on it or so...',
+                review: 'Amazing drill and battery pack just one bad thing the bag came very dirty like grease on it or something black',
+                rating: 3,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'JohnG',
+                date: 'June 25, 2019',
+                header: 'I first purchased the Rigid drill while I was assembling a coffee table and found out I was using...',
+                review: 'I first purchased the Rigid drill while I was assembling a coffee table and found out I was using my phone as a flashlight. I then returned it for this fantastic drill that has a LED light built into the base. It was everything I needed to finish the job easily.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'ConnectTheDots',
+                date: 'June 25, 2019',
+                header: 'This is a big improvement over the DC988 18V drill.Lighter, but still hefty; and more than stron...',
+                review: 'This is a big improvement over the DC988 18V drill. Lighter, but still hefty; and more than strong enough for all we expect it to do. We have widely varied uses in our labs and have to modify equipment to attach test equipment and leads.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '204663546', 
-        name: 'Screwdriver Set (15-Piece)', 
-        price: 29.97 
+        reviews: [
+            {
+                userName: 'Granmamma38',
+                date: 'September 13, 2018',
+                header: 'Husky is the Best Buy for me. It is strong and durable, the best value for the money, and carries...',
+                review: 'Husky is the Best Buy for me. It is strong and durable, the best value for the money, and carries a lifetime warranty, no receipt no questions asked. I\'m a single woman and I own my own home, so, I\'m responsible for the repairs around the house. Husky always handles the job! I would have given it 5 Stars if these had a magnetic tip. That\'s always handy.Maybe the next set husky will add magnetic tip?',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 4,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Red',
+                date: 'August 14, 2018',
+                header: 'Awesome set for the price.',
+                review: 'Awesome set for the price.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Yas',
+                date: 'July 9, 2019',
+                header: 'The product was as I ordered. Functional and handy.',
+                review: 'The product was as I ordered. Functional and handy.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '300243236', 
-        name: 'Adjustable Wrench Set (2-Pack)', 
-        price: 19.97 
+        reviews: [
+            {
+                userName: 'Patricia',
+                date: 'February 24, 2017',
+                header: 'Great set of wrenches. The quality and durability is fantastic; what I have come to expect from ...',
+                review: 'Great set of wrenches. The quality and durability is fantastic; what I have come to expect from Dewalt. They are very tough and very well made. They are heavy and for the price you can\'t go wrong with this set.This is a good set to have on hand for unexpected things that come up because they are two different sizes and are so adjustable.Thick and strong with a good grip.Fit good in your hand.I highly recommend this set!',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'L111',
+                date: 'February 5, 2017',
+                header: 'High quality wrenches at a good price',
+                review: 'These adjustable wrenches are well made and have a nice fit and finish. They are pretty standard adjustable wrenches, so there no surprises to report, but I\'ll offer my thoughts on a few minor details in case you are looking at other brands and want to compare. They have a vinyl grip that makes them comfortable to hold, and the bright yellow grip makes them nice and visible in a toolbox. They have a machined jaw area which gives them a clean, crisp look, and gives them a precise feel.But all of the edges of the jaw are relatively sharp, as they have not been "broken" or rounded at all.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 12,
+                notHelpfulCount: 1
+            }
+        ]
     },
     { 
         id: '202934501', 
-        name: 'SAE Combination Wrench Set (10-Piece)', 
-        price: 19.97 
+        reviews: [
+            {
+                userName: 'Landspeed',
+                date: 'March 1, 2019',
+                header: 'What a deal! I needed a 15 mm wrench to actuate the tensioner on my car to replace the serpentine...',
+                review: 'What a deal! I needed a 15 mm wrench to actuate the tensioner on my car to replace the serpentine belt. I didn\'t have one so I swung by my local Home Depot Store and found the 10-Piece Metric Combination Wrench Set.I have all kinds of different well known wrenches in my tool box at home.These compared with much higher priced brands. These are excellent quality that I will pass on to my heirs.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ] 
     },
     { 
         id: '206762393', 
-        name: '600 lb. Poly Garden Dump Cart', 
-        price: 79.98 
+        reviews: [
+            {
+                userName: 'macdanman',
+                date: 'April 15, 2019',
+                header: 'When this cart came, I put it together by myself. It took maybe an hour. I used 13mm (1/2") socke...',
+                review: 'When this cart came, I put it together by myself. It took maybe an hour. I used 13mm (1/2") socket with an extension and ratchet and a wrench the same size. I also used a medium sized crescent wrench and a flat headed screwdriver. I went on line to see a video on how to assemble it. The directions were fair, but the video helped. I bought this cart to haul groceries from the car to the house as I can\'t walk that well. I will also use it to help haul trash bags to the big garbage can. I\'ll use a piece of plastic in the cart to separate cart from trash.All in all my use will be for light weight items.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 7,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'MrDungBeatle',
+                date: 'June 14, 2018',
+                header: 'This is a Work Horse of a "wagon." I am accustom to the old steel pan, single wheeled, wheelbarro...',
+                review: 'This is a Work Horse of a "wagon." I am accustom to the old steel pan, single wheeled, wheelbarrow and so, was a little skeptical about a plastic tubbed \'wagon." But after one project as shown in the pictures I am sold that this is one of the best construction products I have spent money on lately. It was purchased in hopes of surviving the one major project pictured - that being the removal of old stairs and the hand excavation and removal of 6\'x5\'x8\' worth of dirt and hand refill with #7 gravel, that same 6\'x5\'x8\' hole This was necessary due to unstable ground which prevented the use of heavy equipment. The cart withstood the abuse and is still going as of this writing.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 19,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'countrygirl13',
+                date: 'February 16, 2014',
+                header: 'Gorilla Garden Dumping Cart',
+                review: 'I needed and wanted a garden cart as a wheelbarrow just isn\'t easy enough for me to try to balance while also trying to push it forward.I saw this listed online and read numerous reviews that either stated it was perfect for their use or a waste of money.My view is that it is a an excellent value, well worth the meager cost considering my back won\'t be aching for days after using it and it is very sturdy. It was easy to assemble, using a socket set and an adjustable wrench also a large phillips head screwdriver. The directions were clear and accurate and all the parts fit together perfectly.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 65,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '203531928', 
-        name: '11 in. UV Cable Tie - Black (500-Pack)', 
-        price: 31.37 
+        reviews: [
+            {
+                userName: 'Frawggy',
+                date: 'January 2, 2018',
+                header: 'The little tabs only latched about 50% of the time...',
+                review: 'The little tabs only latched about 50% of the time',
+                rating: 2,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'HomeDepotCustomer',
+                date: 'November 21, 2017',
+                header: 'Suited my project with excellent results. Built an outdoor Cat-environment for our cat.',
+                review: 'Suited my project with excellent results. Built an outdoor Cat-environment for our cat.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '304186447', 
-        name: 'Kashimar All Over Center Medallion 7 ft. x 10 ft. Area Rug', 
-        price: 690.55 
+        reviews: [
+            {
+                userName: 'Patricia',
+                date: 'August 28, 2018',
+                header: 'Very dark red rather than burgundy wool rug is beautiful...',
+                review: 'Very dark red rather than burgundy wool rug is beautiful and goes well with my traditional decor office. I like that the color is carried through the border area rather than having a contrasting color such as navy. While it is machine made rather than hand tied, I think that is reassuring that no child labor was involved in it\'s production.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '302292202', 
-        name: 'MAX Alkaline AAA Battery (30-Pack)', 
-        price: 15.98 
+        reviews: [
+            {
+                userName: 'HomeDepotCustomer',
+                date: 'October 11, 2018',
+                header: 'Ever Ready AAA Batteries, Long lasting, I don\'t usually buy batteries in bulk but this was a gre...',
+                review: 'Ever Ready AAA Batteries, Long lasting, I don\'t usually buy batteries in bulk but this was a great idea.I love the peace of mind of having a box or two of these batteries.I have used them to replace all the LED flash lights I have around the house in case of another heavy storm and power outtage.They also were handy for other small remotes like ceiling fans and miscellaneous electronics.Big plus are the individual boxes of 4 batteries inside the larger case, this made for less spillage of used and unused batteries in the utilities draw, you know the one in the kitchen with all the junk in it.All in all I am happy with these batteries.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '306861567', 
-        name: 'Refrigerator Water Filter', 
-        price: 49.99 
+        reviews: [
+            {
+                userName: 'TimGroleau',
+                date: 'March 26, 2019',
+                header: 'I thought I knew what love was, being married, and having my first daughter 2 years ago. Then I b...',
+                review: 'I thought I knew what love was, being married, and having my first daughter 2 years ago. Then I bought this grill! The price tag is pretty high, but just lift the lid and compare that weight to its $200 counterpart. The difference is the gauge steel Weber uses. That\'s the exact reason people can have a Weber grill for 15 plus years(assuming its covered and stored properly.) I was buying a $200 grill every 1.5-2 years due to rot out of either the drip pan, or the legs falling apart.This thing will last me a very long time, and the 10 year warranty is very nice to have as well!.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 6,
+                notHelpfulCount: 2
+            },
+            {
+                userName: 'jste',
+                date: 'March 30, 2019',
+                header: 'this Beauty Gets Hot and Stays Hot. love the Stainless Steel',
+                review: 'I bought online at the store. Told about a week and half for deliver, came home three days later and it was there. I used the build app and it was a breeze to assemble. Only issue was it was missing the ignitor button. I went online regerstered it and requested one be shipped. I had a misfit around the house so i used it. Let it burn for about 20 minutes to get off the chemicals from the factory. I cooked hamburgers and a few steaks so far. The came out very good. i bought a bluetooth thermoeter other then the Igrill3 because i want to use it in my oven and wanted a rechargable battery not to replace them after all this is 2019 not 1919. ',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 4,
+                notHelpfulCount: 2
+            },
+            {
+                userName: 'scott',
+                date: 'February 14, 2019',
+                header: 'Finally, a gas grill that sears',
+                review: 'this grill gets hot, finally a gas grill that sears! get the stainless steel, Its worth the extra change. incredible customer service experience also. My faith in Weber has been restored.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 3,
+                notHelpfulCount: 2
+            },
+            {
+                userName: 'Theodore',
+                date: 'June 5, 2019',
+                header: 'The lid does not fit correctly and the ignition for...',
+                review: 'The lid does not fit correctly and the ignition for the side burner does not light.Can we have someone come to our house to fix these issues with our new grill?',
+                rating: 2,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 3,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '204671575', 
-        name: 'Q 3200 2-Burner Propane Gas Grill in Titanium with Built-In Thermometer', 
-        price: 419.00 
+        reviews: [
+            {
+                userName: 'SoCalPat',
+                date: 'August 31, 2017',
+                header: 'My second Weber. First was charcoal 22" with table, electronic ignition, and coal storage bin an...',
+                review: 'My second Weber. First was charcoal 22" with table, electronic ignition, and coal storage bin and I loved it. Thought I would be disappointed having to switch to gas but not the case with this Q3200. Very happy with my new grill!!! Assembly did take over an hour doing by myself and I am pretty handy but the wait was worth it. Great controls, sturdy side tables, and easy to clean. Thought my handle light was bad so I called Weber customer service - no questions asked, they sent me out a new light asap - amazing. My steaks, chicken fish, and veggies have all come out perfecto.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 4,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Happy',
+                date: 'June 11, 2019',
+                header: 'Excellent grill. Nice and compact. So far, appears to be well made.',
+                review: 'Excellent grill. Nice and compact. So far, appears to be well made.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '303419594', 
-        name: 'Performance Platinum 80 gal. 10-Year Hybrid High Efficiency Smart Tank Electric Water Heater', 
-        price: 1999.00 
+        reviews: [
+            {
+                userName: 'MarylandDrive',
+                date: 'February 16, 2019',
+                header: 'Had this delivered and got it running about a week ago. Was very pleased to see the newest versi...',
+                review: 'Had this delivered and got it running about a week ago. Was very pleased to see the newest version has wifi built in and no extra hardware or subscription is required. Just download the app, connect to the wifi coming from the hot water heater to configure it, enter the password for the regular wifi, and then let everything reset and it worked. Very nice to see the very low power consumption in a daily, hourly or monthly graph. While I was changing out the old hot water heater, I added a 28" drain pan, a pressure tank, and earthquake straps that had never been installed in my house. Seems like cheap / simple protection and the pressure tank helps avoid high pressure spikes.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 20,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'VicL',
+                date: 'January 18, 2019',
+                header: 'The 50 Gal. Hybrid Rheem water heater replaced my GE Smart Water 50 Gal. I have a family with 2 A...',
+                review: 'The 50 Gal. Hybrid Rheem water heater replaced my GE Smart Water 50 Gal. I have a family with 2 Audits and 2 kids that take long showers. I tried to use ECO Mode but the recovery was too slow for 4 consecutive showers. In High Demand mode, hot water recovery was fast. During my vacation I left my water heater in High Demand mode. The daily kWh consumption is between .70 and .80 per day with no usage. My average daily kWh used is about 5. This water heater definitely saves money compared to my GE electric only water heater. The best reason for going Hybrid is the AC! My water heater is located in the garage, and now I have free AC/Dehumidifier in my garage. ',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 15,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'Victor',
+                date: 'February 16, 2018',
+                header: 'I was glad to get a 65 gallon tank, as most other options come in only 50 or 80 gallon versions. ...',
+                review: 'I was glad to get a 65 gallon tank, as most other options come in only 50 or 80 gallon versions. One important note to those buying the new Gen 4 models is that WiFi is built directly into the water heater unit, meaning that you do NOT need to purchase the EcoNet module separately. I had no difficulty setting up the WiFi connection. Also, the app (I am using an iPhone) now allows you to track energy usage on a daily, monthly, and/or yearly basis. Other to dos for installation: i) an expansion tank is needed, ii) I used a thick yoga mat as my "vibration isolation kit", and iii) I installed wide-spacing louver inserts that I purchased online into the oddly shaped door to the room with the water heater.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 9,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '202531275', 
-        name: '4 cu. ft. Poly Wheelbarrow', 
-        price: 39.98 
+        reviews: [
+            {
+                userName: 'rmorton',
+                date: 'May 24, 2019',
+                header: 'Found this at my Home Depot pre-assembled. The price was great for what I needed it for. The bu...',
+                review: 'Found this at my Home Depot pre-assembled. The price was great for what I needed it for. The bucket is plastic as with part of the frame. The legs are steel and the handles are wood. I Used this to move 3 yards of topsoil around my backyard. Although the handles would creek a little under the strain, it worked well. The tire was pre-inflated and also worked sufficiently. Also, the handles were painted black. I probably would not use it other than hauling dirt as you get what you pay for, but I am happy with it.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'rmorton',
+                date: 'May 24, 2019',
+                header: 'Found this at my Home Depot pre-assembled. The price was great for what I needed it for. The bu...',
+                review: 'Found this at my Home Depot pre-assembled. The price was great for what I needed it for. The bucket is plastic as with part of the frame. The legs are steel and the handles are wood. I Used this to move 3 yards of topsoil around my backyard. Although the handles would creek a little under the strain, it worked well. The tire was pre-inflated and also worked sufficiently. Also, the handles were painted black. I probably would not use it other than hauling dirt as you get what you pay for, but I am happy with it.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'ossie',
+                date: 'June 24, 2013',
+                header: 'great light wheelbarrow plus a decent price',
+                review: 'The pneumatic tire contains a tube which hasn\'t leaked air.I like the plastic tray instead of a heavy steel tray that can rust.It is easy to push which is nice for an eighty five year man.I would recommend it.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 103,
+                notHelpfulCount: 2
+            },
+            {
+                userName: 'Joe',
+                date: 'November 2, 2015',
+                header: 'Great Little Wheelbarrow plus a decent price',
+                review: 'It\'s a very good wheelbarrow for the money ...We used it to hall 2, 000# of dirt in our yard!',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 25,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '202057391', 
-        name: '6 cu. ft. Wheelbarrow with Steel Handles and Flat Free Tire', 
-        price: 94.98 
+        reviews: [
+            {
+                userName: 'Alan',
+                date: 'April 10, 2018',
+                header: 'I bought it at the store already assembled but i had to fix a issue because it was not assembled ...',
+                review: 'I bought it at the store already assembled but i had to fix a issue because it was not assembled correctly. The brackets that hold the wheel and axle in place were not assembled right thus causing the wheel to slide on the axle about 3 inches side to side as i made turns almost causing the wheel barrow to tip over on the side when you made a turn. So i had to had to loosen the brackets that hold the wheel on and move them both inwards towards the wheel. This stopped the wheel from sliding side to side. So it was not properly assembled. The pictures I am pointing at the brackets i had to loosen and move in towards the wheel. ',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 14,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'rdenney',
+                date: 'March 21, 2017',
+                header: 'Already to go when I picked it up. Good wheelbarrow, and already put 5-8 tons of stone threw it.',
+                review: 'Already to go when I picked it up. Good wheelbarrow, and already put 5-8 tons of stone threw it.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 15,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'Patti',
+                date: 'May 29, 2018',
+                header: 'I purchased this wheelbarrow because of the positive reviews.I had it assembled by my local HD s...',
+                review: 'I purchased this wheelbarrow because of the positive reviews. I had it assembled by my local HD store and upon pick up, there was a dent in the side and the paint was chipped which was very disappointing.',
+                rating: 3,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 3,
+                notHelpfulCount: 35
+            },
+            {
+                userName: '510Steve',
+                date: 'May 7, 2019',
+                header: 'This wheelbarrow has 3 shortcomings. First, the front wheel guard, juts out too far past the tire...',
+                review: 'This wheelbarrow has 3 shortcomings. First, the front wheel guard, juts out too far past the tire, which hits any obstacles such as a ramp, or small step, which makes the operator have to stoop down while passing over these transitions. Second is the flat proof tire. It\'s soft, so it only carries medium weight loads, beyond that, it feels like a flat tire.And third, the brackets holding on the wheel axle are thin, which bend back under heavy loads.I used this wheelbarrow to transport soil, from backyard to front yard, and load into a trailer.Rather disappointing.On the positive side, the handles are comfortable, and the steel barrow is sturdy.',
+                rating: 2,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 9,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '303619013', 
-        name: 'Windlowe 61 in. W x 22 in. D x 35 in. H Bath Vanity in White with Carrera Marble Vanity Top in White with White Sink', 
-        price: 1199.20 
+        reviews: [
+            {
+                userName: 'Chat',
+                date: 'June 14, 2019',
+                header: 'The build quality seems decent enough but the paint finish is extremely poor. It has a large numb...',
+                review: 'The build quality seems decent enough but the paint finish is extremely poor. It has a large number of blemishes and gobs of caulk from affixing the top as seen in the pictures. Overall I would not purchase this item at any price as the finish makes it look cheap. One exception to the complaints: the marble top is beautiful.',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Chad',
+                date: 'June 14, 2019',
+                header: 'The build quality seems decent enough but the paint finish is extremely poor. It has a large numb...',
+                review: 'The build quality seems decent enough but the paint finish is extremely poor. It has a large number of blemishes and gobs of caulk from affixing the top as seen in the pictures. Overall I would not purchase this item at any price as the finish makes it look cheap. One exception to the complaints: the marble top is beautiful.',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'danh',
+                date: 'December 17, 2018',
+                header: 'I bought two, one green and one white. Thanksgiving on sale for $724. I used 10% off coupon, ano...',
+                review: 'I bought two, one green and one white. Thanksgiving on sale for $724.I used 10% off coupon, another - $72.40 off is about $651, not too bad.Same almost identical vanities are also at costco cost about 699.99. Bought and brought home both with helps from my good friends.Brought one upstair, unboxed, found 1 vanity broke and 2 cracks on the top.I was panic because these are very heavy. Contacted Live Chat and complaint, they said I have to bring the vanity back and exchange.I said whatttttttttt, too heavy and too much work',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 6,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Rays',
+                date: 'February 12, 2019',
+                header: 'This vanity cabinet is made well ,looks great in bathroom and packaged well to try to prevent dam...',
+                review: 'This vanity cabinet is made well ,looks great in bathroom and packaged well to try to prevent damage in transportation. Price on vanity was very descent .Its alot taller than my older vanity so i to relocate outlets. Also because of counter extended edge it is not flush against walls on the sides . The negative part why i didnt give it 5 stars was the strong chemical smell like a sealer or lacquer smell that lasted more than 5weeks. I was told possible cushion spacers between marble top and cabinet might be cause smell so i should paint or replace but i couldn\'t find it them underneath to paint.Smell has lessened over 6 weeks and is fading after installing it.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'kdwpilgrim',
+                date: 'February 11, 2019',
+                header: 'This product is well-made and is extremely heavy. I\'m not a good just of size, so with the overha...',
+                review: 'This product is well-made and is extremely heavy. I\'m not a good just of size, so with the overhangs it seems longer than I expected and it is higher than I expected ...which is actually a good thing.The shelves in the cabinet look like they are adjustable but they are screwed into the sides and back.If you want to adjust the height, make sure you unscrew them before you install.We also had to cut a large notch in the shelves for the plumbing.I think that is okay in that we could make the notch as big as it needed to be but not bigger.The soft closing drawers and doors are very nice and the marble is lovely.We installed it without the backsplash.I like that look better.',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 3,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Don',
+                date: 'June 4, 2019',
+                header: 'Nice product but back fiberboard was cracked when I finally opened the box. Granted you won’t see...',
+                review: 'Nice product but back fiberboard was cracked when I finally opened the box. Granted you won’t see much of it but still upsetting given the price. Further, the stone came fixed to the bottom so it makes it fun to life 300lbs up the stairs at home. My preference would have been a top that gets glued later.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '203486567', 
-        name: '24 in. W Bath Vanity in White with Cultured Marble Vanity Top in White with White Basin', 
-        price: 89.00 
+        reviews: [
+            {
+                userName: 'Ibug1683',
+                date: 'October 15, 2015',
+                header: 'Looks great!',
+                review: 'Perfect vanity for a small bathroom. Good amount of storage underneath and a squared off top easy for setting things down on top. Happy with the purchase.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 13,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'Brooke',
+                date: 'March 30, 2018',
+                header: 'Sink came looking like it was broken the repaired.',
+                review: 'Sink came looking like it was broken the repaired.',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 3,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'ProjectAddict',
+                date: 'May 11, 2017',
+                header: 'great bang for you buck',
+                review: 'We desperately wanted to get some use out of our disgusting basement powder room but it was in need of some serious TLC. Cash strapped from an overhaul in the main parts of our home, we decided to go the DIY route with Home Depot and this good quality affordable vanity by Glacier Bay. It\'s a nice sturdy wood vanity well suited for a small bathroom.It was easy to assemble and backless for easy access to plumbing.I\'m very impressed with how nice it looks. My bathroom is clean and updated now. I did swap out the included silver knobs for something with a little more color for my personality. Great purchase. I\'m very happy with it.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 18,
+                notHelpfulCount: 0
+            }
+        ] 
     },
     { 
         id: '202084783', 
-        name: 'Traditional 8 ft. x 36 in. White PolyComposite Rail Kit without Brackets', 
-        price: 94.46 
+        reviews: [
+            {
+                userName: 'LouieG',
+                date: 'June 2, 2019',
+                header: 'These rails were a perfect fit to replace the older wood rails that were on our front porch. Easy...',
+                review: 'These rails were a perfect fit to replace the older wood rails that were on our front porch. Easy to install if you follow the directions and sturdy and great looking. Best of all...no more painting and touching up our wood rails...',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Nana',
+                date: 'January 29, 2015',
+                header: 'Beautiful Railings and easy to install',
+                review: 'Very easy to install deck railings that look great! The instructions are well written and plenty easy for senior citizens like us to install. We did not want to re-stain or re-paint every year but did not want something that looked low end. These railings are going to withstand our Southwestern summers just fine and they really look top end after installing. We are so pleased.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 23,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Trimmaster',
+                date: 'April 9, 2019',
+                header: 'Very nice looking...and for a fair price',
+                review: 'Very nice looking...and for a fair price',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Slammer',
+                date: 'May 6, 2019',
+                header: 'This railing system offers an exceptionally clean and inviting look. Very easy to install and can...',
+                review: 'This railing system offers an exceptionally clean and inviting look. Very easy to install and can be done in less than 30 minutes. Railing is very durable and withstands the exterior elements very well. You can\'t go wrong for the price.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '100139006', 
-        name: 'White Faux Wood Room Darkening 3.5 in. Vertical Blind - 78 in. W x 84 in. L', 
-        price: 54.97 
+        reviews: [
+            {
+                userName: 'Jsclaser',
+                date: 'October 17, 2017',
+                header: 'i almost spent $180 on a custom blind until i found this one. It is a great easy to install blind...',
+                review: 'i almost spent $180 on a custom blind until i found this one. It is a great easy to install blind. My only complaint is that is does not come far enough away from the wall at the mounts so it is always colliding with the sliding door\'s handle.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'HomeDepotCustomer',
+                date: 'Decmeber 11, 2016',
+                header: 'I actually bought 2 sets, one for my bedroom which i Like and the other for my kitchen and i had ...',
+                review: 'I actually bought 2 sets, one for my bedroom which i Like and the other for my kitchen and i had several problems with them. Had to return one because it was bent and then when I go to exchange it I got home and the front cover was bent also. I have it in my car but keep forgetting to exchange it ( the cover ) But I was also thinking I should have gotten the white for my kitchen.Can I still exchange it?',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'KitchenRedo',
+                date: 'June 17, 2019',
+                header: 'We are using this blind in front of our sliding glass doors. It has been great so far. The cent...',
+                review: 'We are using this blind in front of our sliding glass doors. It has been great so far. The center bracket keep us from opening the blind the whole way, but otherwise, we like the look.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Fred',
+                date: 'February 26, 2019',
+                header: 'Easy to install,good price,and it looks beautifull.',
+                review: 'Easy to install,good price,and it looks beautifull.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '301276361', 
-        name: 'Ball Animal 2 Upright Vacuum Cleaner', 
-        price: 499.00 
+        reviews: [
+            {
+                userName: 'AnnieD',
+                date: 'September 11, 2018',
+                header: 'Before this Dyson I owned a phenomenal Kenmore vacuum. When I purchased the Kenmore about 10 year...',
+                review: 'Before this Dyson I owned a phenomenal Kenmore vacuum. When I purchased the Kenmore about 10 years ago, I compared it to the top-of-the-line Dyson that was available at that time. Surprisingly, the Kenmore had a stronger suction and more convenient tool selection, so I went with that model instead. Well, after a decade of great performance, my Kenmore was ready for retirement and I was ready to give Dyson another try... and boy am I glad I did! This Animal 2 Upright Vacuum is everything I wanted and more! The first time I used it I picked up SO much debris that my old Kenmore had been leaving behind! ',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Beachgirl',
+                date: 'March 2, 2019',
+                header: 'I have 2 English Springer spaniel pups ..and they shed like crazy! My old Sweeper was aways gett...',
+                review: 'I have 2 English Springer spaniel pups ..and they shed like crazy! My old Sweeper was aways getting clogged and not picking up. I bought this and I\'ve had it almost 6 months! I love it..OMG! i vacuum one room and i need to empty it.I can\'t believe all it picks up. This is the best sweeper ever! I did master getting it to stay upright ..i thouht i broke it . but its fine. I wouldn\'t trade it for any other.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Paulombo',
+                date: 'January 8, 2019',
+                header: 'This is my first Dyson and I have to say it does what it says . It’s excellent for picking up dog...',
+                review: 'This is my first Dyson and I have to say it does what it says . It’s excellent for picking up dog hair , I couldn’t believe how much dirt & hair was embedded in my carpet .I have 2 Labradors and shed a lot , very impressive machine.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'MandiMoo',
+                date: 'May 2, 2019',
+                header: 'Impossible to move on carpet',
+                review: 'I had been waiting to finally upgrade our vacuum cleaner to a Dyson one suited for pet owners. Unfortunately this purchase (January 2019) has a been very bitter experience from an expensive investment. It works very well on hard floor but that\'s not what people buy a Dyson for, a manual sweep takes care of hard flooring.It\'s the carpet that I was hoping to get a good vacuuming out if. It is absolutely impossible to move this vacuum cleaner on any of our three types of rugs we own, none of which are out of ordinary type rugs. They all have smooth flat surfaces, so not a hairy type coarse rugs or carpets by any means. As far as I am concerned, this vacuum cleaner isn\'t really fit for purpose. ',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Commo18',
+                date: 'April 2, 2019',
+                header: 'Not what we were hoping for',
+                review: 'I just finished reading all the 1-star reviews and I agree with most of them. The vacuum does have powerful suction. However, the vacuum does not work well on carpet as it is difficult to move and the beater bar shuts off. My carpet is not totally flat, it does have some nap to it, but I would consider it average for many homes. As for using the tools on the extension hose, it is very difficult. The hose wants to go back to the vacuum and it is a constant battle to keep the hose extended. If Dyson were to modify this vacuum by putting a manual height adjustment on and allowing the user to select the height needed for their carpet I think it would work well. ',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'smokylinks',
+                date: 'July 10, 2019',
+                header: 'Suction is ok, but I find moving the vacuum while using it to be clumsy and unwieldy. Of course t...',
+                review: 'Suction is ok, but I find moving the vacuum while using it to be clumsy and unwieldy. Of course that could just be me learning to use a completely different type of upright. Definitely not the same as the usual upright in regards to vacuuming. I think at the price I paid this unit is overpriced.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     }
 ];
