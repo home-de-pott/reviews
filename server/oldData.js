@@ -1314,182 +1314,710 @@ let allItems = [
             },
             {
                 userName: 'JeffersonOh',
-                date: 'June 13, 2019',
-                header: 'I had three requirements for a mower: 1. easy start 2. easy to bag and 3. decent mulcher. I got 2...',
-                review: 'I had three requirements for a mower: 1. easy start 2. easy to bag and 3. decent mulcher. I got 2 out of 3. My neighbor told my husband he should get me a self propelled as he watched me pushing our old mower up and down our front lawn so that was a consideration. The Honda reviews were great. I went to Home Depot and the lady there helped me put it in my car and I was thrilled. Got it out of my car, set it up myself and was off and racing. That was October and it DID take a couple pulls to start each time and I was concerned -- but this spring it\'s been PERFECT, one pull and it starts.Bag is great.Easy to pull off and put back on and one pull start again to keep moving.Bravo Honda!',
-                rating: 3,
+                date: 'March 15, 2017',
+                header: 'Built super touch',
+                review: 'I have 2 other similar ladders from another manufacturer and I have been happy overall with them. But neither ones is of much use outside the home. This 22 foot ladder from Gorilla will get the job done on the outside of a home as well as those extension ladders, but this one you can fold in half for storage. No ropes needed. Plus it\'s relatively easy to carry.It is on the heavy side but in my opinion, any Joe Weekend won\'t have any trouble. This ladder is extremely well built. Excellent balance. Excellent weight to keep you in place when having to use it on soft material such as grass.The locking mechanisms were easy to use compared to my other two ladders. Simply twist them and they lock. ',
+                rating: 5,
                 verifiedPurchase: false,
-                recommend: false,
-                helpfulCount: 4,
-                notHelpfulCount: 2
+                recommend: true,
+                helpfulCount: 37,
+                notHelpfulCount: 5
             },
             {
-                userName: 'pat',
-                date: 'June 13, 2019',
-                header: 'I had three requirements for a mower: 1. easy start 2. easy to bag and 3. decent mulcher. I got 2...',
-                review: 'I had three requirements for a mower: 1. easy start 2. easy to bag and 3. decent mulcher. I got 2 out of 3. My neighbor told my husband he should get me a self propelled as he watched me pushing our old mower up and down our front lawn so that was a consideration. The Honda reviews were great. I went to Home Depot and the lady there helped me put it in my car and I was thrilled. Got it out of my car, set it up myself and was off and racing. That was October and it DID take a couple pulls to start each time and I was concerned -- but this spring it\'s been PERFECT, one pull and it starts.Bag is great.Easy to pull off and put back on and one pull start again to keep moving.Bravo Honda!',
-                rating: 3,
+                userName: 'GregS',
+                date: 'May 6, 2018',
+                header: 'I\'ve been looking at these multi-position ladders for a long time. I finally had a need for a la...',
+                review: 'I\'ve been looking at these multi- position ladders for a long time.I finally had a need for a ladder taller than a 6 foot step ladder.I took a look at what Home Depot had and this one jumped out at me.I\'ve only used it a couple of times, but it\'s worked wonderfully.I extended it most of the way to take down an antenna the previous owner left on the chimney.There was the typical ladder bounce, but I never felt unsafe climbing it.I also adjusted it to the tallest A frame ladder and was able to climb onto my roof. Some other reviews complain about the weight of the ladder.It is a little heavy, but it\'s much lighter than having a 22\' extension ladder, 9\' A frame ladder and a 5\' A frame ladder.And the convenience of folding it down into a smaller space for storage really makes up for the weight.',
+                rating: 5,
                 verifiedPurchase: false,
-                recommend: false,
+                recommend: true,
                 helpfulCount: 4,
-                notHelpfulCount: 2
+                notHelpfulCount: 0
             }
         ]
     },
     { 
         id: '100662617', 
-        name: '6 ft. Fiberglass Step Ladder with 300 lb. Load Capacity Type IA Duty Rating', 
-        price: 79.96 
+        reviews: [
+            {
+                userName: 'Garagedoorman',
+                date: 'September 13, 2016',
+                header: 'Excellent',
+                review: 'The 5 stars goes mainly to the online purchase experience. Everything was pulled & ready on a Sunday afternoon in just a few hours (thankfully because this wasn\'t the plan I had for the afternoon).I\'ve been installing garage doors for 23 years now & this is literally the 1st thing off the truck when I get to a job. I\'ve had many 4\' ladders thru the years, even a Louisville that I ordered online & thought would be the best. This is the easiest ladder I\'ve had the pleasure of using.The spreaders are high & out of the way, the top tray doesn\'t have weird holes in the middle but rather a nice bowl to hold screws, nuts & bolts to get the job done & still plenty of slots for hand tools.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Louise',
+                date: 'December 13, 2012',
+                header: 'GR8 Ladder for High Ceilings',
+                review: 'This ladder is perfect for changing (light) bulbs, cleaning ceiling fans or diffusers on a 12\' ceiling.Moving a 10\' ladder is awkward--regardless of fabricated material; but the fiberglass keeps it rigid enough to make lowering and transport easier. To avoid having to move it around too often for bulb changes, I recommend changing your incadescent floods to LEDs for longevity.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 22,
+                notHelpfulCount: 2
+            }
+        ]
     },
     { 
         id: '302038304', 
-        name: 'Safeclimb Baker Style 6 ft. x 6 ft. x 2-1/2 ft. Scaffold 1100 lbs. Capacity', 
-        price: 209.00 
+        reviews: [
+            {
+                userName: 'AverageJim',
+                date: 'November 14, 2017',
+                header: 'Recently purchased a new house with several cathedral ceilings. I was about to pull the trigger ...',
+                review: 'Recently purchased a new house with several cathedral ceilings. I was about to pull the trigger on a model at HF when I discovered this model tucked into the dark recesses of the ladder isle at my local HD. Easily fit into the back of my pickup at a little over two feet wide best done with two people loading it. Assembly was easily completed in less than five minutes.Again, you should use two people, but I did it with one. This thing is stable with lots of work space Adjustable for various terrain like steps or outside working conditions Durable? We shall see...it has a thick coating on it that looks hard to chip',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 16,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '206804667', 
-        name: 'Lindley 1-1/8 in. (28mm) Satin Nickel Square Cabinet Knob (10-Pack)', 
-        price: 25.98 
+        reviews: [
+            {
+                userName: 'GrapeApe76',
+                date: 'April 16, 2019',
+                header: 'Easy to install & the square shape updated an old chest of drawers to look more modern for my son...',
+                review: 'Easy to install & the square shape updated an old chest of drawers to look more modern for my son\'s room.Still need to paint the top & bottom kickboard black, but the knobs were a good first step in it\'s make over.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '100673842', 
-        name: 'Classics 1-5/16 in (33 mm) Diameter Weathered Nickel Cabinet Knob', 
-        price: 4.47 
+        reviews: [
+            {
+                userName: 'MJEA',
+                date: 'January 4, 2017',
+                header: 'High quality, iron finish, non magnetic but very attractive, I love the way my kitchen cabinets l...',
+                review: 'High quality, iron finish, non magnetic but very attractive, I love the way my kitchen cabinets look. I used the guide to pin the hole with pencil, mark with a pointed drill bit, drilled and assemble. No problem at all. Fast and easy, no need for a professional. Great investment.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '100210864', 
-        name: 'Hard Cap Knee Pads', 
-        price: 10.97 
+        reviews: [
+            {
+                userName: 'HomeDepotCustomer',
+                date: 'June 19, 2019',
+                header: '3 Star Review',
+                review: '',
+                rating: 3,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Rob',
+                date: 'May 29, 2019',
+                header: 'Product performed as expected. Great!...',
+                review: 'Product performed as expected. Great!',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '205606287', 
-        name: '2 cu. ft. Brown Mulch', 
-        price: 2.00 
+        reviews: [
+            {
+                userName: 'mach316',
+                date: 'June 15, 2019',
+                header: 'DO NOT BUY! I’ve never written a review before, but my experience with this crap has been so bad...',
+                review: 'DO NOT BUY! I’ve never written a review before, but my experience with this crap has been so bad, I felt I should share. I purchased 35 bags on 5/20/19. I laid it all that day, and it looked fantastic. I mean there were large chunks in it, but I was willing to overlook that, because the dark color really looked great. I was thinking how good of a deal I got at such a cheap price. Also happy with the 12 month color guarantee. Of course I realize that much does slowly fade over time, so I don’t take that 12 months literally. Sadly, just after I had spread all the much out, it began to rain. I woke up the next day to notice half the color had vanished, and it had left a trail of brown water leading away from my beds.',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 8,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'TX75056',
+                date: 'June 2, 2019',
+                header: 'Spent hours in the heat spreading 30 bags of this mulch on 6-1-19 then it started raining -- zip ...',
+                review: 'Spent hours in the heat spreading 30 bags of this mulch on 6-1-19 then it started raining -- zip code 75056. I woke up this morning to see this pathetic looking faded mulch. What exactly is the color guarantee? I didn\'t get 12 hours of brown color much less 12 months! I will be requesting and hoping for a refund.Don\'t buy this. I bought Scot\'s EarthGro and Lowe\'s Premium Brown bagged mulch in the past and have NEVER experienced anything like this!',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 12,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '205606416', 
-        name: '2 cu. ft. Red Mulch', 
-        price: 2.00 
+        reviews: [
+            {
+                userName: 'TX75056',
+                date: 'June 2, 2019',
+                header: 'worked as expected',
+                review: 'great mulch, worked as expected',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '205125326', 
-        name: '30 in. W 1.6 cu. ft. Over the Range Microwave in Fingerprint Resistant Stainless Steel', 
-        price: 188.00 
+        reviews: [
+            {
+                userName: 'Brando',
+                date: 'July 6, 2019',
+                header: 'Mediocre at best. We chose the Samsung model to match our 5 year old Samsung refrigerator which w...',
+                review: 'Mediocre at best. We chose the Samsung model to match our 5 year old Samsung refrigerator which we love. Unfortunately I cannot say the same about this Samsung microwave. The appearance is attractive and functions as it should. The mounting hardware matched the GE that it replaced which made installation fairly easy.The charcoal filter was a little difficult to install and actually took more time to install than the overall installation of the microwave itself.The parts that were required to be removed in order to install the filter felt like they were going to break as they were being removed.The vent fan is noticeably quieter than our previous GE and performs well.',
+                rating: 2,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Robert',
+                date: 'November 19, 2017',
+                header: 'Basic microwave. Exactly what I wanted. Simple options for basic use. I would consider it a base ...',
+                review: 'Basic microwave. Exactly what I wanted. Simple options for basic use. I would consider it a base model for fair price. Also be sure to read installation manual.Depending on your vent or non vent installation you may need to turn exhaust fan around before installation.Wasn\'t a problem for me but if you didn\'t read the installation guide it could impact the overall use and satisfaction of the product.',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 6,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Disappointed',
+                date: 'September 12, 2018',
+                header: 'Came home to see It installed and even though It works, it’s damaged...door is crooked with the r...',
+                review: 'Came home to see It installed and even though It works, it’s damaged...door is crooked with the right side bent',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 5,
+                notHelpfulCount: 3
+            }
+        ]
     },
     { 
         id: '204394354', 
-        name: '1.6 cu. ft. Over the Range Microwave in Stainless Steel', 
-        price: 198.00 
+        reviews: [
+            {
+                userName: 'Edge',
+                date: 'May 14, 2019',
+                header: 'February 2015 we redid our entire kitchen,I was excited about purchasing this microwave and could...',
+                review: 'February 2015 we redid our entire kitchen,I was excited about purchasing this microwave and couldn\'t wait to use it.It\'s lovely and it has the components I wanted, with said, good luck with the "everlasting" deal! it\'s not equipped to last longer then perhaps 3-5 yrs. :(I loved everything about it; 30 secs button, the express cook buttons, the little light underneath, etc.A year after purchasing(only my husband and I at home) I noticed scratches not sure how when I use a soft cloth with dish soap to wipe it down.Two years after purchasing; the handle broke off at the bottom, see pic where it\'s ducked taped and also superglued 2x. ',
+                rating: 2,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 7,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'nm1of5',
+                date: 'March 11, 2014',
+                header: 'Spacious, QUIET, cosmetically pleasing',
+                review: 'I purchased this microwave ($219) that included free delivery to my home and opted to add the installation package ($99 + tax). This purchase included free haul-away of my old microwave. Installation: all I can say is "WOW!".Two guys, 1 new microwave, 10 minutes later(tested product time included), took away old microwave(15 years old!).Life returned to normal.A + for service. Product: I have no complaints.It\'s fast, quiet, and looks nice. Very Spacious (1.6 cu ft). Will definitely buy another GE and from Home Depot. One little thing, all appliance models at Home Depot are in white.I had to special order and waited for about 5 days for the black model. ',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 24,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'Magillilnb',
+                date: 'September 13, 2014',
+                header: 'Very bad handle design',
+                review: 'I loved the look and the features and the price, but 1 week after the 1 year warranty ended, the door handle broke off completely at the bottom. This is a very poorly designed handle. Most people are not going to be tall enough to grab the handle at its center. I am fairly tall woman at 5\' 8". I believe that the majority of people will grab the handle near the bottom. The top and bottom of the handle are made up of several parts. I am not a weight lifter and didn\'t do anything but grab the handle and pull on it. That should not cause the handle to break off. I will never buy a GE product again if I can help it.',
+                rating: 2,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 60,
+                notHelpfulCount: 5
+            }
+        ]
     },
     { 
         id: '305708078', 
-        name: '1.1 cu. ft. Countertop Microwave in Black with Gray Cavity', 
-        price: 111.11 
+        reviews: [
+            {
+                userName: 'surestop',
+                date: 'April 16, 2019',
+                header: 'My old Magic Chef, which I really liked, broke after 12 years. Home Depot had close to the same o...',
+                review: 'My old Magic Chef, which I really liked, broke after 12 years. Home Depot had close to the same one on sale, I got one. Easy to set up right out of the box, but sure makes a lot more noise and the inside light is like on a dimmer switch so kinda dim orange ish. I use the :20 second timing a lot and can\'t figure out how to do that.The pre set minute thing is really fast.The clock is green and much smaller than my old one, very difficult to see unless you are up really close.So all in all I would recommend this one, price is great, color is great, micro\'s food quickly. Had the last one 12 years I just have to get use to this one, which I will.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 6,
+                notHelpfulCount: 1
+            }
+        ]
     },
     { 
         id: '100672162', 
-        name: 'Pneumatic 16-Gauge 2-1/2 in. Nailer Kit', 
-        price: 119.00 
+        reviews: [
+            {
+                userName: 'Cfiimebob',
+                date: 'April 2, 2019',
+                header: 'I used this gun to secure oak stair treads to the sub floor and it worked beautifully! You could ...',
+                review: 'I used this gun to secure oak stair treads to the sub floor and it worked beautifully! You could barely see the nail holes. This is the only job I have used it for.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '309427319', 
-        name: '20-Volt MAX 21-Degree Cordless Framing Nailer with Bonus Premium Battery Pack 5.0 Ah, Charger and Kit Bag', 
-        price: 598.00 
+        reviews: [
+            {
+                userName: 'Patrick',
+                date: 'January 29, 2019',
+                header: 'The DeWalt gun was a great aid in my project.It porformed flawlessly with both the 3 1/4" and 2 3...',
+                review: 'The DeWalt gun was a great aid in my project.It porformed flawlessly with both the 3 1/4" and 2 3/8 " nails.I was suprised at the power this gun had and had no problem driving nails. The weight of the gun concerned me before purchasing but was not bad when in use. It seems to be made well and I am anticipating many years of use. It compliments my large array of 20 volt DeWalt tools all of which I am quite pleased!',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 3,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'SmokedNeckbones',
+                date: 'March 6, 2019',
+                header: 'This worked great for my needs. Lost a star not so much for the weight to me, the box of nails (...',
+                review: 'This worked great for my needs. Lost a star not so much for the weight to me, the box of nails (1000pk) felt heavier. The magazine capacity is just too low for me. The capacity is 49 nails I beleive, but for the nails I used they came in strips of 28 so I could only load one strip at a time. Great to have on the job site, especially at the end of the day when you packed up all of the compressors but noticed something that needs to be addressed before you leave, instead of taking everything back out you can just use this in a matter of seconds.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'cmill',
+                date: 'September 7, 2018',
+                header: 'Let me just start by getting the only real negative aspect about this nailer out of the way first...',
+                review: 'Let me just start by getting the only real negative aspect about this nailer out of the way first...its heavy. By no means is this the lightest, most compact framing nailer I have ever used, and yeah, it can be cumbersome to use it over the head. that being saide, it\'s by far one of the coolest nailers I have ever used. The build on this gun is very heavy duty.No worries about dropping this thing a few times as it is really well built.They also give you a few different modes of operation.The first is mode one, which will drive single shot nails up to two inches.The other is mode two which will drive nails up to 3 3 / 8". ',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ] 
     },
     { 
         id: '305340161', 
-        name: '15 Amp 125-Volt Duplex SmarTest Self-Test SmartlockPro Tamper Resistant GFCI Outlet, White (4-Pack)', 
-        price: 55.36 
+        reviews: [
+            {
+                userName: 'Roadrunner',
+                date: 'July 4, 2019',
+                header: 'I had a 4-year old outside outlet that quit working and I replaced it with this one. The installa...',
+                review: 'I had a 4-year old outside outlet that quit working and I replaced it with this one. The installation was simple as it fit right in where the old one was. I like the connections for the wires on the back as they make for quick wiring. The smart lock on the plug is something I can do without, but I get why they have this feature. Hopefully, this one lasts longer than the first one (which was the same brand but a different model).',
+                rating: 4,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '301351320', 
-        name: '15 Amp Decora Combination Tamper Resistant Duplex Outlet and USB Charger, White (3-Pack)', 
-        price: 59.97 
+        reviews: [
+            {
+                userName: 'Reversemidasman',
+                date: 'September 3, 2018',
+                header: 'This is a nice receptacle that provides also two USB charger ports. Made very well, and I notice...',
+                review: 'This is a nice receptacle that provides also two USB charger ports. Made very well, and I noticed several things when I was installing this. 1) The receptacle has alot of depth compared to a regular receptacle.See the pic.So If you have a small outlet box, you may have some difficulty in fitting this in, or you may need to install a deeper box. 2) The screws are only on one side of the outlet receptacle. (See pic), So it would be good if you at at the end of the power line supply instead of replacing for one that is in between, where you would have 4 lines running into the box.Yes, you can, but I think it will be cramp unless you have a deep box. ',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 5,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '100318476', 
-        name: '50 lb. Play Sand', 
-        price: 2.50 
+        reviews: [
+            {
+                userName: 'Sherpa',
+                date: 'May 6, 2014',
+                header: 'Perfect packaging',
+                review: 'We are an aircraft maintenance facility and had to perform a specific wing inspection on a particular aircraft. The inspection required us to load each wing with 1000 pounds of sand. We went on-line and found that Home Depot had the product we needed in the packaging that would work best for us. Your product worked perfectly for our application. We were able to perform the inspection and return the aircraft to service.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 25,
+                notHelpfulCount: 13
+            }
+        ]
     },
     { 
         id: '202007298', 
-        name: '50 lb. Play Sand', 
-        price: 3.97 
+        reviews: [
+            {
+                userName: 'jrgil',
+                date: 'May 8, 2018',
+                header: 'I selected this sand because it is free of any chemicals, and it is clean so I could spread aroun...',
+                review: 'I selected this sand because it is free of any chemicals, and it is clean so I could spread around newly planted palm trees. The color is also very beach looking and gives a clean tropical look to the palm tree setup.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 25,
+                notHelpfulCount: 13
+            }
+        ]
     },
     { 
         id: '202969868', 
-        name: '24 ft. x 4 in. Black Aluminum Landscape Edging Project Kit (4 - 6 ft. pieces)', 
-        price: 42.43 
+        reviews: [
+            {
+                userName: 'RestAtHome',
+                date: 'April 2, 2016',
+                header: 'Best Results Ever!',
+                review: 'Take the extra time to order this online-only product. It’s worth the wait! We’ve run the gambit of edging choices over 35 years of home ownership and 4 homes: plastic that ultimately deforms and cracks, tough- to - install steel that ultimately rusts….This aluminum EZ - edge is the BEST we’ve found. Once assembled, creating the perfect edge IS EZ!.Our project required a 33’ length(2 boxes with leftovers - remember you\'ll need to account for recommended overlap). Sliding the ends together took a little finesse (and my reading glasses); getting the final piece to proper length took a vice, hacksaw and metal fill.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 14,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '204801470', 
-        name: 'No-Dig 40 ft. Landscape Edging Kit', 
-        price: 26.99 
+        reviews: [
+            {
+                userName: 'Maddiegirl',
+                date: 'April 21, 2015',
+                header: 'Not bad, better than expected :)',
+                review: 'When I first took this out of the box, well...I wasn\'t too thrilled.But once I realized how super easy it was to install and then the finished look....I was so thankful that I tried this product.You do not need to lay this out in the sun so it\'s more flexible. I actually installed this on a cool Saturday morning. So, super easy. All you do is rake back your existing mulch, soil, etc and then lay this out the way you want it. Provided are 8 large nails (stakes) to pound into the ground to hold it in place. I do wish they would have provided an easy dozen nails vs. the 8. ',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 5,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '100599105', 
-        name: '32 oz. Concentrate All-in-1 Rose and Flower Care', 
-        price: 15.97 
+        reviews: [
+            {
+                userName: 'Rose',
+                date: 'May 22, 2019',
+                header: 'Product is fantastic! We\'ve used it for several years now.I only wish HD carried the 64 oz.bottle.',
+                review: 'Product is fantastic! We\'ve used it for several years now.I only wish HD carried the 64 oz.bottle.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '203556356', 
-        name: '10 ft. Flood Barrier', 
-        price: 24.98 
+        reviews: [
+            {
+                userName: 'mudflap',
+                date: 'March 11, 2014',
+                header: 'When I first installed this product I thought it wouln\'twork',
+                review: 'After I used it I bought 6 more They work better than I expected Very Good Product',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 6,
+                notHelpfulCount: 2
+            }
+        ]
     },
     { 
         id: '300159571', 
-        name: '18 cu. ft. Top Freezer Refrigerator in Stainless Steel', 
-        price: 578.00 
+        reviews: [
+            {
+                userName: 'AL',
+                date: 'August 7, 2017',
+                header: 'After 3 fridges, 1 service call, dozens of phone calls and...',
+                review: 'After 3 fridges, 1 service call, dozens of phone calls and emails, and 53 days after paying, I finally have a fridge that works. The first fridge was damaged on the truck. The second fridge had what I thought was a minor crack on a plastic clip. I tried calling Home Depot but kept getting routed to Whirlpool through their baffling phone menu system. Whirlpool would not do an exchange and insisted on sending a service technician. I relented, even though I paid for a new fridge, and scheduled a service call. The technician determined the frame was bent, the condenser fan shroud was cracked and the fan was not spinning and not blowing air across the condenser. No wonder the fridge was so noisy.',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 71,
+                notHelpfulCount: 2
+            },
+            {
+                userName: 'NYC2019',
+                date: 'May 19, 2019',
+                header: 'I purchased Whirlpool refrigerator from Home Depot, 18 cu. ft. Top Freezer Refrigerator in Stainl...',
+                review: 'I purchased Whirlpool refrigerator from Home Depot, 18 cu. ft. Top Freezer Refrigerator in Stainless Steel, model # WRT518SZFM, the stainless steel door are rusting, I contacted Whirlpool, they sent me a stainless steel brightener but did not solve the rusting problem (pictures attached). I then subsequently called Whirlpool numerous time to report the rusting problem, Whirlpool scheduled a technician from Dan Marc Appliance company, Wayne took pictures of the rusting door of my refrigerator, and said he would send these pictures to Whirlpool for solution, and he asked me to pay him $125 for coming to look at the problem, and I paid (see attached receipt). ',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 35,
+                notHelpfulCount: 1
+            },
+            {
+                userName: 'SWong',
+                date: 'May 4, 2019',
+                header: 'Shopping and price comparing has enormous benefits! Our relatively new 23 cubic foot high end Fr...',
+                review: 'Shopping and price comparing has enormous benefits! Our relatively new 23 cubic foot high end French door prematurely failed in only 17 months of use thereby spoiling both frozen & refrigerated foods. Desperate situation compounded by the fact having been burned by the one currently highly rated brand we were now hesitant considering purchasing the same brand. Wife and I hence spent hours & hours researching competitive brands using Home Depot’s posted reviews simply because they had quantities of posted reviews which we trust in making our decision for a replacement refrigerator. ',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 71,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '301859152', 
-        name: '25 cu. ft. French Door Refrigerator in Fingerprint Resistant Stainless Steel', 
-        price: 1698.00 
+        reviews: [
+            {
+                userName: 'Zoeysmom',
+                date: 'December 15, 2018',
+                header: 'Love this refrigerator. It \'s very large and fits everything that we need.Love the water and i..',
+                review: 'Love this refrigerator. It \'s very large and fits everything that we need.Love the water and ice cube dispenser and the fact that you can measure the amount of water by ozs.Also the lighting is wonderful, you can see everything in the box.The best thing for me is the enormous middle drawer that holds everything you use all the time and it\'s right at eye level so you don\'t have to move everything to find what you need.Plus it\'s has great lighting. The freezer is also so large that we haven\'t filled it yet.We bought this as a Christmas gift for ourselves and we are very happy and to top it all off, it was on sale.I would buy it again in a heartbeat.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 40,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'DevilDog99',
+                date: 'April 24, 2019',
+                header: 'This a great refrigerator, I would recommend this highly to anyone looking for a new refrigerator.',
+                review: 'This a great refrigerator, I would recommend this highly to anyone looking for a new refrigerator.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 11,
+                notHelpfulCount: 1
+            }
+        ]
     },
     { 
         id: '302754338', 
-        name: '7.6 cu. ft. Mini Retro Fridge in Red', 
-        price: 298.00 
+        reviews: [
+            {
+                userName: 'LC',
+                date: 'June 18, 2019',
+                header: 'I have been looking at small fridges for my garage. I decided on this one and got it shipped to ...',
+                review: 'I have been looking at small fridges for my garage. I decided on this one and got it shipped to me very quick. The door handles have been upgraded to a better handle and it keeps everything very cold. I\'m very happy with the fridge. I would buy it again. Thank you',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 8,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'MsMadelyn27',
+                date: 'February 5, 2019',
+                header: 'I love the style of this fridge and it is certainly servings its purpose, but the plastic handles...',
+                review: 'I love the style of this fridge and it is certainly servings its purpose, but the plastic handles- I can see them breaking in the next year. I need to contact Galanz for some replacement handles as back-up (if they even provide parts like this). Still, its super cute in our office and just the right size for our kitchenette.',
+                rating: 3,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 8,
+                notHelpfulCount: 4
+            }
+        ]
     },
     { 
         id: '305752618', 
-        name: '3/4 HP Slim Continuous Feed Garbage Disposal with Stainless Steel Sink Flange and Attached Power Cord', 
-        price: 129.00 
+        reviews: [
+            {
+                userName: 'mvno',
+                date: 'September 20, 2018',
+                header: 'Quiet, easy to install, plenty of power and well made. The slim design allows more usable space ...',
+                review: 'Quiet, easy to install, plenty of power and well made. The slim design allows more usable space under the sink. I replaced a much older, 15 year, garbage disposal. This one bolted up directly without any changes. I had to remove the factory installed power cord and wire the disposal directly (I assume that\'s according to code when the house was built, so I didn\'t change it and personally saw no reason to convert to a plug). If you have to hardwire it, I recommend disconnecting the disposal from the sink (easy to do), flip it over, remove the cover, rewire the disposal and reattach to the sink.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '206553441', 
-        name: '50 qt. Potting Soil Mix', 
-        price: 13.97 
+        reviews: [
+            {
+                userName: 'Rada',
+                date: 'July 9, 2019',
+                header: 'It makes my plan are happy',
+                review: 'It makes my plan are happy',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Hasi58',
+                date: 'July 2, 2019',
+                header: 'This is really good soil. I used it for my herb garden and within 10-days, my tiny basil plants b...',
+                review: 'This is really good soil. I used it for my herb garden and within 10-days, my tiny basil plants became a huge bush!',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '302658159', 
-        name: 'WindTunnel 2 Whole House Rewind Bagless Pet Upright Vacuum Cleaner', 
-        price: 98.00 
+        reviews: [
+            {
+                userName: 'HOOVER',
+                date: 'April 2, 2019',
+                header: 'The vacuum is good. I have three complaints after using it for a few weeks. 1. The power button ...',
+                review: 'The vacuum is good. I have three complaints after using it for a few weeks. 1. The power button is in a weird location, my previous vacuum\'s power button was on the handle which was easier to turn off and on when starting and stopping. This one is on the back panel so you have to put it in the upright position to turn on or off. And the other day I was pushing the vacuum with my leg on a thick carpet and it kept turning off. 2. The crevice tool is the tool I use the most and it is stored on the bottom of the extension tools.So you have to remove them before and after you use the crevice tool.I use the crevice tool more with out the extension.',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 8,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'HomeDepotCustomer',
+                date: 'March 12, 2019',
+                header: 'Cheaply made first day i used it the retractable cord mech broke i had another model same brand f...',
+                review: 'Cheaply made first day i used it the retractable cord mech broke i had another model same brand for a month and it burnt out i was vacuuming and it just stoped working never turned on again and i hated where the cord was rite in the middle of the bottom it kept getting in the way hopefully this model does better then the last one',
+                rating: 1,
+                verifiedPurchase: true,
+                recommend: false,
+                helpfulCount: 3,
+                notHelpfulCount: 1
+            }
+        ]
     },
     { 
         id: '305779744', 
-        name: '8 ft. Square Aluminum Cantilever Offset Patio Umbrella in Chili', 
-        price: 199.00 
+        reviews: [
+            {
+                userName: 'MissMe',
+                date: 'June 18, 2019',
+                header: 'Love this umbrella. Comes complete with base, which in many cases is an extra purchase. Just bu...',
+                review: 'Love this umbrella. Comes complete with base, which in many cases is an extra purchase. Just buy sand to fill it. The base is designed well with canvas bags to hold the sand. We put the whole thing together in 1/2 an hour or so and I am sitting under it as I write this review. Our table that we have this over sits in front of a window.We love that the umbrella sits off to the side so when not in use it\'s not obstructing the view from our window. The way it tilts back keeps the sun off us all afternoon, yet the umbrella is out of the way off to the side. It slides/ tilts smoothly and cranks up easily.Love, love, love it!',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 2,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'SteveInNYC',
+                date: 'May 18, 2019',
+                header: 'Overall, the umbrella works and is sturdy, but the quality of construction leaves much to be desi...',
+                review: 'Overall, the umbrella works and is sturdy, but the quality of construction leaves much to be desired. I finished assembling the umbrella yesterday and so far it\'s working well for the intended purpose.That said, I\'ve encountered multiple design flaws and had to repair the crank mechanism after it literally popped out of the crank assembly. The screws holding the crank in place are tiny self-tap screws seated in plastic, and hardly adequate. It took me an hour to figure the clutch mechanism out and fit it back in place, and then I ended up replacing the screws with something much more substantial. ',
+                rating: 3,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 8,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '305763247', 
-        name: '10 ft. Aluminum Market Auto Tilt Patio Umbrella in Emerald Coast', 
-        price: 75.65 
+        reviews: [
+            {
+                userName: 'Kbuck',
+                date: 'May 21, 2019',
+                header: 'Easy to assemble. Easy to crank it up and down with the handle. Good quality and natches great wi...',
+                review: 'Easy to assemble. Easy to crank it up and down with the handle. Good quality and natches great with the Chili cushions on the rest of my Hampton Bay set.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ] 
     },
     { 
         id: '305563856', 
-        name: 'Charge Plus TTI', 
-        price: 169.95 
+        reviews: [
+            {
+                userName: 'RobB',
+                date: 'January 8, 2019',
+                header: 'Great Tool!',
+                review: 'Bought this tool for myself and I love it. Delivered on time. Great features and heavy duty.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '205037418', 
-        name: 'Heavy-Duty Utility Blades Dispenser (100-Pack)', 
-        price: 9.97 
+        reviews: [
+            {
+                userName: 'Tester',
+                date: 'May 22, 2019',
+                header: 'The blades are sharp, and appearently decent quality. However, standard blades are 19mm wide, whi...',
+                review: 'The blades are sharp, and appearently decent quality. However, standard blades are 19mm wide, which translates to 0.748 inches. The Husky blades are 0.754 inches, which on some Stanley knives is too wide to fit properly. I tried this on two Stanley knives. I consider this dimensional failure to be a big thing, as it means these blades do not "Fit most utility knives". If they fit your knife, then I would recommend them, but you would have to buy a pack to find out.',
+                rating: 1,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 0,
+                notHelpfulCount: 0
+            },
+            {
+                userName: 'Springbok',
+                date: 'June 10, 2017',
+                header: 'Great addition to any DIY-er with a utility knife',
+                review: 'This 100-pack of heavy-duty utility blades is a must-have if you use a utility knife. Scoring drywall goes so much quicker and neater when you have blades available to swap out when they get dull, and this package makes it easy to safely store the old blade and to dispense a new one. The rachetting tabs on the back of the dispenser help to keep the new blades tight and the corresponding guide indicates how many fresh blades remain. As a valuable bonus, these blades are made in the USA and are very well priced.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '204517298', 
-        name: '30 lb. Stone Resin Patio Umbrella Base in Black', 
-        price: 47.30 
+        reviews: [
+            {
+                userName: 'Springbok',
+                date: 'June 10, 2017',
+                header: 'Great addition to any DIY-er with a utility knife',
+                review: 'This 100-pack of heavy-duty utility blades is a must-have if you use a utility knife. Scoring drywall goes so much quicker and neater when you have blades available to swap out when they get dull, and this package makes it easy to safely store the old blade and to dispense a new one. The rachetting tabs on the back of the dispenser help to keep the new blades tight and the corresponding guide indicates how many fresh blades remain. As a valuable bonus, these blades are made in the USA and are very well priced.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     },
     { 
         id: '206184456', 
