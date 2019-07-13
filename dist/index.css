@@ -197,7 +197,8 @@ div.starsList > ul > li {
 	color: #424242;
 	font-weight: bolder;
 	word-wrap: break-word;
-	padding-bottom: 15px;
+	padding: 15px 15px 15px 0;
+  box-sizing: border-box;
 }
 
 .reviewContent {
@@ -234,5 +235,17 @@ div.starsList > ul > li {
 
 .conditionalChecks > div > img {
 	width: 20px; 
+	vertical-align: text-bottom;
+}
+
+.rankHelpful {
+	float: left;
+	font-weight: bolder;
+	font-size: 16px;
+	padding-bottom: 30px;
+}
+
+.rankHelpful > img {
+	width: 20px;
 	vertical-align: text-bottom;
 }

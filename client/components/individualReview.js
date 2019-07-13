@@ -1,6 +1,8 @@
 import React from 'react';
 import RatingDisplayBlock from './ratingdisplayblock';
 import checkBox from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/checkbox.png';
+import thumbsDown from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsDown.png';
+import thumbsUp from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsUp.png';
 
 // shrink component, break into smaller pieces
 
@@ -52,6 +54,9 @@ const IndividualReview = function({reviews}) {
                   </div>
                 </section>
                 <p>{review.review}</p>
+                <div className = "rankHelpful">
+                  Was this review helpful? <img src = {thumbsUp}></img> {review.helpfulCount} <img src = {thumbsDown}></img> {review.notHelpfulCount}
+                </div>
               </section>
             </section>
           )
