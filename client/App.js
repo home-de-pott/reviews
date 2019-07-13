@@ -55,18 +55,20 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className = "componentHeader">
+          <section>
+            <div className = "bottomBorder">
+                <div className = "bottomBorder">
                   <h2>{this.state.componentHeader}</h2>
                 </div>
                 <ReviewsSummary 
-                  avg = {this.state.avgReviews}
+                  rating = {this.state.avgReviews}
                   totalReviews = {this.state.reviews.length}
                   ratingsBreakdown = {this.state.ratingsBreakdown}
                 />
-                <ImageCarousel />
-                <FullReviews reviews = {this.state.reviews}/>
+              <ImageCarousel reviews = {this.state.reviews}/>
             </div>
+                <FullReviews reviews = {this.state.reviews}/>
+          </section>
         )
     }
 }

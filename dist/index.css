@@ -4,6 +4,12 @@ body {
     box-sizing: border-box;
 }
 
+#root {
+    padding: 20px;
+}
+
+/* Header Styling */
+
 h2 {
     font-weight: 340;
     border-bottom: 4px solid #f96302;
@@ -12,9 +18,13 @@ h2 {
     width: 314px;
 }
 
-.componentHeader {
-    border-bottom: 1px solid #999;
+.bottomBorder {
+		border-bottom: 1px solid #999;
+		overflow: hidden;
+		padding-top: 15px;
 }
+
+/* Review Summary Basic Styling */
 
 .customerSummary {
     float: left;
@@ -50,10 +60,6 @@ h2 {
 	font-size: 14px;
 	text-align: center;
 	padding-top: 15px;
-}
-
-#root {
-    padding: 20px;
 }
 
 /*
@@ -177,4 +183,47 @@ div.starsList > ul > li {
   top: 0;
   left: 0;
   overflow: hidden;
+}
+
+/* Individual Review Styling */
+
+.userName {
+	width: 10%;
+	float: left;
+}
+
+.userName.header,
+.reviewContent .header {
+	color: #424242;
+	font-weight: bolder;
+	word-wrap: break-word;
+	padding-bottom: 15px;
+}
+
+.reviewContent {
+	width: 90%;
+	float: left;
+}
+
+.reviewContent > p {
+	float: left;
+	width: 100%;
+}
+
+.ratingStatsContainer {
+	width: 100%;
+}
+
+.ratingStats > div{
+	width: 25%;
+	float: left;
+	margin-right: 15px;
+}
+
+.ratingStats > .ratingSummary {
+	width: 115px;
+}
+
+.ratingStats > .stars {
+	margin-top: 0;
 }

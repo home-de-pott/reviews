@@ -51,7 +51,7 @@ let allItems = [
 				date: "May 22, 2019",
 				header: '5 Star Review',
 				review: '',
-				rating: 4,
+				rating: 5,
 				verifiedPurchase: true,
 				recommend: false,
 				helpfulCount: 1,
