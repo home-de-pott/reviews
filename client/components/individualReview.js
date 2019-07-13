@@ -1,5 +1,8 @@
 import React from 'react';
 import RatingDisplayBlock from './ratingdisplayblock';
+import checkBox from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/checkbox.png';
+
+// shrink component, break into smaller pieces
 
 const IndividualReview = function({reviews}) {
   let newAvg = 0;
@@ -19,12 +22,32 @@ const IndividualReview = function({reviews}) {
                 <section className = "ratingStatsContainer">
                   <div className = "ratingStats">
                     <RatingDisplayBlock rating = {review.rating}/>
-                    <div className="stars">
-                      <span
-                        style = {{
-                          width: (review.rating / 5) * 100 + "%"
-                        }}>
-                      </span>
+                    <div>
+                      <div className="stars">
+                        <span
+                          style = {{
+                            width: (review.rating / 5) * 100 + "%"
+                          }}>
+                        </span>
+                      </div>
+                      <div className = "conditionalChecks">
+                      {review.recommend 
+                        ? 
+                        <div>
+                          <img src={checkBox}></img> Recommended Product
+                        </div>
+                        :
+                        ''
+                      }
+                      {review.verifiedPurchase
+                        ?
+                        <div>
+                          <img src = {checkBox}></img> Verified Purchase
+                        </div>
+                        :
+                        ''
+                      }
+                      </div>
                     </div>
                   </div>
                 </section>

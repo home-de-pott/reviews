@@ -224,6 +224,15 @@ div.starsList > ul > li {
 	width: 115px;
 }
 
-.ratingStats > .stars {
+.ratingStats > div > .stars {
 	margin-top: 0;
+}
+
+.ratingStats > * div {
+  padding-bottom: 10px;
+}
+
+.conditionalChecks > div > img {
+	width: 20px; 
+	vertical-align: text-bottom;
 }
