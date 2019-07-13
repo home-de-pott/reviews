@@ -45,6 +45,13 @@ h2 {
     box-sizing: border-box;
 }
 
+.totalReviews {
+	color: #797979;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 15px;
+}
+
 #root {
     padding: 20px;
 }
@@ -60,6 +67,8 @@ h2 {
 }
 .Charts.horizontal {
 	display: block;
+	float: right;
+	width: 80%;
 }
 
 .Charts.horizontal .Charts--serie {
@@ -87,8 +96,13 @@ h2 {
 
 .Charts.horizontal .Charts--item {
 	display: block;
-	margin: 0 0 5px 0;
+	margin: 0 0 25px 0;
 	height: 1em;
+}
+
+.barContainer {
+	background-color: #cccccc;
+	width: 80%;
 }
 
 .Charts--item {
@@ -99,12 +113,47 @@ h2 {
 	text-align: center;
 }
 
+.Charts * span {
+	float: right;
+	color: #424242;
+	font-size: 14px;
+}
+
+.starsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	float: left;
+	width: 20%;
+}
+
+div.starsList > ul {
+	list-style-type: none;
+  margin: 0;
+	padding: 0;
+	color: #cccccc;
+}
+
+div.starsList > ul > li {
+	padding-bottom: 21px;
+	font-size: 14px;
+}
+
+.innerStar {
+	font-family: Wingdings;
+	color: #FC7900;
+}
+
+.innerStar::before {
+	content: " \2605";
+}
 /*
 ** Star Display Under Average Styling **
 */
 
 .starsContainer {
 	text-align: center;
+	margin-top: -27px;
 }
 
 .stars {
@@ -112,7 +161,8 @@ h2 {
   font-family: Wingdings;
   font-size: 20px;
   color: #ccc;
-  position: relative;
+	position: relative;
+	margin-top: -15px;
 }
 
 .stars::before,

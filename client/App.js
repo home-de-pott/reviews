@@ -61,6 +61,7 @@ class App extends React.Component {
                 </div>
                 <ReviewsSummary 
                   avg = {this.state.avgReviews}
+                  totalReviews = {this.state.reviews.length}
                   ratingsBreakdown = {this.state.ratingsBreakdown}
                 />
                 <ImageCarousel />

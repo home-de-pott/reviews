@@ -5,7 +5,7 @@ import Graph from './ratingsGraph.js';
 const ReviewsSummary = function(props) {
   // make ratingSummary own component
   return (
-    <div className = "customerSummary">
+    <section className = "customerSummary">
       <div className = "starsAndAverage">
         <div className = "ratingSummary"
           style={{
@@ -26,11 +26,12 @@ const ReviewsSummary = function(props) {
         <div className = "starsContainer">
           <span className ="stars"><span></span></span>
         </div>
+        <div className = "totalReviews">{props.totalReviews} Reviews</div>
       </div>
       <div className = "ratingsBreakdown">
         <Graph ratingsBreakdown = {props.ratingsBreakdown}/>
       </div>
-    </div>
+    </section>
   )
 }
 

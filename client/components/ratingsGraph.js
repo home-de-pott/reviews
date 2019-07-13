@@ -16,28 +16,6 @@ class Graph extends React.Component {
             colors: ['#424242']
         }
     }
-    // componentDidMount() {
-    //     this.populateArray();
-    // }
-    // populateArray() {
-    //     var data = [],
-    //         serieLength = 5;
-
-    //     for (var i = 1; i--;) {
-    //         var tmp = [];
-
-    //         for (var j = serieLength; j--;) {
-    //             tmp.push(getRandomInt(0, 20));
-    //         }
-    //         data.push(tmp);
-    //     }
-
-    //     this.setState({ data: data });
-    // }i
-
-    // consider changing to stateless
-    // sort ratings by key value
-
     render() {
         const ratings = Object.values(this.props.ratingsBreakdown);
         ratings.reverse();
@@ -59,7 +37,6 @@ class Charts extends React.Component {
             data = this.props.data,
             layered = this.props.grouping === 'layered' ? true : false,
             stacked = this.props.grouping === 'stacked' ? true : false,
-            // opaque = this.props.opaque,
             max = 0;
 
         for (var i = data[0].length; i--;) {
@@ -68,56 +45,69 @@ class Charts extends React.Component {
             }
         }
 
-
         return (
-            <div className={'Charts' + (this.props.horizontal ? ' horizontal' : '')}>
-                {data.map(function (serie, serieIndex) {
-                    var sortedSerie = serie.slice(0),
-                        sum;
+            <section>
+                <div className={'Charts' + (this.props.horizontal ? ' horizontal' : '')}>
+                    {data.map(function (serie, serieIndex) {
+                        var sortedSerie = serie.slice(0),
+                            sum;
 
-                    sum = serie.reduce(function (carry, current) {
-                        return carry + current;
-                    }, 0);
-                    sortedSerie.sort(compareNumbers);
+                        sum = serie.reduce(function (carry, current) {
+                            return carry + current;
+                        }, 0);
+                        sortedSerie.sort(compareNumbers);
 
-                    return (
-                        <div className={'Charts--serie ' + (self.props.grouping)}
-                            key={serieIndex}
-                            style={{ height: self.props.height ? self.props.height : 'auto' }}
-                        >
-                            {serie.map(function (item, itemIndex) {
-                                var color = self.props.colors[itemIndex], style,
-                                    size = item / (stacked ? sum : max) * 100;
+                        return (
+                            <div className={'Charts--serie ' + (self.props.grouping)}
+                                key={serieIndex}
+                                style={{ height: self.props.height ? self.props.height : 'auto' }}
+                            >
+                                {serie.map(function (item, itemIndex) {
+                                    var color = self.props.colors[itemIndex], style,
+                                        size = item / sum * 100;
+                                    style = {
+                                        backgroundColor: '#f96301',
+                                        zIndex: item
+                                    };
 
-                                style = {
-                                    backgroundColor: '#f96301',
-                                    zIndex: item
-                                };
+                                    if (self.props.horizontal) {
+                                        style['width'] = size + '%';
+                                    } else {
+                                        style['height'] = size + '%';
+                                    }
 
-                                if (self.props.horizontal) {
-                                    style['width'] = size + '%';
-                                } else {
-                                    style['height'] = size + '%';
-                                }
+                                    if (layered && !self.props.horizontal) {
+                                        style['right'] = ((sortedSerie.indexOf(item) / (serie.length + 1)) * 100) + '%';
+                                    }
 
-                                if (layered && !self.props.horizontal) {
-                                    style['right'] = ((sortedSerie.indexOf(item) / (serie.length + 1)) * 100) + '%';
-                                }
-
-                                return (
-                                    <div
-                                        className={'Charts--item ' + (self.props.grouping)}
-                                        style={style}
-                                        key={itemIndex}
-                                    >
-                                        <b style={{ color: color }}>{item}</b>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    );
-                })}
-            </div>
+                                    return (
+                                        <section>
+                                                <span style={{ color: '#cccccc' }}>({item})</span>
+                                                <div className= "barContainer">
+                                                    <div
+                                                        className={'Charts--item ' + (self.props.grouping)}
+                                                        style={style}
+                                                        key={itemIndex}
+                                                    >
+                                                    </div>
+                                                </div>
+                                        </section>
+                                    );
+                                })}
+                            </div>
+                        );
+                    })}
+                </div>
+							<div className="starsList">
+								<ul>
+								<li>5<span className = "innerStar"></span></li>
+								<li>4<span className = "innerStar"></span></li>
+								<li>3<span className = "innerStar"></span></li>
+								<li>2<span className = "innerStar"></span></li>
+								<li>1<span className = "innerStar"></span></li>
+								</ul>
+							</div>
+            </section>
         );
     }
 }
