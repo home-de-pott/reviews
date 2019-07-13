@@ -36,7 +36,7 @@ class App extends React.Component {
       const starTotal = 5;
       const starPercentage = (rating / starTotal) * 100;
       const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-      document.querySelector('.starRating .stars-inner').style.width = starPercentageRounded; 
+      document.querySelector('.stars > span').style.width = starPercentageRounded; 
     }
 
     componentDidMount() {
@@ -47,7 +47,10 @@ class App extends React.Component {
       .then(({data}) => {
         this.setState({reviews: data});
       })
-      .then(() => this.updateAvgRating());
+      .then(() => this.updateAvgRating())
+      .catch((err) => {
+        console.log(err);
+      });
     }
 
     render() {

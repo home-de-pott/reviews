@@ -21,14 +21,28 @@ h2 {
     width: 50%;
 }
 
+.starsAndAverage {
+    float: left;
+		width: 50%;
+		padding-top: 30px;
+}
+
+.ratingsBreakdown {
+  width: 50%;
+	float: left;
+	padding-top: 30px;
+}
+
 .ratingSummary {
-    height: 115px;
-    width: 50%;
+    height: 130px;
+    width: 100%;
     text-align: center;
     color: #FC7900;
     font-size: 2em;
     font-weight: bolder;
-    float: left;
+		float: left;
+		padding-top: 10px;
+    box-sizing: border-box;
 }
 
 #root {
@@ -41,158 +55,76 @@ h2 {
 
 .Charts {
 	margin: 0 auto;
-	background-color: #f9f9f9;
 	display: flex;
 	align-items: flex-end;
-	padding: 50px;
-	
-	&.horizontal {
-		display: block;
-	}
-	
-	&.horizontal &--serie {
-		display: block;
-		margin: 0 0 30px 0;
-		border: 0;
-		
-		label {
-			position: relative;
-			top: auto;
-			right: auto;
-			left: 0;
-			bottom: auto;
-			padding: 0 0 10px 0;
-		}
-	}
-	
-	&--serie {
-		height: 100%;
-		margin: 0 30px 0 0;
-		display: inline-block;
-		flex: 1;
-		display: flex;
-		align-items: flex-end;
-		transform-origin: 0 100%;
-		animation: slideUp .6s;
-		position: relative;
-		border-bottom: 1px solid #c2c2c2;
-		
-		&.stacked {
-			display: block;
-		}
-		
-		label {			
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: -20px;
-			font-family: Helvetica, sans-serif;
-			font-size: 10px;
-			text-align: center;
-			color: #808080;
-		}
-	}
-	
-	&.horizontal &--item {
-		display: block;
-		border-radius: 0 2px 2px 0;
-		margin: 0 0 5px 0;
-		height: 1em;
-		
-		b {
-			position: absolute;
-			right: -20px;
-			top: .3em;
-		}
-	}
-	
-	&--item {
-		background-color: #43A19E;
-		display: inline-block;
-		margin: 0 5px 0 0;
-		flex: 1;
-		transition: height 1s ease-out, width 1s ease-out;
-		position: relative;
-		text-align: center;
-		border-radius: 2px 2px 0 0;
-		
-		&.layered {
-			position: absolute;
-			left: 5%;
-			right: 5%;
-			bottom: 0;
-			margin: 0;
-			
-			b {
-				position: absolute;
-				right: 0;
-			}
-		}
-		
-		&.stacked {
-			position: relative;
-			display: block;
-			border-radius: 0;
-		}
-		
-		b {
-			position: relative;
-			font-family: Helvetica, sans-serif;
-			font-size: 10px;
-			top: -20px;
-			color: #43A19E;
-		}
-	}
+}
+.Charts.horizontal {
+	display: block;
 }
 
-.Legend {
-	&--color {
-		display: inline-block;
-		vertical-align: middle;
-		border-radius: 2px;
-		width: 16px;
-		height: 16px;
-	}
-	
-	&--label {
-		display: inline-block;
-		vertical-align: middle;
-		font-family: Helvetica, sans-serif;
-		font-size: 12px;
-		margin: 0 0 0 5px;
-	}
+.Charts.horizontal .Charts--serie {
+	display: block;
+	margin: 0 0 30px 0;
+	border: 0;
 }
 
-@keyframes slideUp {
-	from { transform: scaleY(0); }
-	to { transform: scaleY(1); }
+.Charts--serie {
+	height: 100%;
+	margin: 0 30px 0 0;
+	display: inline-block;
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	transform-origin: 0 100%;
+	animation: slideUp .6s;
+	position: relative;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.Charts--serie.stacked {
+	display: block;
+}
+
+.Charts.horizontal .Charts--item {
+	display: block;
+	margin: 0 0 5px 0;
+	height: 1em;
+}
+
+.Charts--item {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	flex: 1;
+	position: relative;
+	text-align: center;
 }
 
 /*
 ** Star Display Under Average Styling **
 */
 
-.stars-outer {
+.starsContainer {
+	text-align: center;
+}
+
+.stars {
   display: inline-block;
+  font-family: Wingdings;
+  font-size: 20px;
+  color: #ccc;
   position: relative;
-  font-family: FontAwesome;
 }
 
-.stars-outer::before {
-  color: #cdcdcd;
-  content: "\f006 \f006 \f006 \f006 \f006";
+.stars::before,
+.stars span::before{
+  content: "\2605\2605\2605\2605\2605";
+  display: block;
 }
 
-.stars-inner {
+.stars span {
+  color: #f96302;
   position: absolute;
   top: 0;
   left: 0;
-  white-space: nowrap;
   overflow: hidden;
-  width: 0;
-}
-
-.stars-inner::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  color: #f96302;
 }

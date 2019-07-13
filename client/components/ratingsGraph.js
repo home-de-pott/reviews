@@ -59,7 +59,7 @@ class Charts extends React.Component {
             data = this.props.data,
             layered = this.props.grouping === 'layered' ? true : false,
             stacked = this.props.grouping === 'stacked' ? true : false,
-            opaque = this.props.opaque,
+            // opaque = this.props.opaque,
             max = 0;
 
         for (var i = data[0].length; i--;) {
