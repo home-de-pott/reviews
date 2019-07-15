@@ -41,7 +41,6 @@ class App extends React.Component {
 
     componentDidMount() {
       // get reviews and update avg
-      // 100550897
       // 205594063
       axios.get('/products/205594063')
       .then(({data}) => {

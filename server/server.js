@@ -3526,7 +3526,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: true,
                 helpfulCount: 1,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             }
         ]
     }

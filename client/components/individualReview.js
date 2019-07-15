@@ -1,10 +1,10 @@
 import React from 'react';
 import RatingDisplayBlock from './ratingdisplayblock';
-import checkBox from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/checkbox.png';
+import Stars from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/stars.js';
 import thumbsDown from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsDown.png';
 import thumbsUp from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsUp.png';
-
-// shrink component, break into smaller pieces
+import VerifiedOrRecommended from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/verifiedOrRecommended.js';
+import ReviewImages from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/reviewImages.js'
 
 const IndividualReview = function({reviews}) {
   let newAvg = 0;
@@ -25,42 +25,13 @@ const IndividualReview = function({reviews}) {
                   <div className = "ratingStats">
                     <RatingDisplayBlock rating = {review.rating}/>
                     <div>
-                      <div className="stars">
-                        <span
-                          style = {{
-                            width: (review.rating / 5) * 100 + "%"
-                          }}>
-                        </span>
-                      </div>
-                      <div className = "conditionalChecks">
-                      {review.recommend 
-                        ? 
-                        <div>
-                          <img src={checkBox}></img> Recommended Product
-                        </div>
-                        :
-                        ''
-                      }
-                      {review.verifiedPurchase
-                        ?
-                        <div>
-                          <img src = {checkBox}></img> Verified Purchase
-                        </div>
-                        :
-                        ''
-                      }
-                      </div>
+                      <Stars rating = {review.rating}/>
+                      <VerifiedOrRecommended review = {review}/>
                     </div>
                   </div>
                 </section>
                 <p>{review.review}</p>
-                <section>
-                  {
-                    review.images.map((imageURL) => 
-                      <img src = {imageURL} style={{ width: '78px', height: '78px', float: 'left', border: 'solid #7d7d7d 3px'}}></img>
-                    )
-                  }
-                </section>
+                <ReviewImages images = {review.images}/>
                 <div className = "rankHelpful">
                   Was this review helpful? <img src = {thumbsUp}></img> {review.helpfulCount} <img src = {thumbsDown}></img> {review.notHelpfulCount}
                 </div>
