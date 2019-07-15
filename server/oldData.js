@@ -3442,5 +3442,80 @@ let allItems = [
                 notHelpfulCount: 0
             }
         ]
+    },
+    {
+        id: '300422887',
+        reviews: [
+            {
+                userName: 'scotts4050',
+                date: 'July 30, 2018',
+                header: 'This unit cools well, but is way louder than the 54 dB rating in the specs. It was so loud, I ha...',
+                review: 'This unit cools well, but is way louder than the 54 dB rating in the specs. It was so loud, I had to return it. It\'s possible there was just something wrong with the particular one I had, but to prove this one was loud, I measured it with a sound level meter(a real one, not a phone app.) See pictures.On the highest setting it measured in at 73.5 dB, and the lowest was 67.6 dB.The unit was in my master bedroom and positioned about six feet from the bed.At that distance, the measurement was exactly 10 dB lower on the lowest setting, which is still twice as loud as the advertised specifications.',
+                rating: 2,
+                verifiedPurchase: false,
+                recommend: false,
+                helpfulCount: 18,
+                notHelpfulCount: 2,
+                images: ['https://photos-us.bazaarvoice.com/photo/2/cGhvdG86aG9tZWRlcG90/9f2d50e0-b94e-5191-9317-37ce543fc3d0']
+            },
+            {
+                userName: 'Techdad',
+                date: 'July 21, 2018',
+                header: 'We have had several 100+ days even 108 and 109 days. Our family room was staying 80+ even with th...',
+                review: 'We have had several 100+ days even 108 and 109 days. Our family room was staying 80+ even with the central ac running. We added this lg window unit setting it 76 on energy mode on low. and the room now stays at 72. Does a great job. It’s a little noisy but nothing we can’t handle. Wifi was simple to set up. Over all it’s a great ac unit and would recommend to anyone needing to cool a room down even if you don’t have central ac system.',
+                rating: 5,
+                verifiedPurchase: false,
+                recommend: true,
+                helpfulCount: 6,
+                notHelpfulCount: 0,
+                images: ['https://photos-us.bazaarvoice.com/photo/2/cGhvdG86aG9tZWRlcG90/c5d6115b-8d10-5493-9da0-4275d2e1cecb']
+            },
+            {
+                userName: 'RJ',
+                date: 'July 17, 2018',
+                header: 'This unit performs perfectly for our needs! We seriously love the WiFi ability, to control and m...',
+                review: 'This unit performs perfectly for our needs! We seriously love the WiFi ability, to control and make adjustments from anywhere using our smart phone app!)) Great for our large RV while parked for long periods of time in the hot summer months…',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 5,
+                notHelpfulCount: 1,
+                images: ['https://photos-us.bazaarvoice.com/photo/2/cGhvdG86aG9tZWRlcG90/3c51690f-1586-5ee3-bad7-bbf10a270cac']
+            },
+            {
+                userName: 'wyliemeister',
+                date: 'May 15, 2018',
+                header: 'Easy to install. Make sure you purchase thumbscrew window security locks. They help keep the w...',
+                review: 'Easy to install. Make sure you purchase thumbscrew window security locks. They help keep the window closed and ensure no one can open the window from the outside. They are about $4 and you can purchase them at Home Depot. This unit produces a large volume of very cold air. Its does not vibrate or rattle but is a bit noisy (just fan noise) on the highest setting. Recommend LG window units over every other brand. I have tried them all. LG added thermal panels this year which you cut to fit the expansion slides on either side for more thermal protection. This is a a really great product.',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 33,
+                notHelpfulCount: 2,
+                images: []
+            },
+            {
+                userName: 'Ctre210x',
+                date: 'April 24, 2018',
+                header: 'Its great, had it installed about a week but i cant get the wifi to wofk. Other than that it work...',
+                review: 'Its great, had it installed about a week but i cant get the wifi to wofk. Other than that it works great!!',
+                rating: 4,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 18,
+                notHelpfulCount: 0,
+                images: []
+            },
+            {
+                userName: 'Usil5057',
+                date: 'May 21, 2019',
+                header: 'Arrived on time.Easy to assemble',
+                rating: 5,
+                verifiedPurchase: true,
+                recommend: true,
+                helpfulCount: 1,
+                notHelpfulCount: 0
+            }
+        ]
     }
 ];
