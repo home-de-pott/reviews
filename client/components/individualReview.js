@@ -54,6 +54,13 @@ const IndividualReview = function({reviews}) {
                   </div>
                 </section>
                 <p>{review.review}</p>
+                <section>
+                  {
+                    review.images.map((imageURL) => 
+                      <img src = {imageURL} style={{ width: '78px', height: '78px', float: 'left', border: 'solid #7d7d7d 3px'}}></img>
+                    )
+                  }
+                </section>
                 <div className = "rankHelpful">
                   Was this review helpful? <img src = {thumbsUp}></img> {review.helpfulCount} <img src = {thumbsDown}></img> {review.notHelpfulCount}
                 </div>

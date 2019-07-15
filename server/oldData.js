@@ -2061,7 +2061,7 @@ let allItems = [
                 recommend: false,
                 helpfulCount: 35,
                 notHelpfulCount: 1,
-                imagews: ['https://photos-us.bazaarvoice.com/photo/2/cGhvdG86aG9tZWRlcG90/e1b5d5a8-6a6b-5883-a94a-39d12bf47031']
+                images: ['https://photos-us.bazaarvoice.com/photo/2/cGhvdG86aG9tZWRlcG90/e1b5d5a8-6a6b-5883-a94a-39d12bf47031']
             },
             {
                 userName: 'SWong',
@@ -2584,7 +2584,7 @@ let allItems = [
                 recommend: true,
                 helpfulCount: 1,
                 notHelpfulCount: 0,
-                imagews: []
+                images: []
             }
         ]
     },
