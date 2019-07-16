@@ -49,9 +49,8 @@ class App extends React.Component {
 
     componentDidMount() {
       // get reviews and update avg
-      // 205594063
-      // 203164241
-      axios.get('ec2-18-219-134-212.us-east-2.compute.amazonaws.com/products/205594063')
+      const id = window.location.pathname.slice(10);
+      axios.get(`ec2-18-219-134-212.us-east-2.compute.amazonaws.com/products/${id}`)
       .then((reviews) => {
         this.setState({reviews: reviews.data});
       })
