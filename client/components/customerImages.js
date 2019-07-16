@@ -25,6 +25,7 @@ const CustomerImages = (props) => {
 	}
 
 	return (
+		<div id = "carousel">
 			<Slider {...settings}>
 					{
 						props.reviews 
@@ -46,6 +47,7 @@ const CustomerImages = (props) => {
 						''
 					}
 			</Slider>
+		</div>
 	);
 }
 

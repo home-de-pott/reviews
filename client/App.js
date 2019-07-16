@@ -51,7 +51,7 @@ class App extends React.Component {
       // get reviews and update avg
       // 205594063
       // 203164241
-      axios.get('/products/205594063')
+      axios.get('ec2-18-219-134-212.us-east-2.compute.amazonaws.com/products/205594063')
       .then((reviews) => {
         this.setState({reviews: reviews.data});
       })
@@ -108,7 +108,7 @@ class App extends React.Component {
 
             <div className="bottomBorder" style={{ paddingBottom: '30px' }}>
                 <div className = "bottomBorder">
-                  <h2>{this.state.componentHeader}</h2>
+                  <h2 className = "reviewsHeader">{this.state.componentHeader}</h2>
                 </div>
                 <ReviewsSummary 
                   toggleReviewForm = {this.toggleReviewForm}

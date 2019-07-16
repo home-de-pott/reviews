@@ -4,13 +4,13 @@ body {
     box-sizing: border-box;
 }
 
-#root {
+#reviews {
     padding: 20px;
 }
 
 /* Header Styling */
 
-h2 {
+.reviewsHeader {
     font-weight: 340;
     border-bottom: 4px solid #f96302;
     margin: -0.3px;
@@ -314,7 +314,7 @@ div.starsList > ul > li {
   transition: 0.3s;
 }
 
-.slick-slider.slick-initialized {
+#carousel .slick-slider.slick-initialized {
 	width: 50%;
 	font-family: helvetica-neue-light, Helvetica Neue, Helvetica, Arial,
     sans-serif;
