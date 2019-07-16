@@ -3,10 +3,13 @@ const app = express();
 const bodyParser = require('body-parser');
 const {PORT, HOST} = require('../config.js');
 const db = require('./db.js');
+const cors = require('cors');
 
 const port = PORT || 3000;
 const host = HOST || '0.0.0.0';
 
+app.use(cors());
+app.use('/', express.static(__dirname + '/../dist'));
 app.use('/products/:id', express.static(__dirname + '/../dist'));
 app.use(bodyParser.json());
 
