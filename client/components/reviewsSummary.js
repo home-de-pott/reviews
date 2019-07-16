@@ -1,6 +1,7 @@
 import React from 'react';
 import Graph from './ratingsGraph.js';
 import RatingDisplayBlock from './ratingdisplayblock.js';
+import CustomerImages from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/customerImages.js';
 
 const ReviewsSummary = function(props) {
   return (
@@ -22,10 +23,11 @@ const ReviewsSummary = function(props) {
           <Graph ratingsBreakdown = {props.ratingsBreakdown}/>
         </div>
         
+        <section>
+          <div><button>Write a Review</button></div>
+          <CustomerImages reviews = {props.reviews}/>
+        </section>
       </section>
-    <section>
-      
-    </section>
     </div>
   )
 }

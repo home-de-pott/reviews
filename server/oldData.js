@@ -355,7 +355,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: true,
                 helpfulCount: 6,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             },
             {
                 userName: 'Sroy2',
@@ -366,7 +367,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: true,
                 helpfulCount: 4,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             },
             {
                 userName: 'BigHam',
@@ -377,7 +379,8 @@ let allItems = [
                 verifiedPurchase: false,
                 recommend: true,
                 helpfulCount: 18,
-                notHelpfulCount: 3
+                notHelpfulCount: 3,
+                images: []
             },
             {
                 userName: 'HomeDepotCustomer',
@@ -389,7 +392,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: true,
                 helpfulCount: 3,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             } 
         ]
     },
@@ -2486,7 +2490,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: false,
                 helpfulCount: 0,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             },
             {
                 userName: 'Slick',
@@ -2497,7 +2502,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: false,
                 helpfulCount: 0,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             }
         ]
     },
@@ -3439,7 +3445,8 @@ let allItems = [
                 verifiedPurchase: true,
                 recommend: false,
                 helpfulCount: 0,
-                notHelpfulCount: 0
+                notHelpfulCount: 0,
+                images: []
             }
         ]
     },
@@ -3510,6 +3517,7 @@ let allItems = [
                 userName: 'Usil5057',
                 date: 'May 21, 2019',
                 header: 'Arrived on time.Easy to assemble',
+                review: 'Arrived on time.Easy to assemble',
                 rating: 5,
                 verifiedPurchase: true,
                 recommend: true,

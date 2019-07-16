@@ -10,7 +10,8 @@ const IndividualReview = function({reviews}) {
   let newAvg = 0;
   return (
     <div>
-      {
+      { reviews
+        ?
         reviews.map((review) => {
           newAvg += review.rating;
           return (
@@ -39,6 +40,8 @@ const IndividualReview = function({reviews}) {
             </section>
           )
         })
+        :
+        ''
       }
     </div>
   )

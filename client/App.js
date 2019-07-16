@@ -42,9 +42,10 @@ class App extends React.Component {
     componentDidMount() {
       // get reviews and update avg
       // 205594063
-      axios.get('/products/205594063')
-      .then(({data}) => {
-        this.setState({reviews: data});
+      // 203164241
+      axios.get('/products/203164241')
+      .then((reviews) => {
+        this.setState({reviews: reviews.data});
       })
       .then(() => this.updateAvgRating())
       .catch((err) => {
@@ -60,8 +61,9 @@ class App extends React.Component {
                   <h2>{this.state.componentHeader}</h2>
                 </div>
                 <ReviewsSummary 
+                  reviews = {this.state.reviews}
                   rating = {this.state.avgReviews}
-                  totalReviews = {this.state.reviews.length}
+                  totalReviews = {this.state.reviews ? this.state.reviews.length : 0}
                   ratingsBreakdown = {this.state.ratingsBreakdown}
                 />
               <ImageCarousel reviews = {this.state.reviews}/>

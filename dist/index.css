@@ -255,3 +255,37 @@ div.starsList > ul > li {
 	width: 20px;
 	vertical-align: text-bottom;
 }
+
+/* Image Carousel */
+.slick-arrow.slick-prev {
+  background-color: #333;
+  color: #ccc;
+  left: -10px;
+  z-index: 100;
+}
+
+.slick-arrow.slick-next {
+  background-color: #333;
+  color: #f96302;
+  right: 0;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.carousel-item__photo {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px;
+}
