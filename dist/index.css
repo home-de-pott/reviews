@@ -26,21 +26,31 @@ h2 {
 
 /* Review Summary Basic Styling */
 
+.customerSummaryContainer {
+	margin-top: 30px;
+}
+
 .customerSummary {
     float: left;
     width: 50%;
 }
 
+.starsAndGraph {
+	border-right: 1px solid #999;
+    overflow: hidden;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
 .starsAndAverage {
     float: left;
-		width: 50%;
-		padding-top: 30px;
+	width: 50%;
 }
 
 .ratingsBreakdown {
   width: 50%;
-	float: left;
-	padding-top: 30px;
+  float: left;
+  padding-top: 3px;
 }
 
 .ratingSummary {
@@ -50,8 +60,8 @@ h2 {
     color: #FC7900;
     font-size: 2em;
     font-weight: bolder;
-		float: left;
-		padding-top: 10px;
+	float: left;
+	padding-top: 10px;
     box-sizing: border-box;
 }
 
@@ -256,36 +266,58 @@ div.starsList > ul > li {
 	vertical-align: text-bottom;
 }
 
+/* Button */
+
+.customerSummary > div > div > button {
+	width: 315px;
+    background-color: #f96305;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+	box-shadow: 0 3px 0 #C14C00;
+	border: none;
+}
+
+.reviewSubmitAndCustImages {
+	text-align: center;
+	padding-top: 3px;
+	padding-left: 20px;
+}
 /* Image Carousel */
-.slick-arrow.slick-prev {
-  background-color: #333;
-  color: #ccc;
-  left: -10px;
-  z-index: 100;
+
+.slick-track {
+	padding-top: 20px;
 }
 
-.slick-arrow.slick-next {
-  background-color: #333;
-  color: #f96302;
-  right: 0;
+.slick-next.carouselArrow:before, .slick-prev.carouselArrow:before {
+	color: #f96302;
+	font-size: 20px;
+    line-height: 1;
+	opacity: .75;
+	left: -10px;
+    z-index: 100;
 }
 
-.arrow {
-  position: absolute;
-  z-index: 100;
-  cursor: pointer;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  text-align: center;
+.slick-prev.carouselArrow, .slick-next.carouselArrow {
+	top: 60%;
 }
 
-.carousel-item__photo {
+.customerReviewImages {
   display: block;
-  object-fit: contain;
   width: 100%;
-  height: auto;
+  width: 78px;
+  height: 78px;
   margin: 0 0 10px;
+}
+
+.slick-slider.slick-initialized {
+	width: 50%;
+	font-family: helvetica-neue-light, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+    margin: auto;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
 }

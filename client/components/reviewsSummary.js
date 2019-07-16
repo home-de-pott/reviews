@@ -5,8 +5,8 @@ import CustomerImages from '/Users/hh/Documents/Coding/hackReactor/reviews/clien
 
 const ReviewsSummary = function(props) {
   return (
-    <div>
-      <section className = "customerSummary">
+    <div className = "customerSummaryContainer">
+      <section className = "customerSummary starsAndGraph">
         <div className = "starsAndAverage">
 
           <RatingDisplayBlock rating = {props.rating}/>
@@ -22,12 +22,13 @@ const ReviewsSummary = function(props) {
         <div className = "ratingsBreakdown">
           <Graph ratingsBreakdown = {props.ratingsBreakdown}/>
         </div>
-        
-        <section>
+      </section>
+      <section className = "customerSummary">
+        <div className = "reviewSubmitAndCustImages">
           <div><button>Write a Review</button></div>
           <CustomerImages reviews = {props.reviews}/>
-        </section>
-      </section>
+        </div>
+      </section>  
     </div>
   )
 }

@@ -16,6 +16,8 @@ const IndividualReview = function({reviews}) {
           newAvg += review.rating;
           return (
             <section className="bottomBorder">
+
+              {/* headers */}
               <div className = "userName header">{review.userName}</div>
               <section className = "reviewContent">
                 <span className = "header" style = {{ float: 'right', fontSize: '14px'}}>
@@ -23,6 +25,8 @@ const IndividualReview = function({reviews}) {
                 </span>
                 <div className = "header">{review.header}</div>
                 <section className = "ratingStatsContainer">
+
+                  {/* rating stars, average, and verified or recommended checkmarks */}
                   <div className = "ratingStats">
                     <RatingDisplayBlock rating = {review.rating}/>
                     <div>
@@ -31,6 +35,8 @@ const IndividualReview = function({reviews}) {
                     </div>
                   </div>
                 </section>
+                
+                {/* review and images with helpfulness voting */}
                 <p>{review.review}</p>
                 <ReviewImages images = {review.images}/>
                 <div className = "rankHelpful">

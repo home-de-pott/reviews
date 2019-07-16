@@ -8,9 +8,9 @@ const CustomerImages = (props) => {
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		adaptiveHeight: true
-		// prevArrow: <Arrow />,
-		// nextArrow: <Arrow />,
+		adaptiveHeight: true,
+		prevArrow: <Arrow />,
+		nextArrow: <Arrow />
 	}
 
 
@@ -31,9 +31,9 @@ const CustomerImages = (props) => {
 						?
 						images.map((imageURL) => {
 							return (
-								<div>
-									<img src = {imageURL}></img>
-								</div>
+								<span className = "reviewImageContainer">
+									<img className = "customerReviewImages"src = {imageURL}></img>
+								</span>
 							)
 						})
 						:
