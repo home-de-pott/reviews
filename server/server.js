@@ -7,10 +7,10 @@ const db = require('./db.js');
 const port = PORT || 3000;
 const host = HOST || '0.0.0.0';
 
-app.use(express.static(__dirname + '/../dist'));
+app.use('/products/:id', express.static(__dirname + '/../dist'));
 app.use(bodyParser.json());
 
-app.get("/products/:id", (req, res) => {
+app.get("/reviews/:id", (req, res) => {
     // get reviews for product based on product id
     const allItems = db.getAll((data) => {
         const reviews = data[data.map((product) => product.id).indexOf(req.params.id)].reviews;

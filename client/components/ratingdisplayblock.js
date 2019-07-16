@@ -6,7 +6,7 @@ const RatingDisplayBlock = (props) => {
     return (
         <div className="ratingSummary"
             style={{
-                backgroundImage: 'url(' + background + ')',
+                backgroundImage: 'url(' + 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/avgRatingBackground.gif' + ')',
                 backgroundSize: '115px 125px',
                 backgroundPosition: 'center center',
                 backgroundRepeat: 'no-repeat'

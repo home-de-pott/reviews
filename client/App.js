@@ -50,7 +50,7 @@ class App extends React.Component {
     componentDidMount() {
       // get reviews and update avg
       const id = window.location.pathname.slice(10);
-      axios.get(`ec2-18-219-134-212.us-east-2.compute.amazonaws.com/products/${id}`)
+      axios.get(`http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/reviews/${id}`)
       .then((reviews) => {
         this.setState({reviews: reviews.data});
       })
