@@ -25,7 +25,7 @@ const CustomerImages = (props) => {
 	}
 
 	return (
-		<div id = "carousel">
+		<div id = "reviewsCarousel">
 			<Slider {...settings}>
 					{
 						props.reviews 
