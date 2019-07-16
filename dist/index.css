@@ -1,7 +1,14 @@
 body {
     font-family: helvetica-neue-light,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #333;
+    box-sizing: border-box;
 }
+
+#root {
+    padding: 20px;
+}
+
+/* Header Styling */
 
 h2 {
     font-weight: 340;
@@ -11,10 +18,355 @@ h2 {
     width: 314px;
 }
 
-.componentHeader {
-    border-bottom: 1px solid #999;
+.bottomBorder {
+		border-bottom: 1px solid #999;
+		overflow: hidden;
+		padding-top: 15px;
 }
 
-#root {
-    padding: 20px;
+/* Review Summary Basic Styling */
+
+.customerSummaryContainer {
+	margin-top: 30px;
+}
+
+.customerSummary {
+    float: left;
+    width: 50%;
+}
+
+.starsAndGraph {
+	border-right: 1px solid #999;
+    overflow: hidden;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
+.starsAndAverage {
+    float: left;
+	width: 50%;
+}
+
+.ratingsBreakdown {
+  width: 50%;
+  float: left;
+  padding-top: 3px;
+}
+
+.ratingSummary {
+    height: 130px;
+    width: 100%;
+    text-align: center;
+    color: #FC7900;
+    font-size: 2em;
+    font-weight: bolder;
+	float: left;
+	padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.totalReviews {
+	color: #797979;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/*
+** GRAPH STYLING **
+*/
+
+.Charts {
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+}
+.Charts.horizontal {
+	display: block;
+	float: right;
+	width: 80%;
+}
+
+.Charts.horizontal .Charts--serie {
+	display: block;
+	margin: 0 0 30px 0;
+	border: 0;
+}
+
+.Charts--serie {
+	height: 100%;
+	margin: 0 30px 0 0;
+	display: inline-block;
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	transform-origin: 0 100%;
+	animation: slideUp .6s;
+	position: relative;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.Charts--serie.stacked {
+	display: block;
+}
+
+.Charts.horizontal .Charts--item {
+	display: block;
+	margin: 0 0 25px 0;
+	height: 1em;
+}
+
+.barContainer {
+	background-color: #cccccc;
+	width: 80%;
+}
+
+.Charts--item {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	flex: 1;
+	position: relative;
+	text-align: center;
+}
+
+.Charts * span {
+	float: right;
+	color: #424242;
+	font-size: 14px;
+}
+
+.starsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	float: left;
+	width: 20%;
+}
+
+div.starsList > ul {
+	list-style-type: none;
+  margin: 0;
+	padding: 0;
+	color: #cccccc;
+}
+
+div.starsList > ul > li {
+	padding-bottom: 21px;
+	font-size: 14px;
+}
+
+.innerStar {
+	font-family: Wingdings;
+	color: #FC7900;
+}
+
+.innerStar::before {
+	content: " \2605";
+}
+
+/*
+** Star Display Under Average Styling **
+*/
+
+.starsContainer {
+	text-align: center;
+	margin-top: -27px;
+}
+
+.stars {
+  display: inline-block;
+  font-family: Wingdings;
+  font-size: 20px;
+  color: #ccc;
+	position: relative;
+	margin-top: -15px;
+}
+
+.stars::before,
+.stars span::before{
+  content: "\2605\2605\2605\2605\2605";
+  display: block;
+}
+
+.stars span {
+  color: #f96302;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* Individual Review Styling */
+
+.userName {
+	width: 10%;
+	float: left;
+}
+
+.userName.header,
+.reviewContent .header {
+	color: #424242;
+	font-weight: bolder;
+	word-wrap: break-word;
+	padding: 15px 15px 15px 0;
+  box-sizing: border-box;
+}
+
+.reviewContent {
+	width: 90%;
+	float: left;
+}
+
+.reviewContent > p {
+	float: left;
+	width: 100%;
+}
+
+.ratingStatsContainer {
+	width: 100%;
+}
+
+.reviewContent > section > img {
+	margin-left: 5px;
+}
+
+.ratingStats > div{
+	width: 25%;
+	float: left;
+	margin-right: 15px;
+}
+
+.ratingStats > .ratingSummary {
+	width: 115px;
+}
+
+.ratingStats > div > .stars {
+	margin-top: 0;
+}
+
+.ratingStats > * div {
+  padding-bottom: 10px;
+}
+
+.conditionalChecks > div > img {
+	width: 20px; 
+	vertical-align: text-bottom;
+}
+
+.rankHelpful {
+	float: left;
+	font-weight: bolder;
+	font-size: 16px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	width: 100%;
+}
+
+.rankHelpful > img {
+	width: 20px;
+	vertical-align: text-bottom;
+}
+
+/* Button */
+
+.customerSummary > div > div > button {
+	width: 315px;
+    background-color: #f96305;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+	box-shadow: 0 3px 0 #C14C00;
+	border: none;
+}
+
+.reviewSubmitAndCustImages {
+	text-align: center;
+	padding-top: 3px;
+	padding-left: 20px;
+}
+/* Image Carousel */
+
+.slick-track {
+	padding-top: 20px;
+}
+
+.slick-next.carouselArrow:before, .slick-prev.carouselArrow:before {
+	color: #f96302;
+	font-size: 20px;
+    line-height: 1;
+	opacity: .75;
+	left: -10px;
+    z-index: 1;
+}
+
+.slick-prev.carouselArrow, .slick-next.carouselArrow {
+	top: 60%;
+}
+
+.customerReviewImages {
+  display: block;
+  width: 100%;
+  width: 78px;
+  height: 78px;
+  margin: 0 0 10px;
+  transition: 0.3s;
+}
+
+.slick-slider.slick-initialized {
+	width: 50%;
+	font-family: helvetica-neue-light, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+    margin: auto;
+    color: #333;
+    box-sizing: border-box;
+	position: relative;
+	padding-top: 18px;
+}
+
+/* Image enlargement */
+
+.enlargedImageContainer {
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
