@@ -66,8 +66,7 @@ class Charts extends React.Component {
                                     var color = self.props.colors[itemIndex], style,
                                         size = item / sum * 100;
                                     style = {
-                                        backgroundColor: '#f96301',
-                                        zIndex: item
+                                        backgroundColor: '#f96301'
                                     };
 
                                     if (self.props.horizontal) {
@@ -81,7 +80,7 @@ class Charts extends React.Component {
                                     }
 
                                     return (
-                                        <section>
+                                        <section key={"chartBar" + itemIndex.toString()}>
                                                 <span style={{ color: '#cccccc' }}>({item})</span>
                                                 <div className= "barContainer">
                                                     <div
