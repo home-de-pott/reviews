@@ -352,7 +352,7 @@ div.starsList > ul > li {
   to {transform:scale(1)}
 }
 
-/* The Close Button */
+/* The Close Image Popup Button */
 
 .close {
   position: absolute;
@@ -369,4 +369,42 @@ div.starsList > ul > li {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Review Form Popup */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+  z-index: 3;
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}
+
+.popup_inner > button {
+	margin: 15px;
+	float: right;
+	width: 250px;
+    background-color: #f96305;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+	box-shadow: 0 3px 0 #C14C00;
+	border: none;
 }

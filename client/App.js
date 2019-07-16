@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import FullReviews from './components/fullReviews';
-import ImageCarousel from './components/imageCarousel';
 import ReviewsSummary from './components/reviewsSummary';
 import IndividualReview from './components/individualReview';
+import ReviewFormPopup from './components/formPopup';
 
 // delete fullReviews component
 // delete imageCarousel component
@@ -20,9 +19,11 @@ class App extends React.Component {
             avgReviews: 0,
             ratingsBreakdown: {},
             reviews: [],
-            enlargedImgViewURL: ''
+            enlargedImgViewURL: '',
+            showReviewForm: false
         }
         this.listenForImageClickToEnlarge = this.listenForImageClickToEnlarge.bind(this);
+        this.toggleReviewForm = this.toggleReviewForm.bind(this);
       }
 
     updateAvgRating() {
@@ -50,7 +51,7 @@ class App extends React.Component {
       // get reviews and update avg
       // 205594063
       // 203164241
-      axios.get('/products/203164241')
+      axios.get('/products/205594063')
       .then((reviews) => {
         this.setState({reviews: reviews.data});
       })
@@ -81,18 +82,36 @@ class App extends React.Component {
       }
     }
 
+    toggleReviewForm() {
+      const showForm = this.state.showReviewForm ? false : true;
+      this.setState({showReviewForm: showForm});
+    }
+
     render() {
         return (
           <section>
+
+            {/* Enlarged image on click */}
             <span className="enlargedImageContainer">
               <span className="close">&times;</span>
               <img className="imageToEnlarge" src={this.state.enlargedImgViewURL}></img>
             </span>
+
+            {/* Review Popup Form */}
+            {
+              this.state.showReviewForm
+              ?
+              <ReviewFormPopup toggleReviewForm = {this.toggleReviewForm}/>
+              :
+              ''
+            }
+
             <div className="bottomBorder" style={{ paddingBottom: '30px' }}>
                 <div className = "bottomBorder">
                   <h2>{this.state.componentHeader}</h2>
                 </div>
                 <ReviewsSummary 
+                  toggleReviewForm = {this.toggleReviewForm}
                   reviews = {this.state.reviews}
                   rating = {this.state.avgReviews}
                   totalReviews = {this.state.reviews ? this.state.reviews.length : 0}

@@ -20,19 +20,26 @@ const ReviewsSummary = function(props) {
         </div>
 
         <div className = "ratingsBreakdown">
+
           <Graph 
             ratingsBreakdown = {props.ratingsBreakdown}
           />
         </div>
+
       </section>
       <section className = "customerSummary">
         <div className = "reviewSubmitAndCustImages">
-          <div><button>Write a Review</button></div>
-          <h4 style = {{marginBottom: '1px'}}>Customer Images</h4>
+
+          <div>
+            <button onClick={() => props.toggleReviewForm()}>Write a Review</button>
+          </div>
+
+          <h4 style = {{marginBottom: '0'}}>Customer Images</h4>
           <CustomerImages 
             reviews = {props.reviews}
             imageOnClick={props.imageOnClick}
           />
+
         </div>
       </section>  
     </div>
