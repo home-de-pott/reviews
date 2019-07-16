@@ -3,9 +3,14 @@ import axios from 'axios';
 import FullReviews from './components/fullReviews';
 import ImageCarousel from './components/imageCarousel';
 import ReviewsSummary from './components/reviewsSummary';
+import IndividualReview from './components/individualReview';
 
-// get or generate reviews
-// hook up db
+// delete fullReviews component
+// delete imageCarousel component
+// consider overriding mongodb's id for faster searching
+// break up updateAverageRating
+// allow user to post reviews
+// allow user to vote usefulness of reviews
 
 class App extends React.Component {
     constructor(props) {
@@ -14,9 +19,11 @@ class App extends React.Component {
             componentHeader: "Customer Reviews",
             avgReviews: 0,
             ratingsBreakdown: {},
-            reviews: []
+            reviews: [],
+            enlargedImgViewURL: ''
         }
-    }
+        this.listenForImageClickToEnlarge = this.listenForImageClickToEnlarge.bind(this);
+      }
 
     updateAvgRating() {
       const ratingsByStars = [0, 0, 0, 0, 0];
@@ -47,16 +54,41 @@ class App extends React.Component {
       .then((reviews) => {
         this.setState({reviews: reviews.data});
       })
-      .then(() => this.updateAvgRating())
+      .then(() => {
+        this.updateAvgRating();
+        this.setUpEventListeners();
+      })
       .catch((err) => {
         console.log(err);
       });
     }
 
+    setUpEventListeners() {
+      // future window listener for id
+    }
+
+    listenForImageClickToEnlarge(event) {
+      const enlarge = document.getElementsByClassName("enlargedImageContainer")[0];
+      const img = document.getElementById(event.target.getAttribute('id'));
+      this.setState({ enlargedImgViewURL: img.getAttribute('src')});
+      enlarge.style.display = "block";
+     
+      // Get the <span> element that closes the enlarged image
+      const close = document.getElementsByClassName("close")[0];
+      // When the user clicks on <span> (x), close the modal
+      close.onclick = function () {
+        enlarge.style.display = "none";
+      }
+    }
+
     render() {
         return (
           <section>
-            <div className = "bottomBorder">
+            <span className="enlargedImageContainer">
+              <span className="close">&times;</span>
+              <img className="imageToEnlarge" src={this.state.enlargedImgViewURL}></img>
+            </span>
+            <div className="bottomBorder" style={{ paddingBottom: '30px' }}>
                 <div className = "bottomBorder">
                   <h2>{this.state.componentHeader}</h2>
                 </div>
@@ -65,10 +97,13 @@ class App extends React.Component {
                   rating = {this.state.avgReviews}
                   totalReviews = {this.state.reviews ? this.state.reviews.length : 0}
                   ratingsBreakdown = {this.state.ratingsBreakdown}
+                  imageOnClick={this.listenForImageClickToEnlarge}
                 />
-              <ImageCarousel reviews = {this.state.reviews}/>
             </div>
-                <FullReviews reviews = {this.state.reviews}/>
+                <IndividualReview 
+                  reviews = {this.state.reviews}
+                  imageOnClick = {this.listenForImageClickToEnlarge}
+                />
           </section>
         )
     }

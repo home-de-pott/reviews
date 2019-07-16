@@ -20,13 +20,19 @@ const ReviewsSummary = function(props) {
         </div>
 
         <div className = "ratingsBreakdown">
-          <Graph ratingsBreakdown = {props.ratingsBreakdown}/>
+          <Graph 
+            ratingsBreakdown = {props.ratingsBreakdown}
+          />
         </div>
       </section>
       <section className = "customerSummary">
         <div className = "reviewSubmitAndCustImages">
           <div><button>Write a Review</button></div>
-          <CustomerImages reviews = {props.reviews}/>
+          <h4 style = {{marginBottom: '1px'}}>Customer Images</h4>
+          <CustomerImages 
+            reviews = {props.reviews}
+            imageOnClick={props.imageOnClick}
+          />
         </div>
       </section>  
     </div>

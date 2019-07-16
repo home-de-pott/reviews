@@ -29,10 +29,16 @@ const CustomerImages = (props) => {
 					{
 						props.reviews 
 						?
-						images.map((imageURL) => {
+						images.map((imageURL, index) => {
 							return (
-								<span className = "reviewImageContainer">
-									<img className = "customerReviewImages"src = {imageURL}></img>
+								<span className = "reviewImageContainer" key = {imageURL}>
+									<img 
+									  className="customerReviewImages" 
+									  src={imageURL} 
+									  id={imageURL}
+									  onClick={() => props.imageOnClick(event)}
+									>
+									</img>
 								</span>
 							)
 						})

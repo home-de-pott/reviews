@@ -5,17 +5,18 @@ import thumbsDown from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/icon
 import thumbsUp from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsUp.png';
 import VerifiedOrRecommended from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/verifiedOrRecommended.js';
 import ReviewImages from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/reviewImages.js'
+import { PromiseProvider } from 'mongoose';
 
-const IndividualReview = function({reviews}) {
+const IndividualReview = function({reviews, imageOnClick}) {
   let newAvg = 0;
   return (
     <div>
       { reviews
         ?
-        reviews.map((review) => {
+        reviews.map((review, index) => {
           newAvg += review.rating;
           return (
-            <section className="bottomBorder">
+            <section className="bottomBorder" key = {review.userName + index}>
 
               {/* headers */}
               <div className = "userName header">{review.userName}</div>
@@ -38,7 +39,10 @@ const IndividualReview = function({reviews}) {
                 
                 {/* review and images with helpfulness voting */}
                 <p>{review.review}</p>
-                <ReviewImages images = {review.images}/>
+                <ReviewImages 
+                  images = {review.images}
+                  imageOnClick = {imageOnClick}
+                />
                 <div className = "rankHelpful">
                   Was this review helpful? <img src = {thumbsUp}></img> {review.helpfulCount} <img src = {thumbsDown}></img> {review.notHelpfulCount}
                 </div>
