@@ -1,9 +1,9 @@
 import React from 'react';
-import checkBox from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/checkbox.png';
+import checkBox from 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/checkbox.png';
 
 const VerifiedOrRecommended = ({review}) => {
     return (
-        <div className="conditionalChecks">
+        <div className="RVWSconditionalChecks">
             {review.recommend
                 ?
                 <div>

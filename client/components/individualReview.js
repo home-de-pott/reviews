@@ -1,11 +1,10 @@
 import React from 'react';
 import RatingDisplayBlock from './ratingdisplayblock';
 import Stars from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/stars.js';
-import thumbsDown from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsDown.png';
-import thumbsUp from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/thumbsUp.png';
+import thumbsDown from 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsDown.png';
+import thumbsUp from 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsUp.png';
 import VerifiedOrRecommended from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/verifiedOrRecommended.js';
 import ReviewImages from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/reviewImages.js'
-import { PromiseProvider } from 'mongoose';
 
 const IndividualReview = function({reviews, imageOnClick}) {
   let newAvg = 0;
@@ -16,19 +15,19 @@ const IndividualReview = function({reviews, imageOnClick}) {
         reviews.map((review, index) => {
           newAvg += review.rating;
           return (
-            <section className="bottomBorder" key = {review.userName + index}>
+            <section className="RVWSbottomBorder" key = {review.userName + index}>
 
               {/* headers */}
-              <div className = "userName header">{review.userName}</div>
-              <section className = "reviewContent">
-                <span className = "header" style = {{ float: 'right', fontSize: '14px'}}>
+              <div className= "RVWSuserName RVWSheader">{review.userName}</div>
+              <section className= "RVWSreviewContent">
+                <span className= "RVWSheader" style = {{ float: 'right', fontSize: '14px'}}>
                   {review.date}
                 </span>
-                <div className = "header">{review.header}</div>
-                <section className = "ratingStatsContainer">
+                <div className= "RVWSheader">{review.header}</div>
+                <section className= "RVWSratingStatsContainer">
 
                   {/* rating stars, average, and verified or recommended checkmarks */}
-                  <div className = "ratingStats">
+                  <div className= "RVWSratingStats">
                     <RatingDisplayBlock rating = {review.rating}/>
                     <div>
                       <Stars rating = {review.rating}/>
@@ -43,7 +42,7 @@ const IndividualReview = function({reviews, imageOnClick}) {
                   images = {review.images}
                   imageOnClick = {imageOnClick}
                 />
-                <div className = "rankHelpful">
+                <div className= "RVWSrankHelpful">
                   Was this review helpful? <img src = {thumbsUp}></img> {review.helpfulCount} <img src = {thumbsDown}></img> {review.notHelpfulCount}
                 </div>
               </section>

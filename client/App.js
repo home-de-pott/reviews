@@ -3,9 +3,7 @@ import axios from 'axios';
 import ReviewsSummary from './components/reviewsSummary';
 import IndividualReview from './components/individualReview';
 import ReviewFormPopup from './components/formPopup';
-
-// delete fullReviews component
-// delete imageCarousel component
+ 
 // consider overriding mongodb's id for faster searching
 // break up updateAverageRating
 // allow user to post reviews
@@ -49,6 +47,12 @@ class App extends React.Component {
 
     componentDidMount() {
       // get reviews and update avg
+      window.addEventListener('getProduct', event => {
+        this.getReviews(event.detail.id);
+      });
+      // put in function getReviews();
+      // change paths for images
+      // consider changing css names
       const id = window.location.pathname.slice(10);
       axios.get(`http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/reviews/${id}`)
       .then((reviews) => {

@@ -25,16 +25,16 @@ const CustomerImages = (props) => {
 	}
 
 	return (
-		<div id = "reviewsCarousel">
+		<div id= "RVWSCarousel">
 			<Slider {...settings}>
 					{
 						props.reviews 
 						?
 						images.map((imageURL, index) => {
 							return (
-								<span className = "reviewImageContainer" key = {imageURL}>
+								<span className= "RVWSreviewImageContainer" key = {imageURL}>
 									<img 
-									  className="customerReviewImages" 
+										className="RVWScustomerReviewImages" 
 									  src={imageURL} 
 									  id={imageURL}
 									  onClick={() => props.imageOnClick(event)}

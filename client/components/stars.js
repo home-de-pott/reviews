@@ -2,7 +2,7 @@ import React from 'react'
 
 const Stars = ({rating}) => {
     return (
-        <div className="stars">
+        <div className="RVWSstars">
             <span
                 style={{
                     width: (rating / 5) * 100 + "%"

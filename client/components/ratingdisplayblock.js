@@ -1,10 +1,9 @@
 import React from 'react';
-import background from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/iconsAndBadges/avgRatingBackground.gif';
 
 const RatingDisplayBlock = (props) => {
 	  const rating = Number.parseFloat(props.rating).toFixed(1);
     return (
-        <div className="ratingSummary"
+        <div className="RVWSratingSummary"
             style={{
                 backgroundImage: 'url(' + 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/avgRatingBackground.gif' + ')',
                 backgroundSize: '115px 125px',

@@ -47,7 +47,7 @@ class Charts extends React.Component {
 
         return (
             <section>
-                <div className={'Charts' + (this.props.horizontal ? ' horizontal' : '')}>
+                <div className={'RVWSCharts' + (this.props.horizontal ? ' horizontal' : '')}>
                     {data.map(function (serie, serieIndex) {
                         var sortedSerie = serie.slice(0),
                             sum;
@@ -58,7 +58,7 @@ class Charts extends React.Component {
                         sortedSerie.sort(compareNumbers);
 
                         return (
-                            <div className={'Charts--serie ' + (self.props.grouping)}
+                            <div className={'RVWSCharts--serie ' + (self.props.grouping)}
                                 key={serieIndex}
                                 style={{ height: self.props.height ? self.props.height : 'auto' }}
                             >
@@ -84,7 +84,7 @@ class Charts extends React.Component {
                                                 <span style={{ color: '#cccccc' }}>({item})</span>
                                                 <div className= "barContainer">
                                                     <div
-                                                        className={'Charts--item ' + (self.props.grouping)}
+                                                    className={'RVWSCharts--item ' + (self.props.grouping)}
                                                         style={style}
                                                         key={itemIndex}
                                                     >

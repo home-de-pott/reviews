@@ -10,7 +10,7 @@ body {
 
 /* Header Styling */
 
-.reviewsHeader {
+.RVWSreviewsHeader {
     font-weight: 340;
     border-bottom: 4px solid #f96302;
     margin: -0.3px;
@@ -18,7 +18,7 @@ body {
     width: 314px;
 }
 
-.bottomBorder {
+.RVWSbottomBorder {
 		border-bottom: 1px solid #999;
 		overflow: hidden;
 		padding-top: 15px;
@@ -26,34 +26,34 @@ body {
 
 /* Review Summary Basic Styling */
 
-.customerSummaryContainer {
+.RVWScustomerSummaryContainer {
 	margin-top: 30px;
 }
 
-.customerSummary {
+.RVWScustomerSummary {
     float: left;
     width: 50%;
 }
 
-.starsAndGraph {
+.RVWSstarsAndGraph {
 	border-right: 1px solid #999;
     overflow: hidden;
 	box-sizing: border-box;
 	padding-right: 20px;
 }
 
-.starsAndAverage {
+.RVWSstarsAndAverage {
     float: left;
 	width: 50%;
 }
 
-.ratingsBreakdown {
+.RVWSratingsBreakdown {
   width: 50%;
   float: left;
   padding-top: 3px;
 }
 
-.ratingSummary {
+.RVWSratingSummary {
     height: 130px;
     width: 100%;
     text-align: center;
@@ -65,7 +65,7 @@ body {
     box-sizing: border-box;
 }
 
-.totalReviews {
+.RVWStotalReviews {
 	color: #797979;
 	font-size: 14px;
 	text-align: center;
@@ -76,24 +76,24 @@ body {
 ** GRAPH STYLING **
 */
 
-.Charts {
+.RVWSCharts {
 	margin: 0 auto;
 	display: flex;
 	align-items: flex-end;
 }
-.Charts.horizontal {
+.RVWSCharts.horizontal {
 	display: block;
 	float: right;
 	width: 80%;
 }
 
-.Charts.horizontal .Charts--serie {
+.RVWSCharts.horizontal .Charts--serie {
 	display: block;
 	margin: 0 0 30px 0;
 	border: 0;
 }
 
-.Charts--serie {
+.RVWSCharts--serie {
 	height: 100%;
 	margin: 0 30px 0 0;
 	display: inline-block;
@@ -106,22 +106,22 @@ body {
 	border-bottom: 1px solid #c2c2c2;
 }
 
-.Charts--serie.stacked {
+.RVWSCharts--serie.stacked {
 	display: block;
 }
 
-.Charts.horizontal .Charts--item {
+.RVWSCharts.horizontal .Charts--item {
 	display: block;
 	margin: 0 0 25px 0;
 	height: 1em;
 }
 
-.barContainer {
+.RVWSbarContainer {
 	background-color: #cccccc;
 	width: 80%;
 }
 
-.Charts--item {
+.RVWSCharts--item {
 	display: inline-block;
 	margin: 0 5px 0 0;
 	flex: 1;
@@ -129,13 +129,13 @@ body {
 	text-align: center;
 }
 
-.Charts * span {
+.RVWSCharts * span {
 	float: right;
 	color: #424242;
 	font-size: 14px;
 }
 
-.starsList {
+.RVWSstarsList {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -143,24 +143,24 @@ body {
 	width: 20%;
 }
 
-div.starsList > ul {
+div.RVWSstarsList > ul {
 	list-style-type: none;
   margin: 0;
 	padding: 0;
 	color: #cccccc;
 }
 
-div.starsList > ul > li {
+div.RVWSstarsList > ul > li {
 	padding-bottom: 21px;
 	font-size: 14px;
 }
 
-.innerStar {
+.RVWSinnerStar {
 	font-family: Wingdings;
 	color: #FC7900;
 }
 
-.innerStar::before {
+.RVWSinnerStar::before {
 	content: " \2605";
 }
 
@@ -168,12 +168,12 @@ div.starsList > ul > li {
 ** Star Display Under Average Styling **
 */
 
-.starsContainer {
+.RVWSstarsContainer {
 	text-align: center;
 	margin-top: -27px;
 }
 
-.stars {
+.RVWSstars {
   display: inline-block;
   font-family: Wingdings;
   font-size: 20px;
@@ -182,13 +182,13 @@ div.starsList > ul > li {
 	margin-top: -15px;
 }
 
-.stars::before,
-.stars span::before{
+.RVWSstars::before,
+.RVWSstars span::before{
   content: "\2605\2605\2605\2605\2605";
   display: block;
 }
 
-.stars span {
+.RVWSstars span {
   color: #f96302;
   position: absolute;
   top: 0;
@@ -198,13 +198,13 @@ div.starsList > ul > li {
 
 /* Individual Review Styling */
 
-.userName {
+.RVWSuserName {
 	width: 10%;
 	float: left;
 }
 
-.userName.header,
-.reviewContent .header {
+.RVWSuserName.header,
+.RVWSreviewContent .header {
 	color: #424242;
 	font-weight: bolder;
 	word-wrap: break-word;
@@ -212,48 +212,48 @@ div.starsList > ul > li {
   box-sizing: border-box;
 }
 
-.reviewContent {
+.RVWSreviewContent {
 	width: 90%;
 	float: left;
 }
 
-.reviewContent > p {
+.RVWSreviewContent > p {
 	float: left;
 	width: 100%;
 }
 
-.ratingStatsContainer {
+.RVWSratingStatsContainer {
 	width: 100%;
 }
 
-.reviewContent > section > img {
+.RVWSreviewContent > section > img {
 	margin-left: 5px;
 }
 
-.ratingStats > div{
+.RVWSratingStats > div{
 	width: 25%;
 	float: left;
 	margin-right: 15px;
 }
 
-.ratingStats > .ratingSummary {
+.RVWSratingStats > .ratingSummary {
 	width: 115px;
 }
 
-.ratingStats > div > .stars {
+.RVWSratingStats > div > .stars {
 	margin-top: 0;
 }
 
-.ratingStats > * div {
+.RVWSratingStats > * div {
   padding-bottom: 10px;
 }
 
-.conditionalChecks > div > img {
+.RVWSconditionalChecks > div > img {
 	width: 20px; 
 	vertical-align: text-bottom;
 }
 
-.rankHelpful {
+.RVWSrankHelpful {
 	float: left;
 	font-weight: bolder;
 	font-size: 16px;
@@ -262,14 +262,14 @@ div.starsList > ul > li {
 	width: 100%;
 }
 
-.rankHelpful > img {
+.RVWSrankHelpful > img {
 	width: 20px;
 	vertical-align: text-bottom;
 }
 
 /* Button */
 
-.customerSummary > div > div > button {
+.RVWScustomerSummary > div > div > button {
 	width: 315px;
     background-color: #f96305;
     text-decoration: none;
@@ -281,7 +281,7 @@ div.starsList > ul > li {
 	border: none;
 }
 
-.reviewSubmitAndCustImages {
+.RVWSreviewSubmitAndCustImages {
 	text-align: center;
 	padding-top: 3px;
 	padding-left: 20px;
@@ -305,7 +305,7 @@ div.starsList > ul > li {
 	top: 60%;
 }
 
-.customerReviewImages {
+.RVWScustomerReviewImages {
   display: block;
   width: 100%;
   width: 78px;
@@ -314,7 +314,7 @@ div.starsList > ul > li {
   transition: 0.3s;
 }
 
-#reviewsCarousel .slick-slider.slick-initialized {
+#RVWSCarousel .slick-slider.slick-initialized {
 	width: 50%;
 	font-family: helvetica-neue-light, Helvetica Neue, Helvetica, Arial,
     sans-serif;
@@ -327,7 +327,7 @@ div.starsList > ul > li {
 
 /* Image enlargement */
 
-.enlargedImageContainer {
+.RVWSenlargedImageContainer {
   text-align: center;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -354,7 +354,7 @@ div.starsList > ul > li {
 
 /* The Close Image Popup Button */
 
-.close {
+.RVWSclose {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -364,8 +364,8 @@ div.starsList > ul > li {
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.RVWSclose:hover,
+.RVWSclose:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -373,7 +373,7 @@ div.starsList > ul > li {
 
 /* Review Form Popup */
 
-.popup {
+.RVWSpopup {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -385,7 +385,7 @@ div.starsList > ul > li {
   background-color: rgba(0,0,0, 0.5);
   z-index: 3;
 }
-.popup_inner {
+.RVWSpopup_inner {
   position: absolute;
   left: 25%;
   right: 25%;
@@ -395,7 +395,7 @@ div.starsList > ul > li {
   background: white;
 }
 
-.popup_inner > button {
+.RVWSpopup_inner > button {
 	margin: 15px;
 	float: right;
 	width: 250px;

@@ -5,21 +5,21 @@ import CustomerImages from '/Users/hh/Documents/Coding/hackReactor/reviews/clien
 
 const ReviewsSummary = function(props) {
   return (
-    <div className = "customerSummaryContainer">
-      <section className = "customerSummary starsAndGraph">
-        <div className = "starsAndAverage">
+    <div className= "RVWScustomerSummaryContainer">
+      <section className= "RVWScustomerSummary RVWSstarsAndGraph">
+        <div className= "RVWSstarsAndAverage">
 
           <RatingDisplayBlock rating = {props.rating}/>
 
-          <div className = "starsContainer">
+          <div className= "RVWSstarsContainer">
             <span className ="stars"><span></span></span>
           </div>
           
-          <div className = "totalReviews">{props.totalReviews} Reviews</div>
+          <div className= "RVWStotalReviews">{props.totalReviews} Reviews</div>
         
         </div>
 
-        <div className = "ratingsBreakdown">
+        <div className= "RVWSratingsBreakdown">
 
           <Graph 
             ratingsBreakdown = {props.ratingsBreakdown}
@@ -27,8 +27,8 @@ const ReviewsSummary = function(props) {
         </div>
 
       </section>
-      <section className = "customerSummary">
-        <div className = "reviewSubmitAndCustImages">
+      <section className= "RVWScustomerSummary">
+        <div className= "RVWSreviewSubmitAndCustImages">
 
           <div>
             <button onClick={() => props.toggleReviewForm()}>Write a Review</button>
