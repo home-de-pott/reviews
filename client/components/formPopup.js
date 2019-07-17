@@ -12,8 +12,7 @@ const ReviewFormPopup = (props) => {
 						<input type = "number"></input>
 						<div>
 							Would you recommend this product?
-							<input type="radio" name="chooseone" value="true"><label for="true"> Yes</label>
-							<input type="radio" name="chooseone" value="HTML"><label for="HTML"> HTML</label>
+							<input type="radio" name="chooseone" value="true"></input><label for="true"> Yes</label> <input type="radio" name="chooseone" value="false"></input><label for="false"> No</label>
 						</div>
 						<p>Nickname</p>
 						<input 
