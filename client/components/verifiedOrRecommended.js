@@ -7,7 +7,8 @@ const VerifiedOrRecommended = ({review}) => {
             {review.recommend
                 ?
                 <div>
-                    <img src={checkBox}></img> Recommended Product
+                    <img src='http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/checkbox.png'>
+                    </img> Recommended Product
                             </div>
                 :
                 ''
@@ -15,7 +16,7 @@ const VerifiedOrRecommended = ({review}) => {
             {review.verifiedPurchase
                 ?
                 <div>
-                    <img src='http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/dist/iconsAndBadges/checkbox.png'>
+                    <img src='http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/checkbox.png'>
                     </img> Verified Purchase
                             </div>
                 :
