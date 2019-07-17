@@ -34,7 +34,16 @@ const ReviewsSummary = function(props) {
             <button onClick={() => props.toggleReviewForm()}>Write a Review</button>
           </div>
 
-          <h4 style = {{marginBottom: '0'}}>Customer Images</h4>
+          <h4 style = {{
+            marginBottom: '0',
+            display: 'block',
+            marginBlockStart: '1.33em',
+            marginBlockEnd: '1.33em',
+            marginInlineStart: '0px',
+            marginInlineEnd: '0px',
+            fontWeight: 'bold'}}>
+              Customer Images
+          </h4>
           <CustomerImages 
             reviews = {props.reviews}
             imageOnClick={props.imageOnClick}

@@ -48,26 +48,27 @@ class App extends React.Component {
       document.querySelector('.RVWSstars > span').style.width = starPercentageRounded; 
     }
 
+    getReviews(id) {
+      axios.get(`http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/reviews/${id}`)
+        .then((reviews) => {
+          this.setState({ reviews: reviews.data });
+        })
+        .then(() => {
+          this.updateAvgRating();
+          this.setUpEventListeners();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+
     componentDidMount() {
-      // Get reviews and update avg
+      // Get reviews based on id
       window.addEventListener('getProduct', event => {
         this.getReviews(event.detail.id);
       });
-      // put in function getReviews();
-      // change paths for images
-      // consider changing css names
       const id = window.location.pathname.slice(10);
-      axios.get(`http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/reviews/${id}`)
-      .then((reviews) => {
-        this.setState({reviews: reviews.data});
-      })
-      .then(() => {
-        this.updateAvgRating();
-        this.setUpEventListeners();
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      this.getReviews(id);
     }
 
     setUpEventListeners() {

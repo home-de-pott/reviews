@@ -374,23 +374,22 @@ div.RVWSstarsList > ul > li {
 /* Review Form Popup */
 
 .RVWSpopup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  background-color: rgba(0,0,0, 0.5);
   z-index: 3;
+  position: fixed; /* Stay in place */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0, 0.5);
 }
+
 .RVWSpopup_inner {
   position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
+  left: 15%;
+  right: 15%;
+  top: 10%;
   margin: auto;
   background: white;
 }
@@ -407,4 +406,13 @@ div.RVWSstarsList > ul > li {
     padding: 5px 10px;
 	box-shadow: 0 3px 0 #C14C00;
 	border: none;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  border-color: #ccc;
+}
+
+input, textarea {
+	font-size: 16px;
 }
