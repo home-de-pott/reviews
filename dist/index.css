@@ -87,7 +87,7 @@ body {
 	width: 80%;
 }
 
-.RVWSCharts.horizontal .Charts--serie {
+.RVWSCharts.horizontal .RVWSCharts--serie {
 	display: block;
 	margin: 0 0 30px 0;
 	border: 0;
@@ -110,7 +110,7 @@ body {
 	display: block;
 }
 
-.RVWSCharts.horizontal .Charts--item {
+.RVWSCharts.horizontal .RVWSCharts--item {
 	display: block;
 	margin: 0 0 25px 0;
 	height: 1em;
@@ -203,8 +203,8 @@ div.RVWSstarsList > ul > li {
 	float: left;
 }
 
-.RVWSuserName.header,
-.RVWSreviewContent .header {
+.RVWSuserName.RVWSheader,
+.RVWSreviewContent .RVWSheader {
 	color: #424242;
 	font-weight: bolder;
 	word-wrap: break-word;
@@ -236,11 +236,11 @@ div.RVWSstarsList > ul > li {
 	margin-right: 15px;
 }
 
-.RVWSratingStats > .ratingSummary {
+.RVWSratingStats > .RVWSratingSummary {
 	width: 115px;
 }
 
-.RVWSratingStats > div > .stars {
+.RVWSratingStats > div > .RVWSstars {
 	margin-top: 0;
 }
 

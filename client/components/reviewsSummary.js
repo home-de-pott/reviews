@@ -12,7 +12,7 @@ const ReviewsSummary = function(props) {
           <RatingDisplayBlock rating = {props.rating}/>
 
           <div className= "RVWSstarsContainer">
-            <span className ="stars"><span></span></span>
+            <span className="RVWSstars"><span></span></span>
           </div>
           
           <div className= "RVWStotalReviews">{props.totalReviews} Reviews</div>

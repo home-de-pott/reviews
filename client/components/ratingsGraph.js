@@ -82,7 +82,7 @@ class Charts extends React.Component {
                                     return (
                                         <section key={"chartBar" + itemIndex.toString()}>
                                                 <span style={{ color: '#cccccc' }}>({item})</span>
-                                                <div className= "barContainer">
+                                            <div className= "RVWSbarContainer">
                                                     <div
                                                     className={'RVWSCharts--item ' + (self.props.grouping)}
                                                         style={style}
@@ -97,13 +97,13 @@ class Charts extends React.Component {
                         );
                     })}
                 </div>
-							<div className="starsList">
+                <div className="RVWSstarsList">
 								<ul>
-								<li>5<span className = "innerStar"></span></li>
-								<li>4<span className = "innerStar"></span></li>
-								<li>3<span className = "innerStar"></span></li>
-								<li>2<span className = "innerStar"></span></li>
-								<li>1<span className = "innerStar"></span></li>
+                        <li>5<span className= "RVWSinnerStar"></span></li>
+                        <li>4<span className= "RVWSinnerStar"></span></li>
+                        <li>3<span className= "RVWSinnerStar"></span></li>
+                        <li>2<span className= "RVWSinnerStar"></span></li>
+                        <li>1<span className= "RVWSinnerStar"></span></li>
 								</ul>
 							</div>
             </section>

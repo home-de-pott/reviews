@@ -25,6 +25,7 @@ class App extends React.Component {
       }
 
     updateAvgRating() {
+      // Update average block display
       const ratingsByStars = [0, 0, 0, 0, 0];
       const reviews = this.state.reviews;
       let newAvg = 0;
@@ -38,15 +39,17 @@ class App extends React.Component {
         avgReviews: newAvg, 
         ratingsBreakdown: ratingsByStars
       });
+
+      // Update stars display
       const rating = this.state.avgReviews;
       const starTotal = 5;
       const starPercentage = (rating / starTotal) * 100;
       const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-      document.querySelector('.stars > span').style.width = starPercentageRounded; 
+      document.querySelector('.RVWSstars > span').style.width = starPercentageRounded; 
     }
 
     componentDidMount() {
-      // get reviews and update avg
+      // Get reviews and update avg
       window.addEventListener('getProduct', event => {
         this.getReviews(event.detail.id);
       });
@@ -72,13 +75,14 @@ class App extends React.Component {
     }
 
     listenForImageClickToEnlarge(event) {
-      const enlarge = document.getElementsByClassName("enlargedImageContainer")[0];
+      const enlarge = document.getElementsByClassName("RVWSenlargedImageContainer")[0];
       const img = document.getElementById(event.target.getAttribute('id'));
       this.setState({ enlargedImgViewURL: img.getAttribute('src')});
       enlarge.style.display = "block";
      
       // Get the <span> element that closes the enlarged image
-      const close = document.getElementsByClassName("close")[0];
+      const close = document.getElementsByClassName("RVWSclose")[0];
+
       // When the user clicks on <span> (x), close the modal
       close.onclick = function () {
         enlarge.style.display = "none";
@@ -95,9 +99,9 @@ class App extends React.Component {
           <section>
 
             {/* Enlarged image on click */}
-            <span className="enlargedImageContainer">
-              <span className="close">&times;</span>
-              <img className="imageToEnlarge" src={this.state.enlargedImgViewURL}></img>
+            <span className="RVWSenlargedImageContainer">
+              <span className="RVWSclose">&times;</span>
+              <img className="RVWSimageToEnlarge" src={this.state.enlargedImgViewURL}></img>
             </span>
 
             {/* Review Popup Form */}
@@ -109,23 +113,23 @@ class App extends React.Component {
               ''
             }
 
-            <div className="bottomBorder" style={{ paddingBottom: '30px' }}>
-                <div className = "bottomBorder">
-                  <h2 className = "reviewsHeader">{this.state.componentHeader}</h2>
-                </div>
-                <ReviewsSummary 
-                  toggleReviewForm = {this.toggleReviewForm}
-                  reviews = {this.state.reviews}
-                  rating = {this.state.avgReviews}
-                  totalReviews = {this.state.reviews ? this.state.reviews.length : 0}
-                  ratingsBreakdown = {this.state.ratingsBreakdown}
-                  imageOnClick={this.listenForImageClickToEnlarge}
-                />
+            <div className="RVWSbottomBorder" style={{ paddingBottom: '30px' }}>
+              <div className= "RVWSbottomBorder">
+                <h2 className= "RVWSreviewsHeader">{this.state.componentHeader}</h2>
+              </div>
+              <ReviewsSummary 
+                toggleReviewForm = {this.toggleReviewForm}
+                reviews = {this.state.reviews}
+                rating = {this.state.avgReviews}
+                totalReviews = {this.state.reviews ? this.state.reviews.length : 0}
+                ratingsBreakdown = {this.state.ratingsBreakdown}
+                imageOnClick={this.listenForImageClickToEnlarge}
+              />
             </div>
-                <IndividualReview 
-                  reviews = {this.state.reviews}
-                  imageOnClick = {this.listenForImageClickToEnlarge}
-                />
+            <IndividualReview 
+              reviews = {this.state.reviews}
+              imageOnClick = {this.listenForImageClickToEnlarge}
+            />
           </section>
         )
     }
