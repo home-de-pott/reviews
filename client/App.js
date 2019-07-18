@@ -52,7 +52,7 @@ class App extends React.Component {
     }
 
     getReviews(id) {
-      axios.get(`http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/reviews/${id}`)
+      axios.get(`http://homedepottreviews.us-east-2.elasticbeanstalk.com/reviews/${id}`)
         .then((reviews) => {
           this.setState({ reviews: reviews.data });
         })

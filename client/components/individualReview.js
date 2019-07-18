@@ -41,7 +41,7 @@ const IndividualReview = function({reviews, imageOnClick}) {
                   imageOnClick = {imageOnClick}
                 />
                 <div className= "RVWSrankHelpful">
-                  Was this review helpful? <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsUp.png'></img> {review.helpfulCount} <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsDown.png'></img> {review.notHelpfulCount}
+                  Was this review helpful? <img src='http://homedepottreviews.us-east-2.elasticbeanstalk.com/iconsAndBadges/thumbsUp.png'></img> {review.helpfulCount} <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsDown.png'></img> {review.notHelpfulCount}
                 </div>
               </section>
             </section>

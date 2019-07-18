@@ -18,7 +18,7 @@ const VerifiedOrRecommended = ({review}) => {
             {review.verifiedPurchase
                 ?
                 <div>
-                    <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/checkbox.png'>
+                    <img src='http://homedepottreviews.us-east-2.elasticbeanstalk.com/iconsAndBadges/checkbox.png'>
                     </img> Verified Purchase
                             </div>
                 :
