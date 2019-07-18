@@ -22,10 +22,6 @@ app.get("/reviews/:id", (req, res) => {
 });
 
 app.post("/writeReview/:id", (req, res) => {
-    // find way to get product id in request
-    // query db for review by id in db file and add reviewdata
-    // to review array
-    // 
     const months = {
         Jan: "January",
         Feb: "February",
@@ -56,8 +52,9 @@ app.post("/writeReview/:id", (req, res) => {
         notHelpfulCount: 0,
         images: []
     }
-    // db.addReview(reviewData, )
-    res.send(req.params.id);
+    db.addReview(reviewData, req.params.id, () => {
+     res.redirect("/products/" + req.params.id);
+    });
 });
 
 app.listen(port, host, () => {

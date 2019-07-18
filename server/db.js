@@ -1,7 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const password = process.env.password;
-console.log(password);
 mongoose.connect(`mongodb+srv://hmhendrycks:${password}@projectdb-devxk.mongodb.net/test?retryWrites=true&w=majority`, { useNewUrlParser: true }); 
 const db = mongoose.connection;
 
@@ -19,10 +18,12 @@ const getAll = (cb) => {
         .then((data) => cb(data))
 }
 
-const addReview = (reviewData, cb) => {
-    const newReview = new product(reviewData);
-    product.save(newReview)
-        .then((result) => cb(result));
+const addReview = (reviewData, id, cb) => {
+    product.findOneAndUpdate(
+        { "id": id },
+        { $push: { "reviews": reviewData }}
+    )
+    .then(cb());
 }
 
 // allItems is from oldData.js for initial seeding

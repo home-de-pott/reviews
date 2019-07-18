@@ -1,6 +1,9 @@
 import React from 'react';
 import Stars from './stars.js';
 
+// onclick func passed down which makes an axios post
+// request then updates average
+
 const ReviewFormPopup = (props) => {
 	return (
 		<div className='RVWSpopup'>
@@ -20,7 +23,7 @@ const ReviewFormPopup = (props) => {
 							type = "text" 
 							placeholder = "Please do not use your own name, spaces, or special characters"
 							style = {{width: '100%'}}
-							name = "nickname"
+							name = "username"
 							required
 						></input>
 						<p style={{ fontSize: "1.25em" }}>Review Title</p>
@@ -28,7 +31,7 @@ const ReviewFormPopup = (props) => {
 							type="text"
 							placeholder="Example: Easy to use, good battery life"
 							style={{ width: '100%' }}
-							name="header"
+							name = "header"
 							required
 						></input>
 						<p style = {{fontSize: "1.25em"}}>Product Review</p>
