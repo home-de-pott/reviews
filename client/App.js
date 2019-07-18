@@ -9,8 +9,6 @@ import ReviewFormPopup from './components/formPopup';
 // allow user to post reviews
 // allow user to vote usefulness of reviews
 // conditionally render images div and reviews, "no reviews, be the first"
-// check why certain images don't display
-// hide/change pswd
 
 class App extends React.Component {
     constructor(props) {
@@ -25,6 +23,7 @@ class App extends React.Component {
         }
         this.listenForImageClickToEnlarge = this.listenForImageClickToEnlarge.bind(this);
         this.toggleReviewForm = this.toggleReviewForm.bind(this);
+        this.submitReviewForm = this.submitReviewForm.bind(this);
       }
 
     updateAvgRating() {
@@ -58,7 +57,6 @@ class App extends React.Component {
         })
         .then(() => {
           this.updateAvgRating();
-          this.setUpEventListeners();
         })
         .catch((err) => {
           console.log(err);
@@ -74,19 +72,13 @@ class App extends React.Component {
       this.getReviews(id);
     }
 
-    setUpEventListeners() {
-      // future window listener for id
-    }
-
     listenForImageClickToEnlarge(event) {
       const enlarge = document.getElementsByClassName("RVWSenlargedImageContainer")[0];
       const img = document.getElementById(event.target.getAttribute('id'));
       this.setState({ enlargedImgViewURL: img.getAttribute('src')});
       enlarge.style.display = "block";
-     
       // Get the <span> element that closes the enlarged image
       const close = document.getElementsByClassName("RVWSclose")[0];
-
       // When the user clicks on <span> (x), close the modal
       close.onclick = function () {
         enlarge.style.display = "none";
@@ -96,6 +88,14 @@ class App extends React.Component {
     toggleReviewForm() {
       const showForm = this.state.showReviewForm ? false : true;
       this.setState({showReviewForm: showForm});
+    }
+
+    submitReviewForm(id, newReview) {
+      axios.post(`/writeReview/${id}`, newReview)
+      .then(() => this.getReviews(id))
+      .catch((err) => {
+        console.log(err);
+      });
     }
 
     render() {
@@ -112,7 +112,10 @@ class App extends React.Component {
             {
               this.state.showReviewForm
               ?
-              <ReviewFormPopup toggleReviewForm = {this.toggleReviewForm}/>
+              <ReviewFormPopup 
+                toggleReviewForm = {this.toggleReviewForm}
+                submitReviewForm = {this.submitReviewForm}
+              />
               :
               ''
             }

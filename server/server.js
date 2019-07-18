@@ -41,13 +41,13 @@ app.post("/writeReview/:id", (req, res) => {
     const month = months[date.toDateString().split(" ")[1]];
     const day = date.getDate();
     const reviewData = {
-        userName: req.body.username,
+        userName: req.body.userName || "HomeDepotCustomer",
         date: month + " " + day + ", " + year,
-        header: req.body.header,
-        review: req.body.review,
-        rating: Number.parseInt(req.body.rating),
+        header: req.body.header || req.body.rating + " Rating",
+        review: req.body.review || "",
+        rating: req.body.rating || 5,
         verifiedPurchase: false,
-        recommend: req.body.chooseone === "true",
+        recommend: req.body.recommend === "true",
         helpfulCount: 0,
         notHelpfulCount: 0,
         images: []

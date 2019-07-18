@@ -1,10 +1,16 @@
 import React from 'react';
-import Stars from './stars.js';
+import ReactStars from 'react-stars'
 
 // onclick func passed down which makes an axios post
 // request then updates average
 
 const ReviewFormPopup = (props) => {
+	let newReview = {
+		userName: "", review: "", recommend: true, header: "", rating: 5
+	};
+	const reviewFormChange = (field, newVal) => {
+		newReview[field] = newVal;
+	}
 	return (
 		<div className='RVWSpopup'>
 			<div className='RVWSpopup_inner'>
@@ -12,40 +18,47 @@ const ReviewFormPopup = (props) => {
 				  <h1 style = {{fontWeight: 'initial', margin: '0'}}>Write A Review</h1>
 				</div>
 				<div className="RVWSbottomBorder" style={{ padding: '20px' }}>	
-				  <Stars review = {5} />
+					<ReactStars
+						onChange={(newVal) => reviewFormChange("rating", newVal)}
+						count={5}
+						size={24}
+						color2={'#f96302'} 
+					/>
 					<form action={`/writeReview/${window.location.pathname.slice(10)}`} method = "post">
-						<input type = "number" name = "rating"></input>
 						<div style = {{fontSize: "1.1em"}}>
-							Would you recommend this product? <input type="radio" name="chooseone" value="true"></input><label style={{ color: "#a09e9e", fontSize: "0.9em" }}> Yes</label> <input type="radio" name="chooseone" value="false"></input><label style={{ color: "#a09e9e", fontSize: "0.9em"}}> No</label>
+							Would you recommend this product? 
+							<input onChange={(newVal) => reviewFormChange("recommend", newVal.target.value)} type="radio" name="chooseone" value="true"></input><label style={{ color: "#a09e9e", fontSize: "0.9em" }}> Yes </label> 
+							<input onChange={(newVal) => reviewFormChange("recommend", newVal.target.value)} type="radio" name="chooseone" value="false"></input><label style={{ color: "#a09e9e", fontSize: "0.9em"}}> No</label>
 						</div>
-						<p style = {{fontSize: "1.25em"}}>Nickname</p>
+						<p style = {{fontSize: "1.25em"}}>
+						    Nickname
+						</p>
 						<input 
+							onChange={(newVal) => reviewFormChange("userName", newVal.target.value)}
 							type = "text" 
 							placeholder = "Please do not use your own name, spaces, or special characters"
 							style = {{width: '100%'}}
-							name = "username"
-							required
 						></input>
-						<p style={{ fontSize: "1.25em" }}>Review Title</p>
+						<p style={{ fontSize: "1.25em" }}>
+						    Review Title
+						</p>
 						<input
+							onChange={(newVal) => reviewFormChange("header", newVal.target.value)}
 							type="text"
 							placeholder="Example: Easy to use, good battery life"
 							style={{ width: '100%' }}
-							name = "header"
-							required
 						></input>
-						<p style = {{fontSize: "1.25em"}}>Product Review</p>
+						<p style = {{fontSize: "1.25em"}}>
+						    Product Review
+						</p>
 						<textarea 
+							onChange={(newVal) => reviewFormChange("review", newVal.target.value)}
 							placeholder = "Example: This drill was easy to assemble, lightweight, and quiet. I'm really pleased with the battery life, and I was able to drill for over an hour of heavy use without having to charge it."
-						  style = {{
+						    style = {{
 								width: '100%',
 								resize: 'none'
 							}}
-							name = "review"
-							required
 						></textarea>
-						<input type = "submit"></input>
-						<button onClick={props.toggleReviewForm}>Cancel</button>
 					</form>
 					<section 
 					  style={{ 
@@ -81,6 +94,14 @@ const ReviewFormPopup = (props) => {
 						</ul>
 					</section>
 				</div>
+				<button onClick={() => {
+					const id = window.location.pathname.slice(10);
+					props.submitReviewForm(id, newReview);
+					props.toggleReviewForm();
+				}}>
+				  Submit
+				</button>
+				<button onClick={props.toggleReviewForm}>Cancel</button>
 			</div>
 		</div>
 	);

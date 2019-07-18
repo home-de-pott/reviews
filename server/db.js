@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const password = process.env.password;
 mongoose.connect(`mongodb+srv://hmhendrycks:${password}@projectdb-devxk.mongodb.net/test?retryWrites=true&w=majority`, { useNewUrlParser: true }); 
 const db = mongoose.connection;
+mongoose.set('useFindAndModify', false);
 
 db.on('error', console.error.bind(console, 'connection error:'));
 
