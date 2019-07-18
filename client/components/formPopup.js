@@ -78,8 +78,6 @@ const ReviewFormPopup = (props) => {
 						</ul>
 					</section>
 				</div>
-				{/* <button onClick={props.toggleReviewForm}>Submit</button>
-				<button onClick={props.toggleReviewForm}>Cancel</button> */}
 			</div>
 		</div>
 	);

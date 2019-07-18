@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://hmhendrycks:reviews@projectdb-devxk.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }); 
+const password = process.env.password
+mongoose.connect(`mongodb+srv://hmhendrycks:${password}@projectdb-devxk.mongodb.net/test?retryWrites=true&w=majority`, { useNewUrlParser: true }); 
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
