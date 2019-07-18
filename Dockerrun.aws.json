@@ -1,0 +1,13 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "hhendrycks/homedepott",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "3000"
+        }
+    ],
+    "Logging": "/var/log/nginx"
+}

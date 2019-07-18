@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://hmhendrycks:Kgb9yum*@projectdb-devxk.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }); 
+mongoose.connect('mongodb+srv://hmhendrycks:reviews@projectdb-devxk.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }); 
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -12,9 +12,15 @@ const ProductReviewSchema = new mongoose.Schema({
 
 const product = mongoose.model('Product', ProductReviewSchema);
 
-let getAll = (cb) => {
+const getAll = (cb) => {
     product.find()
         .then((data) => cb(data))
+}
+
+const addReview = (reviewData, cb) => {
+    const newReview = new product(reviewData);
+    product.save(newReview)
+        .then((result) => cb(result));
 }
 
 // allItems is from oldData.js for initial seeding
@@ -28,4 +34,4 @@ let getAll = (cb) => {
 //     });
 // }.bind(this));
 
-module.exports = { getAll };
+module.exports = { getAll, addReview };

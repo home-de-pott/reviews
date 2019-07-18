@@ -1,4 +1,5 @@
 import React from 'react';
+import Stars from './stars.js';
 
 const ReviewFormPopup = (props) => {
 	return (
@@ -7,29 +8,41 @@ const ReviewFormPopup = (props) => {
 				<div className= "RVWSbottomBorder" style = {{margin: '20px'}}>
 				  <h1 style = {{fontWeight: 'initial', margin: '0'}}>Write A Review</h1>
 				</div>
-				<div>	
-					<form style = {{padding: '20px'}}>
-						<input type = "number"></input>
-						<div>
-							Would you recommend this product?
-							<input type="radio" name="chooseone" value="true"></input><label for="true"> Yes</label> <input type="radio" name="chooseone" value="false"></input><label for="false"> No</label>
+				<div className="RVWSbottomBorder" style={{ padding: '20px' }}>	
+				  <Stars review = {5} />
+					<form action={`/writeReview/${window.location.pathname.slice(10)}`} method = "post">
+						<input type = "number" name = "rating"></input>
+						<div style = {{fontSize: "1.1em"}}>
+							Would you recommend this product? <input type="radio" name="chooseone" value="true"></input><label style={{ color: "#a09e9e", fontSize: "0.9em" }}> Yes</label> <input type="radio" name="chooseone" value="false"></input><label style={{ color: "#a09e9e", fontSize: "0.9em"}}> No</label>
 						</div>
-						<p>Nickname</p>
+						<p style = {{fontSize: "1.25em"}}>Nickname</p>
 						<input 
 							type = "text" 
 							placeholder = "Please do not use your own name, spaces, or special characters"
 							style = {{width: '100%'}}
+							name = "nickname"
 							required
 						></input>
-						<p>Product Review</p>
+						<p style={{ fontSize: "1.25em" }}>Review Title</p>
+						<input
+							type="text"
+							placeholder="Example: Easy to use, good battery life"
+							style={{ width: '100%' }}
+							name="header"
+							required
+						></input>
+						<p style = {{fontSize: "1.25em"}}>Product Review</p>
 						<textarea 
 							placeholder = "Example: This drill was easy to assemble, lightweight, and quiet. I'm really pleased with the battery life, and I was able to drill for over an hour of heavy use without having to charge it."
 						  style = {{
 								width: '100%',
 								resize: 'none'
 							}}
+							name = "review"
 							required
 						></textarea>
+						<input type = "submit"></input>
+						<button onClick={props.toggleReviewForm}>Cancel</button>
 					</form>
 					<section 
 					  style={{ 
@@ -65,8 +78,8 @@ const ReviewFormPopup = (props) => {
 						</ul>
 					</section>
 				</div>
-				<button>Submit</button>
-				<button onClick={props.toggleReviewForm}>Cancel</button>
+				{/* <button onClick={props.toggleReviewForm}>Submit</button>
+				<button onClick={props.toggleReviewForm}>Cancel</button> */}
 			</div>
 		</div>
 	);

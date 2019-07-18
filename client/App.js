@@ -8,6 +8,9 @@ import ReviewFormPopup from './components/formPopup';
 // break up updateAverageRating
 // allow user to post reviews
 // allow user to vote usefulness of reviews
+// conditionally render images div and reviews, "no reviews, be the first"
+// check why certain images don't display
+// hide/change pswd
 
 class App extends React.Component {
     constructor(props) {
@@ -49,7 +52,7 @@ class App extends React.Component {
     }
 
     getReviews(id) {
-      axios.get(`http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/reviews/${id}`)
+      axios.get(`http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/reviews/${id}`)
         .then((reviews) => {
           this.setState({ reviews: reviews.data });
         })

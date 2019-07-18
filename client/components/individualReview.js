@@ -1,8 +1,6 @@
 import React from 'react';
 import RatingDisplayBlock from './ratingdisplayblock';
 import Stars from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/stars.js';
-// import thumbsDown from 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/dist/iconsAndBadges/thumbsDown.png';
-// import thumbsUp from 'http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/dist/iconsAndBadges/thumbsUp.png';
 import VerifiedOrRecommended from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/verifiedOrRecommended.js';
 import ReviewImages from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/reviewImages.js'
 
@@ -43,7 +41,7 @@ const IndividualReview = function({reviews, imageOnClick}) {
                   imageOnClick = {imageOnClick}
                 />
                 <div className= "RVWSrankHelpful">
-                  Was this review helpful? <img src='http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsUp.png'></img> {review.helpfulCount} <img src='http://ec2-18-219-134-212.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsDown.png'></img> {review.notHelpfulCount}
+                  Was this review helpful? <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsUp.png'></img> {review.helpfulCount} <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsDown.png'></img> {review.notHelpfulCount}
                 </div>
               </section>
             </section>

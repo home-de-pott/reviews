@@ -1,12 +1,4 @@
 import React from 'react';
-// get db info into graph
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-
-function compareNumbers(a, b) {
-    return a - b;
-}
 
 class Graph extends React.Component {
     constructor(props) {
@@ -55,7 +47,6 @@ class Charts extends React.Component {
                         sum = serie.reduce(function (carry, current) {
                             return carry + current;
                         }, 0);
-                        sortedSerie.sort(compareNumbers);
 
                         return (
                             <div className={'RVWSCharts--serie ' + (self.props.grouping)}
