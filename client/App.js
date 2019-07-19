@@ -91,7 +91,7 @@ class App extends React.Component {
     }
 
     submitReviewForm(id, newReview) {
-      axios.post(`/writeReview/${id}`, newReview)
+      axios.post(`http://homedepottreviews.us-east-2.elasticbeanstalk.com/writeReview/${id}`, newReview)
       .then(() => this.getReviews(id))
       .catch((err) => {
         console.log(err);

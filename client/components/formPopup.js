@@ -23,6 +23,7 @@ const ReviewFormPopup = (props) => {
 						count={5}
 						size={24}
 						value={5}
+						half={false}
 						color2={'#f96302'} 
 						style = {{paddingBottom: "5px"}}
 					/>
