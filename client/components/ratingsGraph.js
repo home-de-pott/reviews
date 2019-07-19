@@ -69,7 +69,6 @@ class Charts extends React.Component {
                                     if (layered && !self.props.horizontal) {
                                         style['right'] = ((sortedSerie.indexOf(item) / (serie.length + 1)) * 100) + '%';
                                     }
-
                                     return (
                                         <section key={"chartBar" + itemIndex.toString()}>
                                                 <span style={{ color: '#cccccc' }}>({item})</span>

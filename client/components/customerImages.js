@@ -4,13 +4,32 @@ import Arrow from '/Users/hh/Documents/Coding/hackReactor/reviews/client/compone
 
 const CustomerImages = (props) => {
 	var settings = {
+		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		adaptiveHeight: true,
 		prevArrow: <Arrow />,
-		nextArrow: <Arrow />
+		nextArrow: <Arrow />,
+		responsive: [
+			{
+				breakpoint: 1111,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 850,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true
+				}
+			}
+		]
 	}
 
 
@@ -25,7 +44,7 @@ const CustomerImages = (props) => {
 	}
 
 	return (
-		<div id= "RVWSCarousel">
+		<div id="RVWSCarousel" style={{ marginTop: '-15px'}}>
 			<Slider {...settings}>
 					{
 						props.reviews 

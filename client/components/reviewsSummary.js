@@ -40,7 +40,9 @@ const ReviewsSummary = function(props) {
           display: 'block',
           marginBlockStart: '1.33em',
           marginInlineStart: '0px',
-          marginInlineEnd: '0px'}}>
+          marginInlineEnd: '0px',
+          fontSize: '1.1rem'
+          }}>
             Customer Images
           </h4>
           <CustomerImages 

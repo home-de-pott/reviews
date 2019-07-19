@@ -27,7 +27,7 @@ const IndividualReview = function({reviews, imageOnClick}) {
                   {/* rating stars, average, and verified or recommended checkmarks */}
                   <div className= "RVWSratingStats">
                     <RatingDisplayBlock rating = {review.rating}/>
-                    <div>
+                    <div className = "RVWstarsAndCheckbox">
                       <Stars rating = {review.rating}/>
                       <VerifiedOrRecommended review = {review}/>
                     </div>

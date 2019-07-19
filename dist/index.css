@@ -2,10 +2,16 @@ body {
     font-family: helvetica-neue-light,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #333;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 #reviews {
     padding: 20px;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 /* Header Styling */
@@ -72,6 +78,19 @@ body {
 	padding-top: 15px;
 }
 
+@media only screen and (max-width: 850px) {
+    .RVWScustomerSummary {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    .RVWSstarsAndGraph {
+      border-right: none;
+    }
+    .RVWSratingStats > .RVWstarsAndCheckbox {
+      width: 100%;
+    }
+} 
+
 /*
 ** GRAPH STYLING **
 */
@@ -81,6 +100,7 @@ body {
 	display: flex;
 	align-items: flex-end;
 }
+
 .RVWSCharts.horizontal {
 	display: block;
 	float: right;
@@ -268,16 +288,24 @@ div.RVWSstarsList > ul > li {
 	vertical-align: text-bottom;
 }
 
+@media only screen and (max-width: 850px){
+  .RVWSuserName.RVWSheader,
+  .RVWSheader {
+    width: 100%;
+    float: none;
+  }
+}
+
 /* Button */
 
 .RVWScustomerSummary > div > div > button {
 	width: 315px;
-    background-color: #f96305;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 5px 10px;
+  background-color: #f96305;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 5px 10px;
 	box-shadow: 0 3px 0 #C14C00;
 	border: none;
 }
@@ -296,14 +324,14 @@ div.RVWSstarsList > ul > li {
 .slick-next.carouselArrow:before, .slick-prev.carouselArrow:before {
 	color: #f96302;
 	font-size: 20px;
-    line-height: 1;
+  line-height: 1;
 	opacity: .75;
 	left: -10px;
-    z-index: 1;
+  z-index: 1;
 }
 
 .slick-prev.carouselArrow, .slick-next.carouselArrow {
-  top: 60%;
+  top: 70%;
   background-color: transparent;
   z-index: 1;
 }
@@ -320,10 +348,10 @@ div.RVWSstarsList > ul > li {
 #RVWSCarousel .slick-slider.slick-initialized {
 	width: 50%;
 	font-family: helvetica-neue-light, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
-    margin: auto;
-    color: #333;
-    box-sizing: border-box;
+  sans-serif;
+  margin: auto;
+  color: #333;
+  box-sizing: border-box;
 	position: relative;
 	padding-top: 18px;
 }
@@ -397,17 +425,16 @@ div.RVWSstarsList > ul > li {
   background: white;
 }
 
-.RVWSpopup_inner > button {
+.RVWSpopup_inner > div > button {
 	margin: 15px;
-	float: right;
 	width: 250px;
-    background-color: #f96305;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 5px 10px;
-	box-shadow: 0 3px 0 #C14C00;
+  background-color: #f96305;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 5px 10px;
+  box-shadow: 0 3px 0 #C14C00;
 	border: none;
 }
 
@@ -418,13 +445,30 @@ textarea:focus, input:focus{
   border-color: #ccc;
 }
 
-input, textarea {
-	font-size: 16px;
+input, .RVWSreviewTextArea {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+textarea.RVWSreviewTextArea {
+  width: 66%;
+  height: 100%;
+  box-sizing: border-box;
+  height: 269px;
+  float: left;
+}
+
+label {
+  padding: 5px;
+  color: #a09e9e;
+  font-size: 0.9em;
 }
 
 input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 15px;
     top: -2px;
     left: -1px;
@@ -444,6 +488,49 @@ p {
     margin-inline-end: 0px;
 }
 
-/* .RVWSpopup_inner > div > .RVWSstars {
-	font-size: 
-} */
+.RVWSguidelines {
+    float: right; 
+    width: 33%; 
+    background-color: rgb(235, 235, 235); 
+    color: #424242;
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1216px){
+  textarea.RVWSreviewTextArea { height: 287px; }
+}
+
+@media only screen and (max-width: 1162px){
+  textarea.RVWSreviewTextArea { height: 305px; }
+}
+
+@media only screen and (max-width: 1095px){
+  textarea.RVWSreviewTextArea { height: 323px; }
+}
+
+@media only screen and (max-width: 1022px){
+  textarea.RVWSreviewTextArea { height: 341px;}
+}
+
+@media only screen and (max-width: 1016px){
+  textarea.RVWSreviewTextArea { height: 359px; }
+}
+
+@media only screen and (max-width: 980px){
+  textarea.RVWSreviewTextArea { height: 377px; }
+}
+
+@media only screen and (max-width: 903px){
+  textarea.RVWSreviewTextArea { width: 100%; }
+  .RVWSguidelines { width: 100%; }
+}
+
+@media only screen and (max-width: 650px){
+  form > div > span {
+    width: 100%;
+    float: left;
+  }
+}

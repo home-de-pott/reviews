@@ -17,19 +17,24 @@ const ReviewFormPopup = (props) => {
 				<div className= "RVWSbottomBorder" style = {{margin: '20px'}}>
 				  <h1 style = {{fontWeight: 'initial', margin: '0'}}>Write A Review</h1>
 				</div>
-				<div className="RVWSbottomBorder" style={{ padding: '20px' }}>	
+				<div className="RVWSbottomBorder" style={{ padding: '0px 20px 20px 20px' }}>	
 					<ReactStars
 						onChange={(newVal) => reviewFormChange("rating", newVal)}
 						count={5}
 						size={24}
 						value={5}
 						color2={'#f96302'} 
+						style = {{paddingBottom: "5px"}}
 					/>
-					<form action={`/writeReview/${window.location.pathname.slice(10)}`} method = "post">
-						<div style = {{fontSize: "1.1em"}}>
-							Would you recommend this product? 
-							<input onChange={(newVal) => reviewFormChange("recommend", newVal.target.value)} type="radio" name="chooseone" value="true"></input><label style={{ color: "#a09e9e", fontSize: "0.9em" }}> Yes </label> 
-							<input onChange={(newVal) => reviewFormChange("recommend", newVal.target.value)} type="radio" name="chooseone" value="false"></input><label style={{ color: "#a09e9e", fontSize: "0.9em"}}> No</label>
+					<form>
+						<div style = {{fontSize: "1.1em", paddingTop: "20px"}}>
+							Would you recommend this product?
+							<span style={{ padding: '5px' }}> 
+								<input onChange={(newVal) => reviewFormChange("recommend", newVal.target.value)} type="radio" name="chooseone" value="true"></input>
+									<label> Yes </label> 
+								<input onChange={(newVal) => reviewFormChange("recommend", newVal.target.value)} type="radio" name="chooseone" value="false"></input>
+									<label> No</label>
+							</span>
 						</div>
 						<p style = {{fontSize: "1.25em"}}>
 						    Nickname
@@ -52,25 +57,15 @@ const ReviewFormPopup = (props) => {
 						<p style = {{fontSize: "1.25em"}}>
 						    Product Review
 						</p>
-						<textarea 
-							onChange={(newVal) => reviewFormChange("review", newVal.target.value)}
-							placeholder = "Example: This drill was easy to assemble, lightweight, and quiet. I'm really pleased with the battery life, and I was able to drill for over an hour of heavy use without having to charge it."
-						    style = {{
-								width: '100%',
-								resize: 'none'
-							}}
-						></textarea>
+						<textarea
+								className= "RVWSreviewTextArea"
+								onChange={(newVal) => reviewFormChange("review", newVal.target.value)}
+								placeholder = "Example: This drill was easy to assemble, lightweight, and quiet. I'm really pleased with the battery life, and I was able to drill for over an hour of heavy use without having to charge it."
+								style = {{ resize: 'none'}}
+							></textarea>
+						
 					</form>
-					<section 
-					  style={{ 
-							float: 'right', 
-							width: '33%', 
-							backgroundColor: 'rgb(235, 235, 235)', 
-							color: '#424242',
-							fontSize: '12px',
-							lineHeight: '1.5em',
-							padding: '15px'
-					}}>
+					<section className = "RVWSguidelines">
 						<h5
 						  style = {{
 								display: 'block',
@@ -95,14 +90,18 @@ const ReviewFormPopup = (props) => {
 						</ul>
 					</section>
 				</div>
-				<button onClick={() => {
-					const id = window.location.pathname.slice(10);
-					props.submitReviewForm(id, newReview);
-					props.toggleReviewForm();
-				}}>
-				  Submit
-				</button>
-				<button onClick={props.toggleReviewForm}>Cancel</button>
+				<div style = {{ textAlign: "center"}}>
+					<button onClick={() => {
+						const id = window.location.pathname.slice(10);
+						props.submitReviewForm(id, newReview);
+						props.toggleReviewForm();
+					}}>
+					    Submit
+					</button>
+					<button onClick={props.toggleReviewForm}>
+					    Cancel
+					</button>
+				</div>
 			</div>
 		</div>
 	);
