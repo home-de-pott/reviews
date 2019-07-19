@@ -54,14 +54,14 @@ body {
 }
 
 .RVWSratingSummary {
-    height: 130px;
+    height: 155px;
     width: 100%;
     text-align: center;
     color: #FC7900;
     font-size: 2em;
     font-weight: bolder;
 	float: left;
-	padding-top: 10px;
+	padding-top: 20px;
     box-sizing: border-box;
 }
 
@@ -84,7 +84,8 @@ body {
 .RVWSCharts.horizontal {
 	display: block;
 	float: right;
-	width: 80%;
+  width: 80%;
+  padding-top: 5px;
 }
 
 .RVWSCharts.horizontal .RVWSCharts--serie {
@@ -302,7 +303,9 @@ div.RVWSstarsList > ul > li {
 }
 
 .slick-prev.carouselArrow, .slick-next.carouselArrow {
-	top: 60%;
+  top: 60%;
+  background-color: transparent;
+  z-index: 1;
 }
 
 .RVWScustomerReviewImages {

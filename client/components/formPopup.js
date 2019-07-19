@@ -22,6 +22,7 @@ const ReviewFormPopup = (props) => {
 						onChange={(newVal) => reviewFormChange("rating", newVal)}
 						count={5}
 						size={24}
+						value={5}
 						color2={'#f96302'} 
 					/>
 					<form action={`/writeReview/${window.location.pathname.slice(10)}`} method = "post">

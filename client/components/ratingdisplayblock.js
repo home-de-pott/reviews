@@ -15,7 +15,7 @@ const RatingDisplayBlock = (props) => {
             <div style={{
                 fontSize: '16px',
                 color: '#ffffff',
-                paddingTop: '16px',
+                paddingTop: '7px',
                 fontWeight: 'lighter'
             }}>out of 5</div>
         </div>
