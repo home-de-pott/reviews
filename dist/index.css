@@ -10,7 +10,8 @@ body {
     padding: 20px;
 }
 
-img:hover {
+img:hover, 
+button:hover {
   cursor: pointer;
 }
 
@@ -271,7 +272,11 @@ div.RVWSstarsList > ul > li {
 
 .RVWSconditionalChecks > div > img {
 	width: 20px; 
-	vertical-align: text-bottom;
+  vertical-align: text-bottom;
+}
+
+.RVWSconditionalChecks > div > img:hover {
+  cursor: default;
 }
 
 .RVWSrankHelpful {
@@ -488,7 +493,11 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-	}
+}
+  
+input[type='radio']:hover {
+  cursor: pointer;
+}
 	
 p {
 	display: block;

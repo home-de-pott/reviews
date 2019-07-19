@@ -11,7 +11,7 @@ const VerifiedOrRecommended = ({review}) => {
                 <div>
                     <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/checkbox.png'>
                     </img> Recommended Product
-                            </div>
+                </div>
                 :
                 ''
             }
