@@ -5,19 +5,21 @@ const RatingDisplayBlock = (props) => {
     return (
         <div className="RVWSratingSummary"
             style={{
-                backgroundImage: 'url(' + 'http://homedepottreviews.us-east-2.elasticbeanstalk.com/iconsAndBadges/avgRatingBackground.gif' + ')',
+                backgroundImage: 'url(http://homedepottreviews.us-east-2.elasticbeanstalk.com/iconsAndBadges/avgRatingBackground.gif)',
                 backgroundSize: '115px 125px',
                 backgroundPosition: 'center center',
                 backgroundRepeat: 'no-repeat'
             }}
         >
-				{rating}
+		    {rating}
             <div style={{
                 fontSize: '16px',
                 color: '#ffffff',
                 paddingTop: '7px',
                 fontWeight: 'lighter'
-            }}>out of 5</div>
+            }}>
+                out of 5
+            </div>
         </div>
     )
 }

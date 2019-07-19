@@ -11,6 +11,9 @@ class Graph extends React.Component {
     render() {
         const ratings = Object.values(this.props.ratingsBreakdown);
         ratings.reverse();
+        // Not sure what most of this does,
+        // I didn't dig into it too long to remove 
+        // all useless code if it's there
         return (
             <section>
                 <Charts

@@ -11,6 +11,7 @@ const ReviewsSummary = function(props) {
 
           <RatingDisplayBlock rating = {props.rating}/>
 
+          {/* Displays stars, content in CSS */}
           <div className= "RVWSstarsContainer">
             <span className="RVWSstars"><span></span></span>
           </div>
@@ -34,17 +35,6 @@ const ReviewsSummary = function(props) {
             <button onClick={() => props.toggleReviewForm()}>Write a Review</button>
           </div>
 
-          <h4 style = {{
-            color: '#212529',
-          marginBottom: '0',
-          display: 'block',
-          marginBlockStart: '1.33em',
-          marginInlineStart: '0px',
-          marginInlineEnd: '0px',
-          fontSize: '1.1rem'
-          }}>
-            Customer Images
-          </h4>
           <CustomerImages 
             reviews = {props.reviews}
             imageOnClick={props.imageOnClick}

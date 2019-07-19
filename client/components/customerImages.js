@@ -4,7 +4,7 @@ import Arrow from '/Users/hh/Documents/Coding/hackReactor/reviews/client/compone
 
 const CustomerImages = (props) => {
 	var settings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
@@ -44,29 +44,40 @@ const CustomerImages = (props) => {
 	}
 
 	return (
-		<div id="RVWSCarousel" style={{ marginTop: '-15px'}}>
-			<Slider {...settings}>
-					{
-						props.reviews 
-						?
-						images.map((imageURL, index) => {
-							return (
-								<span className= "RVWSreviewImageContainer" key = {imageURL}>
-									<img 
-										className="RVWScustomerReviewImages" 
-									  src={imageURL} 
-									  id={imageURL}
-									  onClick={() => props.imageOnClick(event)}
-									>
-									</img>
-								</span>
-							)
-						})
-						:
-						''
-					}
-			</Slider>
-		</div>
+		<>
+			{
+				images.length
+				?
+				<>
+					<h4 className = "RVWScarouselHeader">
+					Customer Images
+					</h4>
+
+					<div id="RVWSCarousel" style={{ marginTop: '-15px'}}>
+					
+						<Slider {...settings}>
+								{
+									images.map((imageURL, index) => {
+										return (
+											<span className= "RVWSreviewImageContainer" key = {imageURL}>
+												<img 
+													className="RVWScustomerReviewImages" 
+												src={imageURL} 
+												id={imageURL}
+												onClick={() => props.imageOnClick(event)}
+												>
+												</img>
+											</span>
+										)
+									})
+								}
+						</Slider>
+					</div>
+				</>
+				:
+				''
+			}
+		</>
 	);
 }
 

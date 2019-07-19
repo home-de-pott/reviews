@@ -336,6 +336,16 @@ div.RVWSstarsList > ul > li {
   z-index: 1;
 }
 
+.RVWScarouselHeader {
+  color: #212529;
+  margin-bottom: 0;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.1rem;
+}
+
 .RVWScustomerReviewImages {
   display: block;
   width: 100%;
@@ -497,6 +507,17 @@ p {
     line-height: 1.5em;
     padding: 15px;
     box-sizing: border-box;
+}
+
+.RVWSguidelines > h5 {
+  display: block;
+  font-size: 1em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1216px){
