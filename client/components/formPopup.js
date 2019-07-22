@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactStars from 'react-stars';
 import FormInner from './formInner.js';
-import sanitize from 'sanitize-html';
+
 
 const ReviewFormPopup = (props) => {
 	let newReview = {
 		userName: "", review: "", recommend: true, header: "", rating: 5
 	};
 	const reviewFormChange = (field, newVal) => {
-		newReview[field] = sanitize(newVal);
+		newReview[field] = newVal;
 	}
 
 	return (

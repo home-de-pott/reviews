@@ -6,6 +6,7 @@ const db = require('./db.js');
 const cors = require('cors');
 const port = PORT || 3000;
 const host = HOST || '0.0.0.0';
+const sanitize = require('sanitize-html');
 
 app.use(cors());
 app.use('/', express.static(__dirname + '/../dist'));
@@ -40,11 +41,13 @@ app.post("/writeReview/:id", (req, res) => {
     const year = date.getFullYear();
     const month = months[date.toDateString().split(" ")[1]];
     const day = date.getDate();
+    console.log("request made");
+    console.log(sanitize(req.body.userName));
     const reviewData = {
-        userName: req.body.userName || "HomeDepotCustomer",
+        userName: sanitize(req.body.userName) || "HomeDepotCustomer",
         date: month + " " + day + ", " + year,
-        header: req.body.header || req.body.rating + " Star Rating",
-        review: req.body.review || "",
+        header: sanitize(req.body.header) || req.body.rating + " Star Rating",
+        review: sanitize(req.body.review) || "",
         rating: req.body.rating || 5,
         verifiedPurchase: false,
         recommend: req.body.recommend === "true",

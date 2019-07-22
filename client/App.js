@@ -24,18 +24,18 @@ class App extends React.Component {
       this.submitReviewForm = this.submitReviewForm.bind(this);
     }
   
-  addWindowListenerOnce() {
-    if (!this.state.addedWindowListener) {
-      window.addEventListener('getProduct', event => {
-        this.getReviews(event.detail.id);
-      });
-      this.setState({ addedWindowListener: true});
-    }
-  }
+  // addWindowListenerOnce() {
+  //   if (!this.state.addedWindowListener) {
+  //     window.addEventListener('getProduct', event => {
+  //       this.getReviews(event.detail.id);
+  //     });
+  //     this.setState({ addedWindowListener: true});
+  //   }
+  // }
 
   componentDidMount() {
     // Get reviews based on id
-    this.addWindowListenerOnce();
+    // this.addWindowListenerOnce();
     const id = window.location.pathname.slice(10);
     this.getReviews(id);
   }
