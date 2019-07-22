@@ -41,8 +41,6 @@ app.post("/writeReview/:id", (req, res) => {
     const year = date.getFullYear();
     const month = months[date.toDateString().split(" ")[1]];
     const day = date.getDate();
-    console.log("request made");
-    console.log(sanitize(req.body.userName));
     const reviewData = {
         userName: sanitize(req.body.userName) || "HomeDepotCustomer",
         date: month + " " + day + ", " + year,
