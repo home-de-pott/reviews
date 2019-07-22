@@ -43,7 +43,7 @@ app.post("/writeReview/:id", (req, res) => {
     const reviewData = {
         userName: req.body.userName || "HomeDepotCustomer",
         date: month + " " + day + ", " + year,
-        header: req.body.header || req.body.rating + " Rating",
+        header: req.body.header || req.body.rating + " Star Rating",
         review: req.body.review || "",
         rating: req.body.rating || 5,
         verifiedPurchase: false,

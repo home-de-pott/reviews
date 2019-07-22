@@ -6,7 +6,7 @@ Combined with components built by my teammates, a simple clone of Home Depot's s
 
 Technologies
 
-I deployed with Docker and AWS Elastic Beanstalk. My database was MongoDB Atlas, and the client side was rendered with Webpack, Babel, and React. The coding language is Javascript. 
+I deployed with Docker and AWS Elastic Beanstalk. My database was MongoDB Atlas, and the client side was rendered with Webpack, Babel, and React. The coding language is JavaScript. 
 
 Styling was mostly pure CSS for my component. After rendered with my teammates, their Bootstrap CSS files clashed with mine, causing some unusual style changes. To compensate, I had to tweak some of my CSS. Because of this, the component does not look as inteded on its own, but rather only correct when rendered with all other components.
 
