@@ -3,6 +3,8 @@ import RatingDisplayBlock from './ratingdisplayblock';
 import Stars from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/stars.js';
 import VerifiedOrRecommended from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/verifiedOrRecommended.js';
 import ReviewImages from '/Users/hh/Documents/Coding/hackReactor/reviews/client/components/reviewImages.js'
+import thumbsDown from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/images/thumbsDown.png';
+import thumbsUp from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/images/thumbsUp.png';
 
 const IndividualReview = function({reviews, imageOnClick}) {
   let newAvg = 0;
@@ -41,7 +43,7 @@ const IndividualReview = function({reviews, imageOnClick}) {
                   imageOnClick = {imageOnClick}
                 />
                 <div className= "RVWSrankHelpful">
-                  Was this review helpful? <img src='http://homedepottreviews.us-east-2.elasticbeanstalk.com/iconsAndBadges/thumbsUp.png'></img> {review.helpfulCount} <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/thumbsDown.png'></img> {review.notHelpfulCount}
+                  Was this review helpful? <img src={thumbsUp}></img> {review.helpfulCount} <img src={thumbsDown}></img> {review.notHelpfulCount}
                 </div>
               </section>
             </section>

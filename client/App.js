@@ -4,9 +4,6 @@ import ReviewsSummary from './components/reviewsSummary';
 import IndividualReview from './components/individualReview';
 import ReviewFormPopup from './components/formPopup';
 
-// allow user to vote usefulness of reviews
-// conditionally render images div and reviews, "no reviews, be the first"
-
 class App extends React.Component {
   constructor(props) {
       super(props);
@@ -23,19 +20,9 @@ class App extends React.Component {
       this.toggleReviewForm = this.toggleReviewForm.bind(this);
       this.submitReviewForm = this.submitReviewForm.bind(this);
     }
-  
-  // addWindowListenerOnce() {
-  //   if (!this.state.addedWindowListener) {
-  //     window.addEventListener('getProduct', event => {
-  //       this.getReviews(event.detail.id);
-  //     });
-  //     this.setState({ addedWindowListener: true});
-  //   }
-  // }
 
   componentDidMount() {
     // Get reviews based on id
-    // this.addWindowListenerOnce();
     const id = window.location.pathname.slice(10);
     this.getReviews(id);
   }
@@ -68,7 +55,7 @@ class App extends React.Component {
   }
 
   getReviews(id) {
-    axios.get(`http://homedepottreviews.us-east-2.elasticbeanstalk.com/reviews/${id}`)
+    axios.get(`/reviews/${id}`)
       .then((reviews) => {
         this.setState({ reviews: reviews.data });
       })
@@ -99,7 +86,7 @@ class App extends React.Component {
   }
 
   submitReviewForm(id, newReview) {
-    axios.post(`http://homedepottreviews.us-east-2.elasticbeanstalk.com/writeReview/${id}`, newReview)
+    axios.post(`/writeReview/${id}`, newReview)
     .then(() => this.getReviews(id))
     .catch((err) => {
       console.log(err);

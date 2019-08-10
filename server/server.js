@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const {PORT, HOST} = require('../config.js');
 const db = require('./db.js');
 const cors = require('cors');
-const port = PORT || 3000;
+const port = PORT || 8080;
 const host = HOST || '0.0.0.0';
 const sanitize = require('sanitize-html');
 
@@ -59,5 +59,5 @@ app.post("/writeReview/:id", (req, res) => {
 });
 
 app.listen(port, host, () => {
-    console.log("Listening to port 3000");
+    console.log("Listening to port on " + port);
 });

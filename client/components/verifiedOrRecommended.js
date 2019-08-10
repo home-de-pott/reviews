@@ -1,4 +1,5 @@
 import React from 'react';
+import checkbox from '/Users/hh/Documents/Coding/hackReactor/reviews/dist/images/checkbox.png';
 
 const VerifiedOrRecommended = ({review}) => {
     // If verified purchase or recommended purchase,
@@ -9,7 +10,7 @@ const VerifiedOrRecommended = ({review}) => {
             {review.recommend
                 ?
                 <div>
-                    <img src='http://ec2-3-130-129-220.us-east-2.compute.amazonaws.com/iconsAndBadges/checkbox.png'>
+                    <img src= {checkbox}>
                     </img> Recommended Product
                 </div>
                 :
@@ -18,7 +19,7 @@ const VerifiedOrRecommended = ({review}) => {
             {review.verifiedPurchase
                 ?
                 <div>
-                    <img src='http://homedepottreviews.us-east-2.elasticbeanstalk.com/iconsAndBadges/checkbox.png'>
+                    <img src={checkbox}>
                     </img> Verified Purchase
                             </div>
                 :
