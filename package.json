@@ -30,7 +30,7 @@
     "react-dom": "^16.8.6",
     "react-slick": "^0.24.0",
     "react-stars": "^2.2.5",
-    "sanitize-html": "^1.20.1",
+    "sanitize-html": "^2.3.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
